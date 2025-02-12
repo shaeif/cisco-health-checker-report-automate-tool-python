@@ -1,4 +1,0 @@
-
-PLAY [Perform health checks on Cisco Devices] **********************************
-
-TASK [Gather IOS facts] ********************************************************

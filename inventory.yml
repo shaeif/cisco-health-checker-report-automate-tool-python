@@ -1,9 +1,45 @@
+# cisco_devices:
+#   hosts:
+#     cisco1:
+#       ansible_host: devnetsandboxiosxe.cisco.com
+#       ansible_user: admin
+#       ansible_ssh_pass: C1sco12345  # Or use ansible_ssh_private_key_file for SSH keys
+#       ansible_network_os: ios
+#   vars:
+#     ansible_connection: network_cli
+
+# [cisco_devices]
+# ansible_host=devnetsandboxiosxe.cisco.com ansible_user=admin ansible_password=C1sco12345 ansible_network_os=ios
+
 cisco_devices:
   hosts:
     cisco1:
       ansible_host: devnetsandboxiosxe.cisco.com
       ansible_user: admin
-      ansible_ssh_pass: C1sco12345  # Or use ansible_ssh_private_key_file for SSH keys
+      ansible_password: C1sco12345
       ansible_network_os: ios
+      ansible_connection: network_cli
+    cisco2:
+      ansible_host: devnetsandboxiosxe2.cisco.com
+      ansible_user: admin
+      ansible_password: C1sco12345
+      ansible_network_os: ios
+      ansible_connection: network_cli
+    # cisco3:
+    #   ansible_host: 192.168.1.1  # IP of device
+    #   ansible_user: user3
+    #   ansible_password: pass3
+    #   ansible_network_os: ios
+    #   ansible_connection: network_cli
+    # cisco4:
+    #   ansible_host: 192.168.1.2  # Another IP
+    #   ansible_user: user4
+    #   ansible_password: pass4
+    #   ansible_network_os: ios
+    #   ansible_connection: telnet
+    #   ansible_telnet_port: 23  # Telnet specific
+    #   ansible_telnet_timeout: 30  # Optional timeout for telnet connection
+
   vars:
-    ansible_connection: network_cli
+    ansible_connection: network_cli  # Default connection type for network devices
+    ansible_network_os: ios  # Default network OS for all devices in the group

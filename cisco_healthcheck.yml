@@ -133,145 +133,105 @@
           - show cdp neigh
       register: cdp_neighbors_short_output
       ignore_errors: yes
+    
+    - name: Ensure output directory exists
+      file:
+        path: output
+        state: directory
+        mode: '0755'
 
     - name: Save output to a file for the device
       copy:
         content: |
           Version Output:
-          {{ version_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in version_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           CPU Output:
-          {{ cpu_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in cpu_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           CPU History Output:
-          {{ cpu_history_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in cpu_history_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Memory Output:
-          {{ memory_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in memory_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           CDP Neighbors Output:
-          {{ cdp_neighbors_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in cdp_neighbors_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           CDP Neighbors Detail Output:
-          {{ cdp_neighbors_detail_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in cdp_neighbors_detail_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Etherchannel Output:
-          {{ etherchannel_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in etherchannel_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           IP Interface Brief Output:
-          {{ ip_int_brief_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in ip_int_brief_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           VLAN Brief Output:
-          {{ vlan_brief_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in vlan_brief_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Inventory Output:
-          {{ inventory_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in inventory_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Power Output:
-          {{ power_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in power_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Power Inline Output:
-          {{ power_inline_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in power_inline_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Stack Output:
-          {{ stack_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in stack_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Running Config Output:
-          {{ running_config_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in running_config_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Protocols Output:
-          {{ protocols_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in protocols_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           IP Route Output:
-          {{ ip_route_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in ip_route_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           Interface Status Output:
-          {{ interface_status_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in interface_status_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
           CDP Neighbors Short Output:
-          {{ cdp_neighbors_short_output.stdout  | replace('\n', '\\n')  }}
+          {% for line in cdp_neighbors_short_output.stdout %}
+          {{ line }}
+          {% endfor %}
           
-        dest: "{{ inventory_hostname }}_health_check_output.txt"
-        mode: '0644'
-
-    - name: Save output to a file for the device in struct format
-      copy:
-        content: |
-          -------------------------------------------------------
-          Device: {{ inventory_hostname }}
-          -------------------------------------------------------
-
-          Version Information:
-          {{ version_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          CPU Utilization:
-          {{ cpu_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          CPU History:
-          {{ cpu_history_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Memory Usage:
-          {{ memory_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          CDP Neighbors:
-          {{ cdp_neighbors_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Detailed CDP Neighbors:
-          {{ cdp_neighbors_detail_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          EtherChannel Summary:
-          {{ etherchannel_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          IP Interface Brief:
-          {{ ip_int_brief_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          VLAN Information:
-          {{ vlan_brief_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Inventory:
-          {{ inventory_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Power Consumption:
-          {{ power_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Power Inline:
-          {{ power_inline_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Stack Information:
-          {{ stack_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Running Configuration:
-          {{ running_config_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Protocols Information:
-          {{ protocols_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          IP Routing Table:
-          {{ ip_route_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Interface Status:
-          {{ interface_status_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-          Short CDP Neighbors:
-          {{ cdp_neighbors_short_output.stdout  | replace('\n', '\\n')  }}
-          
-          -------------------------------------------------------
-        dest: "{{ inventory_hostname }}_struct_health_check_output.txt"
+        dest: "output/{{ inventory_hostname }}_health_check_output.txt"
         mode: '0644'
