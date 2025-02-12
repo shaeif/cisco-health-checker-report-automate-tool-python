@@ -1,0 +1,25 @@
+show switch
+show version
+show process cpu
+show process cpu history
+show processes memory
+show cdp neighbors
+show cdp neighbors detail
+show etherchannel summary
+show ip int brief
+show module
+show vlan brief
+show inventory
+show power
+show environment temperature
+show power inl
+show environment status
+sh stack
+show power available
+show runn
+show protocols
+show ip route
+show interface status
+show cdp neigh
+sh switch virtual role
+sh switch virtual redun

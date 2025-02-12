@@ -1,0 +1,277 @@
+- name: Perform health checks on Cisco Devices
+  hosts: cisco_devices
+  gather_facts: no
+  connection: network_cli
+  tasks:
+
+    - name: Gather IOS facts
+      cisco.ios.ios_facts:
+      ignore_errors: yes
+
+    - name: Show version info
+      cisco.ios.ios_command:
+        commands:
+          - show version
+      register: version_output
+      ignore_errors: yes
+
+    - name: Show CPU utilization
+      cisco.ios.ios_command:
+        commands:
+          - show process cpu
+      register: cpu_output
+      ignore_errors: yes
+
+    - name: Show process CPU history
+      cisco.ios.ios_command:
+        commands:
+          - show process cpu history
+      register: cpu_history_output
+      ignore_errors: yes
+
+    - name: Show memory usage
+      cisco.ios.ios_command:
+        commands:
+          - show processes memory
+      register: memory_output
+      ignore_errors: yes
+
+    - name: Show CDP neighbors
+      cisco.ios.ios_command:
+        commands:
+          - show cdp neighbors
+      register: cdp_neighbors_output
+      ignore_errors: yes
+
+    - name: Show detailed CDP neighbors
+      cisco.ios.ios_command:
+        commands:
+          - show cdp neighbors detail
+      register: cdp_neighbors_detail_output
+      ignore_errors: yes
+
+    - name: Show etherchannel summary
+      cisco.ios.ios_command:
+        commands:
+          - show etherchannel summary
+      register: etherchannel_output
+      ignore_errors: yes
+
+    - name: Show IP interface brief
+      cisco.ios.ios_command:
+        commands:
+          - show ip int brief
+      register: ip_int_brief_output
+      ignore_errors: yes
+
+    - name: Show VLAN brief
+      cisco.ios.ios_command:
+        commands:
+          - show vlan brief
+      register: vlan_brief_output
+      ignore_errors: yes
+
+    - name: Show inventory
+      cisco.ios.ios_command:
+        commands:
+          - show inventory
+      register: inventory_output
+      ignore_errors: yes
+
+    - name: Show power
+      cisco.ios.ios_command:
+        commands:
+          - show power
+      register: power_output
+      ignore_errors: yes
+
+    - name: Show power inline
+      cisco.ios.ios_command:
+        commands:
+          - show power inline
+      register: power_inline_output
+      ignore_errors: yes
+
+    - name: Show stack information
+      cisco.ios.ios_command:
+        commands:
+          - show stack
+      register: stack_output
+      ignore_errors: yes
+
+    - name: Show running configuration
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: running_config_output
+      ignore_errors: yes
+
+    - name: Show protocols
+      cisco.ios.ios_command:
+        commands:
+          - show protocols
+      register: protocols_output
+      ignore_errors: yes
+
+    - name: Show IP route
+      cisco.ios.ios_command:
+        commands:
+          - show ip route
+      register: ip_route_output
+      ignore_errors: yes
+
+    - name: Show interface status
+      cisco.ios.ios_command:
+        commands:
+          - show interface status
+      register: interface_status_output
+      ignore_errors: yes
+
+    - name: Show CDP neighbors (again, shorter command)
+      cisco.ios.ios_command:
+        commands:
+          - show cdp neigh
+      register: cdp_neighbors_short_output
+      ignore_errors: yes
+
+    - name: Save output to a file for the device
+      copy:
+        content: |
+          Version Output:
+          {{ version_output.stdout  | replace('\n', '\\n')  }}
+          
+          CPU Output:
+          {{ cpu_output.stdout  | replace('\n', '\\n')  }}
+          
+          CPU History Output:
+          {{ cpu_history_output.stdout  | replace('\n', '\\n')  }}
+          
+          Memory Output:
+          {{ memory_output.stdout  | replace('\n', '\\n')  }}
+          
+          CDP Neighbors Output:
+          {{ cdp_neighbors_output.stdout  | replace('\n', '\\n')  }}
+          
+          CDP Neighbors Detail Output:
+          {{ cdp_neighbors_detail_output.stdout  | replace('\n', '\\n')  }}
+          
+          Etherchannel Output:
+          {{ etherchannel_output.stdout  | replace('\n', '\\n')  }}
+          
+          IP Interface Brief Output:
+          {{ ip_int_brief_output.stdout  | replace('\n', '\\n')  }}
+          
+          VLAN Brief Output:
+          {{ vlan_brief_output.stdout  | replace('\n', '\\n')  }}
+          
+          Inventory Output:
+          {{ inventory_output.stdout  | replace('\n', '\\n')  }}
+          
+          Power Output:
+          {{ power_output.stdout  | replace('\n', '\\n')  }}
+          
+          Power Inline Output:
+          {{ power_inline_output.stdout  | replace('\n', '\\n')  }}
+          
+          Stack Output:
+          {{ stack_output.stdout  | replace('\n', '\\n')  }}
+          
+          Running Config Output:
+          {{ running_config_output.stdout  | replace('\n', '\\n')  }}
+          
+          Protocols Output:
+          {{ protocols_output.stdout  | replace('\n', '\\n')  }}
+          
+          IP Route Output:
+          {{ ip_route_output.stdout  | replace('\n', '\\n')  }}
+          
+          Interface Status Output:
+          {{ interface_status_output.stdout  | replace('\n', '\\n')  }}
+          
+          CDP Neighbors Short Output:
+          {{ cdp_neighbors_short_output.stdout  | replace('\n', '\\n')  }}
+          
+        dest: "{{ inventory_hostname }}_health_check_output.txt"
+        mode: '0644'
+
+    - name: Save output to a file for the device in struct format
+      copy:
+        content: |
+          -------------------------------------------------------
+          Device: {{ inventory_hostname }}
+          -------------------------------------------------------
+
+          Version Information:
+          {{ version_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          CPU Utilization:
+          {{ cpu_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          CPU History:
+          {{ cpu_history_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Memory Usage:
+          {{ memory_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          CDP Neighbors:
+          {{ cdp_neighbors_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Detailed CDP Neighbors:
+          {{ cdp_neighbors_detail_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          EtherChannel Summary:
+          {{ etherchannel_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          IP Interface Brief:
+          {{ ip_int_brief_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          VLAN Information:
+          {{ vlan_brief_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Inventory:
+          {{ inventory_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Power Consumption:
+          {{ power_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Power Inline:
+          {{ power_inline_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Stack Information:
+          {{ stack_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Running Configuration:
+          {{ running_config_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Protocols Information:
+          {{ protocols_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          IP Routing Table:
+          {{ ip_route_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Interface Status:
+          {{ interface_status_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+          Short CDP Neighbors:
+          {{ cdp_neighbors_short_output.stdout  | replace('\n', '\\n')  }}
+          
+          -------------------------------------------------------
+        dest: "{{ inventory_hostname }}_struct_health_check_output.txt"
+        mode: '0644'
