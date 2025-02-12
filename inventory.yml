@@ -20,7 +20,7 @@ cisco_devices:
       ansible_network_os: ios
       ansible_connection: network_cli
     cisco2:
-      ansible_host: devnetsandboxiosxe2.cisco.com
+      ansible_host: devnetsandboxiosxe.cisco.com
       ansible_user: admin
       ansible_password: C1sco12345
       ansible_network_os: ios

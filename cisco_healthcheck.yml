@@ -1,6 +1,6 @@
 - name: Perform health checks on Cisco Devices
   hosts: cisco_devices
-  gather_facts: no
+  gather_facts: yes
   connection: network_cli
   tasks:
 
@@ -144,94 +144,170 @@
       copy:
         content: |
           Version Output:
+          {% if version_output.stdout is defined %}
           {% for line in version_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show version"
+          {% endif %}
           
           CPU Output:
+          {% if cpu_output.stdout is defined %}
           {% for line in cpu_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show process cpu"
+          {% endif %}
           
           CPU History Output:
+          {% if cpu_history_output.stdout is defined %}
           {% for line in cpu_history_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show process cpu history"
+          {% endif %}
           
           Memory Output:
+          {% if memory_output.stdout is defined %}
           {% for line in memory_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show processes memory"
+          {% endif %}
           
           CDP Neighbors Output:
+          {% if cdp_neighbors_output.stdout is defined %}
           {% for line in cdp_neighbors_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show cdp neighbors"
+          {% endif %}
           
           CDP Neighbors Detail Output:
+          {% if cdp_neighbors_detail_output.stdout is defined %}
           {% for line in cdp_neighbors_detail_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show cdp neighbors detail"
+          {% endif %}
           
           Etherchannel Output:
+          {% if etherchannel_output.stdout is defined %}
           {% for line in etherchannel_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show etherchannel summary"
+          {% endif %}
           
           IP Interface Brief Output:
+          {% if ip_int_brief_output.stdout is defined %}
           {% for line in ip_int_brief_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show ip int brief"
+          {% endif %}
           
           VLAN Brief Output:
+          {% if vlan_brief_output.stdout is defined %}
           {% for line in vlan_brief_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show vlan brief"
+          {% endif %}
           
           Inventory Output:
+          {% if inventory_output.stdout is defined %}
           {% for line in inventory_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show inventory"
+          {% endif %}
           
           Power Output:
+          {% if power_output.stdout is defined %}
           {% for line in power_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show power"
+          {% endif %}
           
           Power Inline Output:
+          {% if power_inline_output.stdout is defined %}
           {% for line in power_inline_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show power inline"
+          {% endif %}
           
           Stack Output:
+          {% if stack_output.stdout is defined %}
           {% for line in stack_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show stack"
+          {% endif %}
           
           Running Config Output:
+          {% if running_config_output.stdout is defined %}
           {% for line in running_config_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show running-config"
+          {% endif %}
           
           Protocols Output:
+          {% if protocols_output.stdout is defined %}
           {% for line in protocols_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show protocols"
+          {% endif %}
           
           IP Route Output:
+          {% if ip_route_output.stdout is defined %}
           {% for line in ip_route_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show ip route"
+          {% endif %}
           
           Interface Status Output:
+          {% if interface_status_output.stdout is defined %}
           {% for line in interface_status_output.stdout %}
           {{ line }}
           {% endfor %}
+          {% else %}
+          No output from "show interface status"
+          {% endif %}
           
           CDP Neighbors Short Output:
+          {% if cdp_neighbors_short_output.stdout is defined %}
           {% for line in cdp_neighbors_short_output.stdout %}
           {{ line }}
           {% endfor %}
-          
-        dest: "output/{{ inventory_hostname }}_health_check_output.txt"
+          {% else %}
+          No output from "show cdp neigh"
+          {% endif %}
+
+        dest: "output/{{ ansible_facts['net_hostname'] }}_health_check_output.txt"
         mode: '0644'
+
+    - name: Show all gathered facts
+      debug:
+        var: ansible_facts
