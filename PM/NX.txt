@@ -1,0 +1,105 @@
+
+TERMINAL LENGTH 0
+
+show version
+
+show process cpu
+
+show process cpu history
+
+show cpu usage
+
+show cpu
+
+show processes memory
+
+show processes cpu
+
+show cdp neighbors
+
+show cdp neighbors detail
+
+show sup-bootflash//:
+show bootflash//:
+
+show sup-bootflash://
+show bootflash://
+
+show system resources
+show processes memory
+
+show ip int brief
+
+show sup-bootflash:
+
+show bootflash:
+
+show flash:
+
+
+show module
+
+show modules
+
+
+show vlan brief
+
+show inventory
+
+show power
+
+
+
+show environment temperature
+
+show power status power-supply 1
+
+show power status power-supply 2
+
+
+show power status fan-tray
+
+show power used
+
+show power total
+show power inl
+
+
+show power status all
+
+show environment cooling
+
+show environment status
+
+sh env all
+
+
+
+show power available
+
+show protocols
+
+show ip route
+
+show interface status
+
+show cdp neigh
+
+show cdp neigh detail
+
+
+show mac address
+
+show logg
+
+show port-cha sum
+show hsrp br
+show features
+show vpc
+show fex
+show lice sum
+
+ter le 25
+
+
+

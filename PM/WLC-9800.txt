@@ -1,0 +1,123 @@
+
+TERMINAL LENGTH 0
+
+
+
+show switch
+
+show version
+
+show process cpu
+show processes cpu
+show process cpu history
+
+show cpu usage
+
+show cpu
+
+show processes memory
+
+show processes cpu
+
+show cdp neighbors
+
+show cdp neighbors detail
+
+
+show ip int brief
+
+show bootflash:
+
+show flash:
+
+show system resources
+show processes memory
+
+show module
+
+show modules
+
+show vlan brief
+
+show inventory
+
+show power
+
+
+
+show environment temperature
+
+show power status power-supply 1
+
+show power status power-supply 2
+
+
+show power status fan-tray
+
+show power used
+
+show power total
+show power inl
+
+
+show power status all
+
+show environment cooling
+
+show environment status
+
+sh env all
+
+sh stack
+
+
+show power available
+
+show runn
+
+show protocols
+
+show ip route
+
+show interface status
+
+
+show mac address
+
+show logg
+!
+show switch
+show redundancy 
+show redundancy states
+
+show lice sum
+
+show wireless client summary
+show ap config general
+show ap config general | i MAC | Serial | Address | Name | Model
+show network summary
+show ap cdp neighbors
+show ap tag summary 
+show ap uptime
+show chassis rmi
+show chassis
+show platform software access-list chassis active f0 summary
+
+show wireless stats ap join summary
+show wireless dtls connections
+show wireless stats ap history
+show wireless stats client detail
+show aaa servers
+show ap summary
+show ap config general | i AP Serial Number|AP Model | MAC
+show wlan summary
+
+show chassis ha-status standby
+show chassis ha-status local
+show chassis ha-status active
+
+
+ter le 25
+
+
+

@@ -1,0 +1,38 @@
+config paging disable
+
+show ap cdp neighbors all
+show ap inventory all
+show ap summary
+show redundancy summary 
+show wlan summary
+show switchconfig
+show running-config
+show network summary
+show sysinfo
+show license summary
+show license all
+show license status
+
+show 802.11a
+
+show 802.11b
+
+show advanced 802.11a logging
+
+show advanced 802.11b logging
+
+show license expiring
+
+show logging
+
+show mesh ap
+
+show mesh config
+
+show mesh env
+
+show mesh neigh
+
+show mesh path
+
+show mesh stat

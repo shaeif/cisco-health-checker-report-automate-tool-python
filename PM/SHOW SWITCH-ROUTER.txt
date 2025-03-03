@@ -1,0 +1,143 @@
+
+TERMINAL LENGTH 0
+
+
+
+show switch
+
+show version
+
+show process cpu
+show processes cpu
+show process cpu history
+
+show cpu usage
+
+show cpu
+
+show processes memory
+
+show processes cpu
+
+show cdp neighbors
+
+show cdp neighbors detail
+
+show etherchannel summary
+show ip int brief
+
+show sup-bootflash:
+
+show bootflash:
+
+show flash:
+show sup-bootflash//:
+show bootflash//:
+
+show sup-bootflash://
+show bootflash://
+
+show system resources
+show processes memory
+
+show module
+
+show modules
+
+show stack-power detail
+show stack-power neighbors
+
+show vlan brief
+
+show inventory
+
+show power
+
+
+
+show environment temperature
+
+show power status power-supply 1
+
+show power status power-supply 2
+
+
+show power status fan-tray
+
+show power used
+
+show power total
+show power inl
+
+
+show power status all
+
+show environment cooling
+
+show environment status
+
+sh env all
+
+sh stack
+
+
+show power available
+
+show runn
+
+show protocols
+
+show ip route
+
+show interface status
+
+show cdp neigh
+
+show cdp neigh detail
+
+sh switch virtual role
+
+sh switch virtual redun
+
+show mac address
+
+show logg
+
+
+
+
+show switch virtual
+
+!
+show switch virtual role
+!
+show switch virtual link 
+!
+show switch virtual link port-cha
+!
+show switch virtual dual-active fast-hello
+!
+show switch virtual dual-active summary
+!
+show switch
+show redundancy 
+show redundancy states
+
+show stackwise-virtual
+show stackwise-virtual bandwidth
+show stackwise-virtual neighbors
+
+show stackwise-virtual link
+show stackwise-virtual switch 1
+show stackwise-virtual switch 2
+
+
+show features
+show vpc
+show fex
+show lice sum
+
+ter le 25
+
+
+

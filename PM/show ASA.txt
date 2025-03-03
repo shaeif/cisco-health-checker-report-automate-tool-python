@@ -1,0 +1,23 @@
+ terminal pager 0
+
+show tech-support
+
+ show version
+
+show inventory
+ show module all
+
+show memory
+
+ show activation-key
+show runn
+show ip address
+show interface ip brief
+
+ show nameif
+
+show module
+
+ show processes
+show processes cpu-usage
+show memory detail

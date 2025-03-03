@@ -8,6 +8,13 @@
       cisco.ios.ios_facts:
       ignore_errors: yes
 
+    - name: Show switch
+      cisco.ios.ios_command:
+        commands:
+          - show switch
+      register: switch_output
+      ignore_errors: yes
+
     - name: Show version info
       cisco.ios.ios_command:
         commands:
@@ -15,11 +22,18 @@
       register: version_output
       ignore_errors: yes
 
-    - name: Show CPU utilization
+    - name: Show process CPU
       cisco.ios.ios_command:
         commands:
           - show process cpu
       register: cpu_output
+      ignore_errors: yes
+
+    - name: Show processes CPU
+      cisco.ios.ios_command:
+        commands:
+          - show processes cpu
+      register: processes_cpu_output
       ignore_errors: yes
 
     - name: Show process CPU history
@@ -29,7 +43,21 @@
       register: cpu_history_output
       ignore_errors: yes
 
-    - name: Show memory usage
+    - name: Show CPU usage
+      cisco.ios.ios_command:
+        commands:
+          - show cpu usage
+      register: cpu_usage_output
+      ignore_errors: yes
+
+    - name: Show CPU
+      cisco.ios.ios_command:
+        commands:
+          - show cpu
+      register: cpu_general_output
+      ignore_errors: yes
+
+    - name: Show processes memory
       cisco.ios.ios_command:
         commands:
           - show processes memory
@@ -64,6 +92,42 @@
       register: ip_int_brief_output
       ignore_errors: yes
 
+    - name: Show bootflash details
+      cisco.ios.ios_command:
+        commands:
+          - show sup-bootflash:
+          - show bootflash:
+          - show flash:
+          - show sup-bootflash//:
+          - show bootflash//:
+          - show sup-bootflash://
+          - show bootflash://
+      register: bootflash_output
+      ignore_errors: yes
+
+    - name: Show system resources
+      cisco.ios.ios_command:
+        commands:
+          - show system resources
+      register: system_resources_output
+      ignore_errors: yes
+
+    - name: Show module information
+      cisco.ios.ios_command:
+        commands:
+          - show module
+          - show modules
+      register: module_output
+      ignore_errors: yes
+
+    - name: Show stack power details
+      cisco.ios.ios_command:
+        commands:
+          - show stack-power detail
+          - show stack-power neighbors
+      register: stack_power_output
+      ignore_errors: yes
+
     - name: Show VLAN brief
       cisco.ios.ios_command:
         commands:
@@ -78,25 +142,42 @@
       register: inventory_output
       ignore_errors: yes
 
-    - name: Show power
+    - name: Show power details
       cisco.ios.ios_command:
         commands:
           - show power
+          - show environment temperature
+          - show power status power-supply 1
+          - show power status power-supply 2
+          - show power status fan-tray
+          - show power used
+          - show power total
+          - show power inl
+          - show power status all
       register: power_output
       ignore_errors: yes
 
-    - name: Show power inline
+    - name: Show environment details
       cisco.ios.ios_command:
         commands:
-          - show power inline
-      register: power_inline_output
+          - show environment cooling
+          - show environment status
+          - sh env all
+      register: environment_output
       ignore_errors: yes
 
-    - name: Show stack information
+    - name: Show redundancy and stackwise-virtual details
       cisco.ios.ios_command:
         commands:
-          - show stack
-      register: stack_output
+          - show redundancy
+          - show redundancy states
+          - show stackwise-virtual
+          - show stackwise-virtual bandwidth
+          - show stackwise-virtual neighbors
+          - show stackwise-virtual link
+          - show stackwise-virtual switch 1
+          - show stackwise-virtual switch 2
+      register: redundancy_output
       ignore_errors: yes
 
     - name: Show running configuration
@@ -127,13 +208,24 @@
       register: interface_status_output
       ignore_errors: yes
 
-    - name: Show CDP neighbors (again, shorter command)
+    - name: Show logs and MAC addresses
       cisco.ios.ios_command:
         commands:
-          - show cdp neigh
-      register: cdp_neighbors_short_output
+          - show mac address
+          - show logg
+      register: log_output
       ignore_errors: yes
-    
+
+    - name: Show licensing and feature information
+      cisco.ios.ios_command:
+        commands:
+          - show features
+          - show vpc
+          - show fex
+          - show lice sum
+      register: features_output
+      ignore_errors: yes
+
     - name: Ensure output directory exists
       file:
         path: output
@@ -143,7 +235,16 @@
     - name: Save output to a file for the device
       copy:
         content: |
-          Version Output:
+          Switch Details:
+          {% if switch_output.stdout is defined %}
+          {% for line in switch_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show switch"
+          {% endif %}
+
+          Version:
           {% if version_output.stdout is defined %}
           {% for line in version_output.stdout %}
           {{ line }}
@@ -151,8 +252,8 @@
           {% else %}
           No output from "show version"
           {% endif %}
-          
-          CPU Output:
+
+          CPU :
           {% if cpu_output.stdout is defined %}
           {% for line in cpu_output.stdout %}
           {{ line }}
@@ -160,8 +261,8 @@
           {% else %}
           No output from "show process cpu"
           {% endif %}
-          
-          CPU History Output:
+
+          CPU History :
           {% if cpu_history_output.stdout is defined %}
           {% for line in cpu_history_output.stdout %}
           {{ line }}
@@ -169,8 +270,8 @@
           {% else %}
           No output from "show process cpu history"
           {% endif %}
-          
-          Memory Output:
+
+          Memory :
           {% if memory_output.stdout is defined %}
           {% for line in memory_output.stdout %}
           {{ line }}
@@ -178,8 +279,8 @@
           {% else %}
           No output from "show processes memory"
           {% endif %}
-          
-          CDP Neighbors Output:
+
+          CDP Neighbors :
           {% if cdp_neighbors_output.stdout is defined %}
           {% for line in cdp_neighbors_output.stdout %}
           {{ line }}
@@ -187,8 +288,8 @@
           {% else %}
           No output from "show cdp neighbors"
           {% endif %}
-          
-          CDP Neighbors Detail Output:
+
+          CDP Neighbors Detail :
           {% if cdp_neighbors_detail_output.stdout is defined %}
           {% for line in cdp_neighbors_detail_output.stdout %}
           {{ line }}
@@ -196,8 +297,8 @@
           {% else %}
           No output from "show cdp neighbors detail"
           {% endif %}
-          
-          Etherchannel Output:
+
+          EtherChannel Summary :
           {% if etherchannel_output.stdout is defined %}
           {% for line in etherchannel_output.stdout %}
           {{ line }}
@@ -205,8 +306,8 @@
           {% else %}
           No output from "show etherchannel summary"
           {% endif %}
-          
-          IP Interface Brief Output:
+
+          IP Interface Brief :
           {% if ip_int_brief_output.stdout is defined %}
           {% for line in ip_int_brief_output.stdout %}
           {{ line }}
@@ -214,8 +315,44 @@
           {% else %}
           No output from "show ip int brief"
           {% endif %}
-          
-          VLAN Brief Output:
+
+          Bootflash :
+          {% if bootflash_output.stdout is defined %}
+          {% for line in bootflash_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show bootflash"
+          {% endif %}
+
+          System Resources :
+          {% if system_resources_output.stdout is defined %}
+          {% for line in system_resources_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show system resources"
+          {% endif %}
+
+          Module Information :
+          {% if module_output.stdout is defined %}
+          {% for line in module_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show module"
+          {% endif %}
+
+          Stack Power Details :
+          {% if stack_power_output.stdout is defined %}
+          {% for line in stack_power_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show stack-power detail"
+          {% endif %}
+
+          VLAN Brief :
           {% if vlan_brief_output.stdout is defined %}
           {% for line in vlan_brief_output.stdout %}
           {{ line }}
@@ -223,8 +360,8 @@
           {% else %}
           No output from "show vlan brief"
           {% endif %}
-          
-          Inventory Output:
+
+          Inventory :
           {% if inventory_output.stdout is defined %}
           {% for line in inventory_output.stdout %}
           {{ line }}
@@ -232,8 +369,8 @@
           {% else %}
           No output from "show inventory"
           {% endif %}
-          
-          Power Output:
+
+          Power :
           {% if power_output.stdout is defined %}
           {% for line in power_output.stdout %}
           {{ line }}
@@ -241,26 +378,26 @@
           {% else %}
           No output from "show power"
           {% endif %}
-          
-          Power Inline Output:
-          {% if power_inline_output.stdout is defined %}
-          {% for line in power_inline_output.stdout %}
+
+          Environment :
+          {% if environment_output.stdout is defined %}
+          {% for line in environment_output.stdout %}
           {{ line }}
           {% endfor %}
           {% else %}
-          No output from "show power inline"
+          No output from "show environment status"
           {% endif %}
-          
-          Stack Output:
-          {% if stack_output.stdout is defined %}
-          {% for line in stack_output.stdout %}
+
+          Redundancy :
+          {% if redundancy_output.stdout is defined %}
+          {% for line in redundancy_output.stdout %}
           {{ line }}
           {% endfor %}
           {% else %}
-          No output from "show stack"
+          No output from "show redundancy"
           {% endif %}
-          
-          Running Config Output:
+
+          Running Config :
           {% if running_config_output.stdout is defined %}
           {% for line in running_config_output.stdout %}
           {{ line }}
@@ -268,8 +405,8 @@
           {% else %}
           No output from "show running-config"
           {% endif %}
-          
-          Protocols Output:
+
+          Protocols :
           {% if protocols_output.stdout is defined %}
           {% for line in protocols_output.stdout %}
           {{ line }}
@@ -277,8 +414,8 @@
           {% else %}
           No output from "show protocols"
           {% endif %}
-          
-          IP Route Output:
+
+          IP Route :
           {% if ip_route_output.stdout is defined %}
           {% for line in ip_route_output.stdout %}
           {{ line }}
@@ -286,8 +423,8 @@
           {% else %}
           No output from "show ip route"
           {% endif %}
-          
-          Interface Status Output:
+
+          Interface Status :
           {% if interface_status_output.stdout is defined %}
           {% for line in interface_status_output.stdout %}
           {{ line }}
@@ -295,15 +432,25 @@
           {% else %}
           No output from "show interface status"
           {% endif %}
-          
-          CDP Neighbors Short Output:
-          {% if cdp_neighbors_short_output.stdout is defined %}
-          {% for line in cdp_neighbors_short_output.stdout %}
+
+          Log :
+          {% if log_output.stdout is defined %}
+          {% for line in log_output.stdout %}
           {{ line }}
           {% endfor %}
           {% else %}
-          No output from "show cdp neigh"
+          No output from "show log"
           {% endif %}
+
+          Licensing and Features :
+          {% if features_output.stdout is defined %}
+          {% for line in features_output.stdout %}
+          {{ line }}
+          {% endfor %}
+          {% else %}
+          No output from "show features"
+          {% endif %}
+
 
         dest: "output/{{ ansible_facts['net_hostname'] }}_health_check_output.txt"
         mode: '0644'
