@@ -1,0 +1,3 @@
+# .ansible-lint.yml
+rules:
+  line-length: disable
