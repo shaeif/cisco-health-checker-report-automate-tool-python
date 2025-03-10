@@ -35,7 +35,7 @@
         board_id: "{{ decoded_file | regex_search('(?<=Processor board ID )\\S+') | default('unknown') }}"
         uptime_info: "{{ decoded_file | regex_search('(?m)^.*uptime.*$') | replace(',', ' ') | join('') }}"
         hostname: "{{ decoded_file | regex_search('(?m)^.*uptime.*$') | regex_search('^\\S+', '\\0') }}"
-        vlan_ip: "{{ decoded_file | regex_search('^Vlan\\d{2,3}\\s+(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})', multiline=True) | default('unknown') }}"
+        vlan_ip: "{{ decoded_file | regex_search('^Vlan\\d{2,3}\\s+(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})', multiline=True) | regex_search('\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}', '\\0') | default('unknown') }}"
         switch_version: "{{ decoded_file | regex_search('Cisco IOS Software.*', multiline=True) | regex_search('Version\\s+(\\d+\\.\\d+(\\(\\d+\\))?(\\.\\d+)?([A-Za-z]\\d*)?)', '\\1') | default('unknown') }}"
         system_image: "{{ decoded_file | regex_search('(?:flash|bootflash):([^\\s]+\\.bin)', '\\1') | default('unknown') }}"
         cpu_util: "{{ decoded_file | regex_findall('.*CPU\\s+utilization.*$', multiline=True) | join('\\n') }}"
@@ -47,9 +47,12 @@
         path: ./output/PMC.xlsx
         sheet: "worksheet"
         data: >-
-          {{  item.0+1  }},{{ '' }},{{ item.1.switch_model | join('') }},{{ item.1.hostname | join('') }},{{ item.1.vlan_ip }},{{ "UP" }},{{ item.1.switch_version | join('') }},{{ '' }},
-          {{ item.1.system_image | join('')  }},{{''}},{{ item.1.board_id }},{{ item.1.uptime_info }},
+          {{  item.0+1  }},{{ 'Switch' }},{{ item.1.switch_model | join('') }},{{ item.1.hostname | join('') }},{{ item.1.vlan_ip | join('') }},{{ "UP" }},{{ item.1.switch_version | join('') }},{{ '' }},
+          {{ item.1.system_image | join('')  }},{{ item.1.board_id }},{{ item.1.uptime_info }},
           {{ item.1.cpu_util }},{{ item.1.inventory_data }},{{ item.1.cisco_info }}
-        cell: "A{{ 293 + item.0 }}" 
+        cell: "A{{ 218 + item.0 }}" 
         override: True
       with_indexed_items: "{{ extracted_data }}"
+
+
+# ansible-playbook -e 'ansible_python_interpreter=/home/shaeif/anaconda3/envs/py38/bin/python' process_and_append_data_to_excel.yml -vvv

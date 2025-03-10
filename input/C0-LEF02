@@ -1,0 +1,1920 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.03.05 11:35:37 =~=~=~=~=~=~=~=~=~=~=~=
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2018, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 05.31
+  NXOS: version 7.0(3)I7(5)
+  BIOS compile time:  05/17/2018  NXOS image file is: bootflash:///nxos.7.0.3.I7.5.bin
+  NXOS compile time:  8/28/2018 2:00:00 [08/28/2018 12:51:46]
+
+
+Hardware
+  cisco Nexus9000 C93180YC-FX Chassis 
+  Intel(R) Xeon(R) CPU D-1528 @ 1.90GHz with 65809524 kB of memory.
+  Processor Board ID FDO22092AWV
+
+  Device name: CTVLEF02
+  bootflash:  115805356 kB
+Kernel uptime is 977 day(s), 23 hour(s), 49 minute(s), 54 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 7.0(3)I7(5)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+	
+CTVLEF02# LENGTH 0
+show process cpu
+
+           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2018, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 05.31
+  NXOS: version 7.0(3)I7(5)
+  BIOS compile time:  05/17/2018
+  NXOS image file is: bootflash:///nxos.7.0.3.I7.5.bin
+...skipping one line
+
+
+Hardware
+  cisco Nexus9000 C93180YC-FX Chassis 
+  Intel(R) Xeon(R) CPU D-1528 @ 1.90GHz with 65809524 kB of memory.
+  Processor Board ID FDO22092AWV
+
+  Device name: CTVLEF02
+  bootflash:  115805356 kB
+Kernel uptime is 977 day(s), 23 hour(s), 49 minute(s), 55 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 7.0(3)I7(5)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+	
+CTVLEF02# how process cpu
+
+
+show cpu
+
+sh           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show process cpu history
+                                                                
+    1                                       1        1          
+    393443434444844344344384344843443444443505743433434334435744
+100                                                             
+ 90                                                             
+ 80                                                             
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20                                                             
+ 10 ##          #         #    #           ####      #      ##  
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per second (last 60 seconds)
+                      # = average CPU%
+
+
+                                                                
+    111  111111  111   1111  111111111 1111     111111 111111111
+    331997412118934399901009911101034390003898991011008410103200
+100                                                             
+[7m--More--[m 90                                                             
+[7m--More--[m[K
+...skipping one line
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20      *                                                      
+ 10 *****##*#****************#********************#*************
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per minute (last 60 minutes)
+              * = maximum CPU%   # = average CPU%
+
+
+                                                                            
+    111111111111111111111111111111111111111111111111111111111111111111111111
+    466456456644694444545478454446766564564544454945584555547467555434555565
+100                                                                         
+ 90                                                                         
+ 80                                                                         
+ 70                                                                         
+ 60                                                                         
+ 50                                                                         
+ 40                                                                         
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m 30                                                                         
+ 20  ** ** ***  **    * * ** *   ****** ** *   * * *** **** * *****   ******
+ 10 ************************************************************************
+    0....5....1....1....2....2....3....3....4....4....5....5....6....6....7.
+              0    5    0    5    0    5    0    5    0    5    0    5    0 
+
+                   CPU% per hour (last 72 hours)
+                  * = maximum CPU%   # = average CPU%
+
+CTVLEF02# cpu usage
+ow processes memory
+
+           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show cpu
+show processes cpu
+
+                ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show processes memory
+
+PID    MemAlloc  MemLimit    MemUsed     StackBase/Ptr      Process
+-----  --------  ----------  ----------  -----------------  ----------------
+    1    176128  0           4329472     c01abd00/c01ab328  init
+    2         0  0           0                  0/0         kthreadd
+    3         0  0           0                  0/0         ksoftirqd/0
+    6         0  0           0                  0/0         migration/0
+    7         0  0           0                  0/0         watchdog/0
+    8         0  0           0                  0/0         migration/1
+   10         0  0           0                  0/0         ksoftirqd/1
+   12         0  0           0                  0/0         watchdog/1
+   13         0  0           0                  0/0         migration/2
+   15         0  0           0                  0/0         ksoftirqd/2
+   16         0  0           0                  0/0         watchdog/2
+   17         0  0           0                  0/0         migration/3
+   19         0  0           0                  0/0         ksoftirqd/3
+   20         0  0           0                  0/0         watchdog/3
+   21         0  0           0                  0/0         migration/4
+   22         0  0           0                  0/0         kworker/4:0
+   23         0  0           0                  0/0         ksoftirqd/4
+   24         0  0           0                  0/0         watchdog/4
+   25         0  0           0                  0/0         migration/5
+   26         0  0           0                  0/0         kworker/5:0
+   27         0  0           0                  0/0         ksoftirqd/5
+[7m--More--[m   28         0  0           0                  0/0         watchdog/5
+[7m--More--[m[K
+...skipping one line
+   31         0  0           0                  0/0         ksoftirqd/6
+   32         0  0           0                  0/0         watchdog/6
+   33         0  0           0                  0/0         migration/7
+   35         0  0           0                  0/0         ksoftirqd/7
+   36         0  0           0                  0/0         watchdog/7
+   37         0  0           0                  0/0         migration/8
+   38         0  0           0                  0/0         kworker/8:0
+   39         0  0           0                  0/0         ksoftirqd/8
+   40         0  0           0                  0/0         watchdog/8
+   41         0  0           0                  0/0         migration/9
+   43         0  0           0                  0/0         ksoftirqd/9
+   44         0  0           0                  0/0         watchdog/9
+   45         0  0           0                  0/0         migration/10
+   47         0  0           0                  0/0         ksoftirqd/10
+   48         0  0           0                  0/0         watchdog/10
+   49         0  0           0                  0/0         migration/11
+   51         0  0           0                  0/0         ksoftirqd/11
+   52         0  0           0                  0/0         watchdog/11
+   53         0  0           0                  0/0         cpuset
+   54         0  0           0                  0/0         khelper
+   55         0  0           0                  0/0         kdevtmpfs
+   56         0  0           0                  0/0         netns
+   57         0  0           0                  0/0         sync_supers
+   58         0  0           0                  0/0         bdi-default
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m   59         0  0           0                  0/0         kblockd
+   60         0  0           0                  0/0         ata_sff
+   61         0  0           0                  0/0         khubd
+   62         0  0           0                  0/0         rpciod
+   82         0  0           0                  0/0         khungtaskd
+   83         0  0           0                  0/0         kswapd0
+   84         0  0           0                  0/0         ksmd
+   85         0  0           0                  0/0         fsnotify_mark
+   86         0  0           0                  0/0         unionfs_siod
+   87         0  0           0                  0/0         nfsiod
+   88         0  0           0                  0/0         crypto
+  102         0  0           0                  0/0         scsi_eh_0
+  103         0  0           0                  0/0         scsi_eh_1
+  104         0  0           0                  0/0         scsi_eh_2
+  105         0  0           0                  0/0         scsi_eh_3
+  106         0  0           0                  0/0         scsi_eh_4
+  107         0  0           0                  0/0         scsi_eh_5
+  110         0  0           0                  0/0         kworker/u:4
+  111         0  0           0                  0/0         kworker/u:5
+  118         0  0           0                  0/0         kworker/6:1
+  119         0  0           0                  0/0         kworker/7:1
+  121         0  0           0                  0/0         kworker/10:1
+  124         0  0           0                  0/0         kworker/4:1
+  127         0  0           0                  0/0         cnic_wq
+[7m--More--[m[K
+...skipping one line
+  129         0  0           0                  0/0         edac-poller
+  130         0  0           0                  0/0         deferwq
+  169         0  0           0                  0/0         kworker/5:2
+  258         0  0           0                  0/0         loop0
+  386   2392064  0           420470784   ffc5fb40/ffc5b32c  dcos_sshd
+  512  15728640  0           579567616   ffab5070/ffaa7534  vsh.bin
+  543         0  0           0                  0/0         flush-8:0
+  553         0  0           0                  0/0         kworker/11:0
+ 1319  74878976  1741466214  597413888   ff902240/ff9005dc  port-profile
+ 1338         0  0           0                  0/0         flush-179:0
+ 1371   5951488  1418567321  427741184   ffbf91a0/ffbf8540  spm
+ 1376  24678400  1371511488  972845056   ff876a20/ff876900  rpm
+ 1381   9273344  854606508   552841216   ffc279e0/ffc25ddc  pltfm_config
+ 1382   6053888  1040010329  431484928   ff96fb30/ff96eb20  plcmgr
+ 1385  10797056  1167595404  545116160   fff69500/fff6798c  pfstat
+ 1400   8110080  1442217868  963436544   fffd7b20/fffd37fc  ntp
+ 1405   4714496  1138395827  704892928   ffba5660/ffba3afc  monitor
+ 1408   5042176  1091557299  835452928   ffec3c80/ffec20fc  lldp
+ 1411  16322560  915570585   550440960   ffae3da0/ffae21fc  lim
+ 1412  25522176  1134428979  592019456   ffa24bb0/ffa24620  l2rib
+ 1415  71467008  1217143910  520003584   ffe8d020/ffe8c11c  ipfib
+ 1418  157859840  1724332889  1065345024  ffbb9f70/ffbb9a30  igmp
+ 1425  25735168  876689792   562315264   ff8c0280/ff8be4bc  eth_port_channel
+ 1428   8384512  1033963814  426901504   ffe680c0/ffe67fa0  ecp
+[7m--More--[m[K
+...skipping one line
+ 1436   7024640  1091266035  539783168   ffbd2540/ffbd1520  acllog
+ 1491   1581056  0           415170560   ff9bf080/ff9bb2bc  ntpd
+ 1545   1425408  787534809   418799616   ffb0bed0/ffb0bb00  eth_dstats
+ 1546  20156416  1050828134  564531200   fff89120/fff87a80  ipqosmgr
+ 1547  11595776  1169627430  549273600   ff9a23e0/ff9a13c0  lacp
+ 1557  21762048  1110031859  561152000   ffc4bf90/ffc4a3dc  eltm
+ 1570  40407040  819178483   468844544   ffe73cb0/ffe71f2c  aclqos
+ 1575  18751488  963747980   567291904   fffc83c0/fffc6a6c  vlan_mgr
+ 1582  94793728  850572800   519282688   ffaf19b0/ffaf0bb0  diag_port_lb
+ 1583  32423936  1014183315  622952448   ff9b7d30/ff9b5d6c  ethpm
+ 1584  45711360  1448174112  606445568   ffba9500/ffba774c  l2fm
+ 1590  12763136  1447592115  553205760   ffe32970/ffe31e60  stp
+ 1591   4489216  769513254   424267776   fff16b90/fff15b40  stripcl
+ 1592   9097216  893172262   562475008   fff0a360/fff09300  udld
+ 1671   9674752  1046300006  551198720   ffaa5cb0/ffaa4a00  copp
+ 1706  16912384  1742192691  840343552   ffb0b8e0/ffb06a9c  vpc
+ 1709  42426368  1109184806  565387264   fff82120/fff8051c  ufdm
+ 1710   2064384  771099225   422559744   ff97b5a0/ff97a560  u2
+ 1711   2400256  1293041958  796364800   ffe4b850/ffe49cdc  sal
+ 1714  131014656  1842357222  1050980352  ff89e930/ff89e800  mrib
+ 1715  16850944  1171353356  453222400   ffae3a00/ffae1e4c  mfdm
+ 1716   2379776  770621632   424497152   ffb3e420/ffb3d3a0  mcm
+ 1717  54796288  1343058624  892452864   ff96d970/ff96d840  m6rib
+ 1718   2625536  1033414131  424529920   ffa07fa0/ffa063fc  l2pt
+[7m--More--[m[K
+...skipping one line
+ 1723         0  0           0                  0/0         kworker/2:0
+ 1752   6307840  1169798080  426483712   ffca5fe0/ffca5340  m2rib
+ 1787  65728512  1327937689  845512704   fffab510/fffab430  mcastfwd
+ 1828         0  0           0                  0/0         wdpunch_thread
+ 2338    184320  0           6590464     f8937ad0/f8937908  more
+ 2339  16035840  0           580468736   ffab5070/ffaa6798  vsh.bin
+ 2340         0  0           0           55058970/55058668  ps
+ 2465         0  0           0                  0/0         loop1
+ 2468         0  0           0                  0/0         loop2
+ 2471         0  0           0                  0/0         loop3
+ 2474         0  0           0                  0/0         loop4
+ 2480         0  0           0                  0/0         loop5
+ 2482         0  0           0                  0/0         loop6
+ 2772    192512  0           2383872     ffb46730/ffb44098  getty
+ 2778         0  0           0                  0/0         kworker/7:0
+ 2945   3469312  0           287924224   ff9ce1a0/ff9cd47c  bloggerd
+ 2949   1712128  0           287186944   ff90d870/ff90d540  psshelper
+ 2950   1712128  0           287186944   fff72890/fff72560  psshelper
+ 2951  101163008  0           670662656   ffe75e20/ffe75990  plog_lc
+ 2952    851968  0           281198592   ff9ac760/ff9ac1b8  patch_installer
+ 2953    479232  0           281174016   ff81a890/ff819f28  obfl_lc
+ 2954   1105920  0           284803072   fff69fc0/fff68d40  mvsh
+ 2955   1175552  0           284950528   ffeb1730/ffeb0710  evmc
+ 2956  101736448  0           674189312   ffc8dde0/ffc8d670  dt_helper
+[7m--More--[m 2957   4640768  0           475516928   ffbea510/ffbe8d60  diagclient
+ 2958  37203968  0           507248640   ffb0cd00/ffb0c480  crdcfg_server
+ 2959    405504  0           280903680   ffb9c520/ffb9c298  capability
+ 2975  107032576  0           679763968   ffd10190/ffd0f54c  device_test
+ 2977    864256  0           472059904   ffe35610/ffe35130  crdclient
+ 2982  102408192  0           674996224   ffc468d0/ffc46410  dc3_sensor
+ 2983  984981504  0           2000764928  ff9c41c0/ff9c330c  tahusd
+ 3173  121692160  0           701124608   ffde1860/ffde1340  bfdc
+ 3174   2912256  0           291254272   ffb07b50/ffb06b20  fcpc
+ 3175  189607936  0           778063872   fffcc980/fffcb900  iftmc
+ 3176  107556864  0           688361472   ffddda80/ffddca30  nf
+ 3177  137191424  0           720949248   fff76060/fff75470  pixc
+ 3178  115011584  0           689459200   ff9ba5b0/ff9b99c0  port_client
+ 3179  115380224  0           693370880   ffdd7b70/ffdd76d0  stats_client
+ 3180  103153664  0           682622976   ffd62a50/ffd61a30  vntagc
+ 3182  133517312  0           716251136   fff99dd0/fff992c0  mtm
+ 3185  212455424  0           815501312   ffd88a10/ffd87b10  ipfib
+ 3186  180072448  0           785260544   ffd82210/ffd80fe0  aclqos
+ 3187  107372544  0           707883008   ff8016f0/ff8006d0  ptplc
+ 3191  104300544  0           679010304   ff8ae5e0/ff8ad5c0  fcoelc
+ 3192  104022016  0           685600768   fff48210/fff471f0  monc
+ 3193  106364928  0           681009152   ffe78430/ffe77390  xbar_client
+ 3871    266240  0           12840960    23bdfa90/23bd7610  incrond
+ 3982         0  0           0                  0/0         jbd2/sda4-8
+[7m--More--[m 3983         0  0           0                  0/0         ext4-dio-unwrit
+[7m--More--[m 4693         0  0           0                  0/0         trigger
+[7m--More--[m[K
+...skipping one line
+ 5233         0  0           0                  0/0         kworker/6:2
+ 5349         0  0           0                  0/0         kworker/3:2
+ 7447         0  0           0                  0/0         jbd2/sda5-8
+ 7448         0  0           0                  0/0         ext4-dio-unwrit
+ 7453         0  0           0                  0/0         jbd2/sda6-8
+ 7454         0  0           0                  0/0         ext4-dio-unwrit
+ 9117         0  0           0                  0/0         kworker/11:1
+ 9852         0  0           0                  0/0         mmcqd/0
+ 9935         0  0           0                  0/0         jbd2/sda2-8
+ 9936         0  0           0                  0/0         ext4-dio-unwrit
+ 9965         0  0           0                  0/0         jbd2/mmcblk0p3-
+ 9966         0  0           0                  0/0         ext4-dio-unwrit
+10906         0  0           0                  0/0         kworker/9:1
+13044         0  0           0                  0/0         kworker/3:1
+14230    442368  0           32579584    18fc0f00/18fc04d8  sshd
+14347         0  0           0                  0/0         kworker/8:2
+14741         0  0           0                  0/0         loop7
+14744         0  0           0                  0/0         loop8
+14906         0  0           0                  0/0         jbd2/sda3-8
+14907         0  0           0                  0/0         ext4-dio-unwrit
+14926         0  0           0                  0/0         jbd2/sda7-8
+14927         0  0           0                  0/0         ext4-dio-unwrit
+15101    184320  0           8642560     95375dc0/95375be0  portmap
+15256         0  0           0                  0/0         lockd
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m15257         0  0           0                  0/0         nfsd
+15259    323584  0           13221888    b75b5af0/b75b57a8  rpc.mountd
+15261    208896  0           15097856    d1c487c0/d1c48558  rpc.statd
+17228         0  0           0                  0/0         loop9
+17229         0  0           0                  0/0         ext4-dio-unwrit
+18507    176128  0           2285568     ffd5ffc0/ffd5fdf0  mcelog
+19254         0  0           0                  0/0         kworker/1:2
+20040     94208  0           2936832     fffc8390/fffc7d98  libvirtd_mon.sh
+20041     94208  0           2936832     ffa68ac0/ffa68258  sh
+20042   9220096  0           539684864   ffaa1b90/ffaa1900  sysmgr
+20043   7897088  0           473468928   ffdfcc40/ffdfc9b0  sysmgr
+20052    258048  0           6533120     ee30ae50/ee30ac48  inotifywait
+20053  14094336  0           19779584    ffd95e70/ffd95880  libvirtd
+20799         0  0           0                  0/0         kworker/1:0
+24678         0  0           0                  0/0         mping-thread
+24679         0  0           0                  0/0         mping-thread
+24967         0  0           0                  0/0         cctrl_kthread
+25617         0  0           0                  0/0         redun_kthread
+25913         0  0           0                  0/0         usd_mts_kthread
+26131         0  0           0                  0/0         kworker/9:2
+26492         0  0           0                  0/0         ls-notify-mts-t
+27625    176128  0           4304896     841a3580/841a3458  insmod
+29799         0  0           0                  0/0         kworker/10:0
+29902         0  0           0                  0/0         kworker/0:2
+[7m--More--[m31301    131072  0           2973696     fffb9040/fffb75d8  bootflash_sync.
+31327    344064  0           6619136     376276c0/376274b8  inotifywait
+31635    466944  0           280629248   ffd733b0/ffd731e0  sdwrapd
+31637   2043904  0           286896128   fff12170/fff110d0  pfmclnt
+31792    389120  735279001   2785280     ff9c0830/ff9c0650  xinetd
+31793    434176  317279001   2514944     ffa36af0/ffa36880  tftpd
+31794   2330624  642735174   418639872   ff8b9510/ff8b8840  sdwrapd
+31798    475136  0           280633344   ffa2f0d0/ffa2eee0  dme_proxy
+31801  29151232  0           612511744   ffe0d780/ffe0c690  platform
+31810    475136  0           280637440   ffabd5c0/ffabd420  dme_bootup_proxy
+31811  153120768  0           892526592   ffe3bdb0/ffe3bcec  event_manager
+[7m--More--[m31812  119488512  0           842571776   ffd4e730/ffd4e66c  policyelem
+31843  21262336  917034764   556556288   fffa2860/fff9e32c  syslogd
+31851   6213632  1026385254  539430912   fffc83a0/fffc7e98  vshd
+31852  13869056  0           629297152   ffac6080/ffac3cdc  template_manager
+31853   4775936  627370585   422318080   ff84eff0/ff84e200  tamnw
+31854   8032256  1031895744  427384832   ffc35e10/ffc35850  smm
+31857   2007040  670446937   296566784   ffe7b0f0/ffe7adc0  psshelper
+31858  325070848  1026618982  754069504   ffff3c20/ffff3010  pixm_vl
+31859  50733056  1151726611  588541952   fff32660/fff31a50  pixm_gl
+31860   1097728  0           21118976    ffd1bd60/ffd1ba60  nxapi
+31861  510468096  0           1057087488  ffa854a0/ffa851f0  nginx
+31862   4177920  0           503689216   fffe3680/fffe0adc  mmode
+31863    294912  0           3248128     ff8a7770/ff8a63f0  lmgrd
+31866   1388544  0           419721216   ffe109c0/ffe10150  fs-daemon
+31867  10924032  0           549007360   ffe74de0/ffe73e4c  feature-mgr
+31868   1138688  0           417546240   ff86bcc0/ff86ba70  confcheck
+31869   2514944  626478476   418861056   ffa237a0/ffa22bd0  capability
+31870   5259264  754868857   425865216   ffb0d230/ffb0b9bc  bloggerd
+31873   1871872  670298252   294195200   ff85c020/ff85bcf0  psshelper_gsvc
+31895  28381184  1628338764  734191616   ffd20430/ffd1f8cc  clis
+31896   1466368  757307584   421445632   ffbfcce0/ffbfc7f8  licmgr
+31909    192512  0           4685824     ffb373b0/ffb37030  tams_proc
+31910    311296  0           3272704     ffa0bda0/ffa0bbf0  cisco
+31942   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+[7m--More--[m[K/[K[7mNo previous regular expression[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m[K[7m--More--[m[K
+...skipping one line
+31952   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+31970   1167360  0           418611200   ffb8fbd0/ffb8fa10  xmlma
+31973   1986560  639366323   419385344   ffafc950/ffafb710  vmm
+31974   5054464  788139897   433963008   fffceb70/fffce638  vman
+31975   9252864  970025267   541765632   ffdff090/ffdfe540  vdc_mgr
+31976   9912320  0           290193408   ffa91fa0/ffa8fd6c  usbhsd
+31979   8613888  830155955   541364224   ff8a5930/ff8a5200  ttyd
+31980   8548352  810103008   558096384   fff36ab0/fff36588  sysinfo
+31981   2408448  765841190   423272448   ffbaf140/ffbae100  snmpmib_proc
+31984   1294336  641676358   420282368   ff8ce040/ff8cd9b0  sksd
+31986   1781760  624969100   420868096   ffb356f0/ffb3518c  res_mgr
+31987   3641344  1990028902  294535168   ffb346e0/ffb336bc  plugin
+31990    905216  797694092   417341440   ffe85610/ffe85180  plog_sup
+31991    864256  0           281399296   fff7a420/fff79e18  patch-installer
+31996  10035200  4294967295  832794624   ffe19a80/ffe194e0  nbproxy
+31999   1720320  1165870464  418824192   ff83a430/ff8391b0  mvsh
+32000    479232  0           281505792   ffa66bc0/ffa66770  mping_server
+32001   3321856  784257408   430125056   ffaf60f0/ffaf4d70  module
+32006  14450688  895594233   441122816   ffe010b0/ffe00b30  kim
+32007   1916928  628911500   420024320   ffe65ca0/ffe64c70  evms
+32011   9465856  868089728   430125056   ffef81b0/ffef7f48  epld_upgrade_stdby
+32014   6238208  760006438   424353792   ff961100/ff95f950  diagclient
+32015   4575232  1784586163  827490304   ffb8c490/ffb8a8fc  dhclient
+32018  30547968  1220712204  501129216   ffc71760/ffc70ed0  crdcfg_server
+[7m--More--[m32019   1040384  0           419479552   ffa620f0/ffa61a90  core-dmon
+[7m--More--[m32020  100233216  0           593641472   ff9dea70/ff9de9ac  confelem
+[7m--More--[m[K
+...skipping one line
+32026    708608  845279001   406892544   ffac0320/ffabf7e8  bios_daemon
+32027  14766080  4294967295  659615744   ffff1b30/ffff0a18  ascii-cfg
+32028   9150464  0           548073472   ffe2e600/ffe2d318  securityd
+32031   2248704  0           422490112   ffb55c30/ffb53e8c  cert_enroll
+32034   6873088  0           543473664   ff80f130/ff80dcc0  aaa
+32067   1409024  804209190   422318080   ff9d16b0/ff9d0d48  obfl
+32082  25608192  4294967295  850776064   ffff79a0/ffff75b0  urib
+32086    184320  0           4329472     27cc7850/27cc7738  klogd
+32104   1921024  891190361   419143680   ffef7170/ffef6150  evmc
+32106   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+32113  14036992  1699816448  554668032   ffa660f0/ffa64d10  aclmgr
+32161   1593344  805993408   423673856   fffc6890/fffc5990  ExceptionLog
+32168   7925760  863592998   542453760   ffaab490/ffaaaaf0  bootvar
+32169   4521984  758280793   422133760   ffe11af0/ffe108e0  diagmgr
+32170  56856576  889850649   597405696   ffc1d650/ffc1c600  ifmgr
+32197  19161088  1176674188  562774016   ffb57af0/ffb576c0  l3vm
+32327         0  0           0                  0/0         flush-7:9
+32379   8445952  1312505216  435785728   ffdbe7c0/ffdbe420  npacl
+32411   1159168  0           416055296   ff82d660/ff82d210  cardclient
+32414  13922304  858573900   433840128   ffee5290/ffee463c  device_test
+32415   4657152  0           422514688   ffb8eb00/ffb8daa0  xbar
+32419  50200576  1372903718  988639232   ff8d2240/ff8d1d00  adjmgr
+32420  28033024  1969699699  940355584   ff8404e0/ff8403a0  u6rib
+32431  15151104  777808064   438116352   ff9eeff0/ff9eeb50  statsclient
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m32453   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+32478  80289792  1663470144  951468032   ffa433e0/ffa43280  arp
+32480  26247168  1361717132  996220928   ffd07110/ffd06bb0  icmpv6
+32481  27529216  1095645619  482758656   ffbdfcc0/ffbdfba0  pktmgr
+32496  66719744  1726381952  1095020544  ff9678f0/ff967330  netstack
+32532   9531392  1283798368  822976512   fff0dbd0/fff08b2c  radius
+32533   9449472  1259150412  826798080   fff2c910/fff2b74c  cdp
+32534   6049792  1086575846  425357312   ffd3c1a0/ffd3a62c  cfs
+32535    475136  625953152   280612864   ffaf2910/ffaf26c8  ip_dummy
+32536    475136  625953152   280612864   ff8f6ca0/ff8f6a58  ipv6_dummy
+32537  10326016  1420167462  947281920   ffd697b0/ffd67c3c  otm
+32538  25501696  1242569945  874975232   fff54d00/fff4fb3c  snmpd
+32541    475136  625953152   280612864   ffb1cdc0/ffb1cb78  tcpudp_dummy
+32550   2015232  735279001   413339648   ffbe4100/ffbe031c  dcos-xinetd
+32600   2215936  860574387   420679680   fff74600/fff742dc  callhome
+32725         0  0           0                  0/0         kworker/0:1
+
+All processes: MemAlloc = 6637223936
+CTVLEF02# cdp neighbors detail
+
+show sup-bootflash            ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show sup-bootflash//:
+                ^
+% Invalid command at '^' marker.
+CTVLEF02# show bootflash//:
+                   ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show sup-bootflash://
+                ^
+% Invalid command at '^' marker.
+CTVLEF02# show bootflash://
+                   ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show system resources
+Load average:   1 minute: 0.52   5 minutes: 0.66   15 minutes: 0.72
+Processes   :   588 total, 1 running
+CPU states  :   2.58% user,   3.50% kernel,   93.91% idle
+	CPU0 states  :   1.00% user,   18.00% kernel,   81.00% idle
+	CPU1 states  :   2.02% user,   4.04% kernel,   93.93% idle
+	CPU2 states  :   16.00% user,   7.00% kernel,   77.00% idle
+	CPU3 states  :   1.00% user,   2.00% kernel,   97.00% idle
+	CPU4 states  :   1.98% user,   1.98% kernel,   96.03% idle
+	CPU5 states  :   1.01% user,   1.01% kernel,   97.97% idle
+	CPU6 states  :   0.00% user,   0.00% kernel,   100.00% idle
+	CPU7 states  :   6.00% user,   6.00% kernel,   88.00% idle
+	CPU8 states  :   2.02% user,   0.00% kernel,   97.97% idle
+	CPU9 states  :   0.00% user,   0.00% kernel,   100.00% idle
+	CPU10 states  :   0.00% user,   1.00% kernel,   99.00% idle
+	CPU11 states  :   0.00% user,   0.00% kernel,   100.00% idle
+Memory usage:   65809524K total,   6562968K used,   59246556K free
+Current memory status: OK
+CTVLEF02# show processes memory
+
+PID    MemAlloc  MemLimit    MemUsed     StackBase/Ptr      Process
+-----  --------  ----------  ----------  -----------------  ----------------
+    1    176128  0           4329472     c01abd00/c01ab328  init
+    2         0  0           0                  0/0         kthreadd
+    3         0  0           0                  0/0         ksoftirqd/0
+    6         0  0           0                  0/0         migration/0
+    7         0  0           0                  0/0         watchdog/0
+    8         0  0           0                  0/0         migration/1
+   10         0  0           0                  0/0         ksoftirqd/1
+   12         0  0           0                  0/0         watchdog/1
+   13         0  0           0                  0/0         migration/2
+   15         0  0           0                  0/0         ksoftirqd/2
+   16         0  0           0                  0/0         watchdog/2
+   17         0  0           0                  0/0         migration/3
+   19         0  0           0                  0/0         ksoftirqd/3
+   20         0  0           0                  0/0         watchdog/3
+   21         0  0           0                  0/0         migration/4
+   22         0  0           0                  0/0         kworker/4:0
+   23         0  0           0                  0/0         ksoftirqd/4
+   24         0  0           0                  0/0         watchdog/4
+   25         0  0           0                  0/0         migration/5
+   26         0  0           0                  0/0         kworker/5:0
+   27         0  0           0                  0/0         ksoftirqd/5
+[7m--More--[m   28         0  0           0                  0/0         watchdog/5
+[7m--More--[m[K
+...skipping one line
+   31         0  0           0                  0/0         ksoftirqd/6
+   32         0  0           0                  0/0         watchdog/6
+   33         0  0           0                  0/0         migration/7
+   35         0  0           0                  0/0         ksoftirqd/7
+   36         0  0           0                  0/0         watchdog/7
+   37         0  0           0                  0/0         migration/8
+   38         0  0           0                  0/0         kworker/8:0
+   39         0  0           0                  0/0         ksoftirqd/8
+   40         0  0           0                  0/0         watchdog/8
+   41         0  0           0                  0/0         migration/9
+   43         0  0           0                  0/0         ksoftirqd/9
+   44         0  0           0                  0/0         watchdog/9
+   45         0  0           0                  0/0         migration/10
+   47         0  0           0                  0/0         ksoftirqd/10
+   48         0  0           0                  0/0         watchdog/10
+   49         0  0           0                  0/0         migration/11
+   51         0  0           0                  0/0         ksoftirqd/11
+   52         0  0           0                  0/0         watchdog/11
+   53         0  0           0                  0/0         cpuset
+   54         0  0           0                  0/0         khelper
+   55         0  0           0                  0/0         kdevtmpfs
+   56         0  0           0                  0/0         netns
+   57         0  0           0                  0/0         sync_supers
+   58         0  0           0                  0/0         bdi-default
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m   59         0  0           0                  0/0         kblockd
+   60         0  0           0                  0/0         ata_sff
+   61         0  0           0                  0/0         khubd
+   62         0  0           0                  0/0         rpciod
+   82         0  0           0                  0/0         khungtaskd
+   83         0  0           0                  0/0         kswapd0
+   84         0  0           0                  0/0         ksmd
+   85         0  0           0                  0/0         fsnotify_mark
+   86         0  0           0                  0/0         unionfs_siod
+   87         0  0           0                  0/0         nfsiod
+   88         0  0           0                  0/0         crypto
+  102         0  0           0                  0/0         scsi_eh_0
+  103         0  0           0                  0/0         scsi_eh_1
+  104         0  0           0                  0/0         scsi_eh_2
+  105         0  0           0                  0/0         scsi_eh_3
+  106         0  0           0                  0/0         scsi_eh_4
+  107         0  0           0                  0/0         scsi_eh_5
+  110         0  0           0                  0/0         kworker/u:4
+  111         0  0           0                  0/0         kworker/u:5
+  118         0  0           0                  0/0         kworker/6:1
+  119         0  0           0                  0/0         kworker/7:1
+  121         0  0           0                  0/0         kworker/10:1
+  124         0  0           0                  0/0         kworker/4:1
+  127         0  0           0                  0/0         cnic_wq
+[7m--More--[m  128         0  0           0                  0/0         bnx2x
+  129         0  0           0                  0/0         edac-poller
+  130         0  0           0                  0/0         deferwq
+  169         0  0           0                  0/0         kworker/5:2
+  258         0  0           0                  0/0         loop0
+  386   2392064  0           420470784   ffc5fb40/ffc5b32c  dcos_sshd
+  512  15728640  0           579567616   ffab5070/ffaa7534  vsh.bin
+  543         0  0           0                  0/0         flush-8:0
+  553         0  0           0                  0/0         kworker/11:0
+ 1319  74878976  1741466214  597413888   ff902240/ff9005dc  port-profile
+ 1338         0  0           0                  0/0         flush-179:0
+ 1371   5951488  1418567321  427741184   ffbf91a0/ffbf8540  spm
+ 1376  24678400  1371511488  972845056   ff876a20/ff876900  rpm
+ 1381   9273344  854606508   552841216   ffc279e0/ffc25ddc  pltfm_config
+ 1382   6053888  1040010329  431484928   ff96fb30/ff96eb20  plcmgr
+ 1385  10797056  1167595404  545116160   fff69500/fff6798c  pfstat
+ 1400   8110080  1442217868  963436544   fffd7b20/fffd37fc  ntp
+ 1405   4714496  1138395827  704892928   ffba5660/ffba3afc  monitor
+ 1408   5042176  1091557299  835452928   ffec3c80/ffec20fc  lldp
+ 1411  16322560  915570585   550440960   ffae3da0/ffae21fc  lim
+ 1412  25522176  1134428979  592019456   ffa24bb0/ffa24620  l2rib
+ 1415  71467008  1217143910  520003584   ffe8d020/ffe8c11c  ipfib
+ 1418  157859840  1724332889  1065345024  ffbb9f70/ffbb9a30  igmp
+ 1425  25735168  876689792   562315264   ff8c0280/ff8be4bc  eth_port_channel
+[7m--More--[m[K/[K[7mNo previous regular expression[m 1428   8384512  1033963814  426901504   ffe680c0/ffe67fa0  ecp
+ 1435  13398016  989205043   441294848   ff9589f0/ff956e6c  adbm
+ 1436   7024640  1091266035  539783168   ffbd2540/ffbd1520  acllog
+ 1491   1581056  0           415170560   ff9bf080/ff9bb2bc  ntpd
+ 1545   1425408  787534809   418799616   ffb0bed0/ffb0bb00  eth_dstats
+ 1546  20156416  1050828134  564531200   fff89120/fff87a80  ipqosmgr
+ 1547  11595776  1169627430  549273600   ff9a23e0/ff9a13c0  lacp
+ 1557  21762048  1110031859  561152000   ffc4bf90/ffc4a3dc  eltm
+ 1570  40407040  819178483   468844544   ffe73cb0/ffe71f2c  aclqos
+ 1575  18751488  963747980   567291904   fffc83c0/fffc6a6c  vlan_mgr
+ 1582  94793728  850572800   519282688   ffaf19b0/ffaf0bb0  diag_port_lb
+ 1583  32423936  1014183315  622952448   ff9b7d30/ff9b5d6c  ethpm
+ 1584  45711360  1448174112  606445568   ffba9500/ffba774c  l2fm
+ 1590  12763136  1447592115  553205760   ffe32970/ffe31e60  stp
+ 1591   4489216  769513254   424267776   fff16b90/fff15b40  stripcl
+ 1592   9097216  893172262   562475008   fff0a360/fff09300  udld
+ 1671   9674752  1046300006  551198720   ffaa5cb0/ffaa4a00  copp
+ 1706  16912384  1742192691  840343552   ffb0b8e0/ffb06a9c  vpc
+ 1709  42426368  1109184806  565387264   fff82120/fff8051c  ufdm
+ 1710   2064384  771099225   422559744   ff97b5a0/ff97a560  u2
+ 1711   2400256  1293041958  796364800   ffe4b850/ffe49cdc  sal
+ 1714  131014656  1842357222  1050980352  ff89e930/ff89e800  mrib
+ 1715  16850944  1171353356  453222400   ffae3a00/ffae1e4c  mfdm
+ 1716   2379776  770621632   424497152   ffb3e420/ffb3d3a0  mcm
+[7m--More--[m[K[7m--More--[m[K
+...skipping 24 lines
+ 2954   1105920  0           284803072   fff69fc0/fff68d40  mvsh
+ 2955   1175552  0           284950528   ffeb1730/ffeb0710  evmc
+ 2956  101736448  0           674189312   ffc8dde0/ffc8d670  dt_helper
+ 2957   4640768  0           475516928   ffbea510/ffbe8d60  diagclient
+ 2958  37203968  0           507248640   ffb0cd00/ffb0c480  crdcfg_server
+ 2959    405504  0           280903680   ffb9c520/ffb9c298  capability
+ 2975  107032576  0           679763968   ffd10190/ffd0f54c  device_test
+ 2977    864256  0           472059904   ffe35610/ffe35130  crdclient
+ 2982  102408192  0           674996224   ffc468d0/ffc46410  dc3_sensor
+ 2983  984981504  0           2000764928  ff9c41c0/ff9c330c  tahusd
+ 3173  121692160  0           701124608   ffde1860/ffde1340  bfdc
+ 3174   2912256  0           291254272   ffb07b50/ffb06b20  fcpc
+ 3175  189607936  0           778063872   fffcc980/fffcb900  iftmc
+ 3176  107556864  0           688361472   ffddda80/ffddca30  nf
+ 3177  137191424  0           720949248   fff76060/fff75470  pixc
+ 3178  115011584  0           689459200   ff9ba5b0/ff9b99c0  port_client
+ 3179  115380224  0           693370880   ffdd7b70/ffdd76d0  stats_client
+ 3180  103153664  0           682622976   ffd62a50/ffd61a30  vntagc
+ 3182  133517312  0           716251136   fff99dd0/fff992c0  mtm
+ 3185  212455424  0           815501312   ffd88a10/ffd87b10  ipfib
+ 3186  180072448  0           785260544   ffd82210/ffd80fe0  aclqos
+ 3187  107372544  0           707883008   ff8016f0/ff8006d0  ptplc
+ 3191  104300544  0           679010304   ff8ae5e0/ff8ad5c0  fcoelc
+ 3192  104022016  0           685600768   fff48210/fff471f0  monc
+[7m--More--[m 3193  106364928  0           681009152   ffe78430/ffe77390  xbar_client
+[7m--More--[m 3871    266240  0           12840960    23bdfa90/23bd7610  incrond
+[7m--More--[m[K
+...skipping one line
+ 3983         0  0           0                  0/0         ext4-dio-unwrit
+ 4693         0  0           0                  0/0         trigger
+ 4734         0  0           0                  0/0         kworker/2:1
+ 5233         0  0           0                  0/0         kworker/6:2
+ 5349         0  0           0                  0/0         kworker/3:2
+ 7447         0  0           0                  0/0         jbd2/sda5-8
+ 7448         0  0           0                  0/0         ext4-dio-unwrit
+ 7453         0  0           0                  0/0         jbd2/sda6-8
+ 7454         0  0           0                  0/0         ext4-dio-unwrit
+ 9117         0  0           0                  0/0         kworker/11:1
+ 9852         0  0           0                  0/0         mmcqd/0
+ 9935         0  0           0                  0/0         jbd2/sda2-8
+ 9936         0  0           0                  0/0         ext4-dio-unwrit
+ 9965         0  0           0                  0/0         jbd2/mmcblk0p3-
+ 9966         0  0           0                  0/0         ext4-dio-unwrit
+10906         0  0           0                  0/0         kworker/9:1
+13044         0  0           0                  0/0         kworker/3:1
+14230    442368  0           32579584    18fc0f00/18fc04d8  sshd
+14347         0  0           0                  0/0         kworker/8:2
+14741         0  0           0                  0/0         loop7
+14744         0  0           0                  0/0         loop8
+14906         0  0           0                  0/0         jbd2/sda3-8
+14907         0  0           0                  0/0         ext4-dio-unwrit
+14926         0  0           0                  0/0         jbd2/sda7-8
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m14927         0  0           0                  0/0         ext4-dio-unwrit
+15101    184320  0           8642560     95375dc0/95375be0  portmap
+15256         0  0           0                  0/0         lockd
+15257         0  0           0                  0/0         nfsd
+15259    323584  0           13221888    b75b5af0/b75b57a8  rpc.mountd
+15261    208896  0           15097856    d1c487c0/d1c48558  rpc.statd
+17228         0  0           0                  0/0         loop9
+17229         0  0           0                  0/0         ext4-dio-unwrit
+18507    176128  0           2285568     ffd5ffc0/ffd5fdf0  mcelog
+19254         0  0           0                  0/0         kworker/1:2
+20040     94208  0           2936832     fffc8390/fffc7d98  libvirtd_mon.sh
+20041     94208  0           2936832     ffa68ac0/ffa68258  sh
+20042   9220096  0           539684864   ffaa1b90/ffaa1900  sysmgr
+20043   7897088  0           473468928   ffdfcc40/ffdfc9b0  sysmgr
+20052    258048  0           6533120     ee30ae50/ee30ac48  inotifywait
+20053  14094336  0           19779584    ffd95e70/ffd95880  libvirtd
+20799         0  0           0                  0/0         kworker/1:0
+24678         0  0           0                  0/0         mping-thread
+24679         0  0           0                  0/0         mping-thread
+24967         0  0           0                  0/0         cctrl_kthread
+25617         0  0           0                  0/0         redun_kthread
+25913         0  0           0                  0/0         usd_mts_kthread
+26131         0  0           0                  0/0         kworker/9:2
+26492         0  0           0                  0/0         ls-notify-mts-t
+[7m--More--[m[K
+...skipping one line
+29799         0  0           0                  0/0         kworker/10:0
+29902         0  0           0                  0/0         kworker/0:2
+31301    131072  0           2973696     fffb9040/fffb75d8  bootflash_sync.
+31327    344064  0           6619136     376276c0/376274b8  inotifywait
+31635    466944  0           280629248   ffd733b0/ffd731e0  sdwrapd
+31637   2043904  0           286896128   fff12170/fff110d0  pfmclnt
+31792    389120  735279001   2785280     ff9c0830/ff9c0650  xinetd
+31793    434176  317279001   2514944     ffa36af0/ffa36880  tftpd
+31794   2330624  642735174   418639872   ff8b9510/ff8b8840  sdwrapd
+31798    475136  0           280633344   ffa2f0d0/ffa2eee0  dme_proxy
+31801  29151232  0           612511744   ffe0d780/ffe0c690  platform
+31810    475136  0           280637440   ffabd5c0/ffabd420  dme_bootup_proxy
+31811  153120768  0           892526592   ffe3bdb0/ffe3bcec  event_manager
+31812  119488512  0           842571776   ffd4e730/ffd4e66c  policyelem
+31843  21262336  917034764   556556288   fffa2860/fff9e32c  syslogd
+31851   6213632  1026385254  539430912   fffc83a0/fffc7e98  vshd
+31852  13869056  0           629297152   ffac6080/ffac3cdc  template_manager
+31853   4775936  627370585   422318080   ff84eff0/ff84e200  tamnw
+31854   8032256  1031895744  427384832   ffc35e10/ffc35850  smm
+31857   2007040  670446937   296566784   ffe7b0f0/ffe7adc0  psshelper
+31858  325070848  1026618982  754069504   ffff3c20/ffff3010  pixm_vl
+31859  50733056  1151726611  588541952   fff32660/fff31a50  pixm_gl
+31860   1097728  0           21118976    ffd1bd60/ffd1ba60  nxapi
+31861  510468096  0           1057087488  ffa854a0/ffa851f0  nginx
+[7m--More--[m[K[7m--More--[m[K
+...skipping 24 lines
+31986   1781760  624969100   420868096   ffb356f0/ffb3518c  res_mgr
+31987   3641344  1990028902  294535168   ffb346e0/ffb336bc  plugin
+31990    905216  797694092   417341440   ffe85610/ffe85180  plog_sup
+31991    864256  0           281399296   fff7a420/fff79e18  patch-installer
+31996  10035200  4294967295  832794624   ffe19a80/ffe194e0  nbproxy
+31999   1720320  1165870464  418824192   ff83a430/ff8391b0  mvsh
+32000    479232  0           281505792   ffa66bc0/ffa66770  mping_server
+32001   3321856  784257408   430125056   ffaf60f0/ffaf4d70  module
+32006  14450688  895594233   441122816   ffe010b0/ffe00b30  kim
+32007   1916928  628911500   420024320   ffe65ca0/ffe64c70  evms
+32011   9465856  868089728   430125056   ffef81b0/ffef7f48  epld_upgrade_stdby
+32014   6238208  760006438   424353792   ff961100/ff95f950  diagclient
+32015   4575232  1784586163  827490304   ffb8c490/ffb8a8fc  dhclient
+32018  30547968  1220712204  501129216   ffc71760/ffc70ed0  crdcfg_server
+32019   1040384  0           419479552   ffa620f0/ffa61a90  core-dmon
+32020  100233216  0           593641472   ff9dea70/ff9de9ac  confelem
+32021   9486336  823666060   546529280   ff93f1f0/ff93e1d0  clk_mgr
+32026    708608  845279001   406892544   ffac0320/ffabf7e8  bios_daemon
+32027  14766080  4294967295  659615744   ffff1b30/ffff0a18  ascii-cfg
+32028   9150464  0           548073472   ffe2e600/ffe2d318  securityd
+32031   2248704  0           422490112   ffb55c30/ffb53e8c  cert_enroll
+32034   6873088  0           543473664   ff80f130/ff80dcc0  aaa
+32067   1409024  804209190   422318080   ff9d16b0/ff9d0d48  obfl
+32082  25608192  4294967295  850776064   ffff79a0/ffff75b0  urib
+[7m--More--[m[K
+...skipping one line
+32104   1921024  891190361   419143680   ffef7170/ffef6150  evmc
+32106   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+32113  14036992  1699816448  554668032   ffa660f0/ffa64d10  aclmgr
+32161   1593344  805993408   423673856   fffc6890/fffc5990  ExceptionLog
+32168   7925760  863592998   542453760   ffaab490/ffaaaaf0  bootvar
+32169   4521984  758280793   422133760   ffe11af0/ffe108e0  diagmgr
+32170  56856576  889850649   597405696   ffc1d650/ffc1c600  ifmgr
+32197  19161088  1176674188  562774016   ffb57af0/ffb576c0  l3vm
+32327         0  0           0                  0/0         flush-7:9
+32379   8445952  1312505216  435785728   ffdbe7c0/ffdbe420  npacl
+32411   1159168  0           416055296   ff82d660/ff82d210  cardclient
+32414  13922304  858573900   433840128   ffee5290/ffee463c  device_test
+32415   4657152  0           422514688   ffb8eb00/ffb8daa0  xbar
+32419  50200576  1372903718  988639232   ff8d2240/ff8d1d00  adjmgr
+32420  28033024  1969699699  940355584   ff8404e0/ff8403a0  u6rib
+32431  15151104  777808064   438116352   ff9eeff0/ff9eeb50  statsclient
+32453   1310720  0           289775616   ffd1bd60/ffd1b920  nginx
+32478  80289792  1663470144  951468032   ffa433e0/ffa43280  arp
+32480  26247168  1361717132  996220928   ffd07110/ffd06bb0  icmpv6
+32481  27529216  1095645619  482758656   ffbdfcc0/ffbdfba0  pktmgr
+32496  66719744  1726381952  1095020544  ff9678f0/ff967330  netstack
+32532   9531392  1283798368  822976512   fff0dbd0/fff08b2c  radius
+32533   9449472  1259150412  826798080   fff2c910/fff2b74c  cdp
+32534   6049792  1086575846  425357312   ffd3c1a0/ffd3a62c  cfs
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m32535    475136  625953152   280612864   ffaf2910/ffaf26c8  ip_dummy
+[7m--More--[m[K
+...skipping one line
+32537  10326016  1420167462  947281920   ffd697b0/ffd67c3c  otm
+32538  25501696  1242569945  874975232   fff54d00/fff4fb3c  snmpd
+32541    475136  625953152   280612864   ffb1cdc0/ffb1cb78  tcpudp_dummy
+32550   2015232  735279001   413339648   ffbe4100/ffbe031c  dcos-xinetd
+32600   2215936  860574387   420679680   fff74600/fff742dc  callhome
+32725         0  0           0                  0/0         kworker/0:1
+
+All processes: MemAlloc = 6637223936
+CTVLEF02# how bootflash:
+           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show flash:
+                ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show module
+Mod Ports             Module-Type                       Model          Status
+--- ----- ------------------------------------- --------------------- ---------
+1    54   48x10/25G/32G + 6x40/100G Ethernet/FC N9K-C93180YC-FX       active * 
+ 
+
+Mod  Sw                Hw     Slot
+---  ----------------  ------ ----
+1    7.0(3)I7(5)       1.1    NA  
+
+
+Mod  MAC-Address(es)                         Serial-Num
+---  --------------------------------------  ----------
+1    00-de-fb-eb-6f-c0 to 00-de-fb-eb-70-1f  FDO22092AWV
+
+Mod  Online Diag Status
+---  ------------------
+1    Pass
+
+* this terminal session 
+CTVLEF02# 
+CTVLEF02# show modules
+
+
+show vlan brief                     ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+5    NATIVE                           active    
+1250 NETWORK-MGMT                     active    Po2, Eth1/49, Eth1/50
+1251 CCTV_Servers                     active    Po2, Po12, Po41, Po42, Po43
+                                                Po50, Po51, Po52, Po53, Po54
+                                                Po55, Po56, Po57, Po58, Po59
+                                                Po60, Po61, Po62, Po63, Po64
+                                                Po66, Po67, Po68, Po69, Po70
+                                                Po71, Po72, Po73, Po74, Po75
+                                                Po76, Po77, Po78, Po79, Eth1/4
+                                                Eth1/5, Eth1/6, Eth1/7, Eth1/8
+                                                Eth1/9, Eth1/10, Eth1/11
+                                                Eth1/12, Eth1/13, Eth1/14
+                                                Eth1/15, Eth1/16, Eth1/32
+                                                Eth1/49, Eth1/50, Eth1/53
+                                                Eth1/54
+
+CTVLEF02# 
+CTVLEF02# show inventory
+NAME: "Chassis",  DESCR: "Nexus9000 C93180YC-FX Chassis"         
+PID: N9K-C93180YC-FX     ,  VID: V02 ,  SN: FDO22092AWV          
+
+NAME: "Slot 1",  DESCR: "48x10/25G/32G + 6x40/100G Ethernet/FC Module"
+PID: N9K-C93180YC-FX     ,  VID: V02 ,  SN: FDO22092AWV          
+
+NAME: "Power Supply 1",  DESCR: "Nexus9000 C93180YC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: DCC215260MG          
+
+NAME: "Power Supply 2",  DESCR: "Nexus9000 C93180YC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: DCC215260H6          
+
+NAME: "Fan 1",  DESCR: "Nexus9000 C93180YC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 2",  DESCR: "Nexus9000 C93180YC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 3",  DESCR: "Nexus9000 C93180YC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 4",  DESCR: "Nexus9000 C93180YC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+CTVLEF02# 
+CTVLEF02# show power
+
+
+
+show environ                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show environment temperature
+Temperature:
+--------------------------------------------------------------------
+Module   Sensor        MajorThresh   MinorThres   CurTemp     Status
+                       (Celsius)     (Celsius)    (Celsius)         
+--------------------------------------------------------------------
+1        FRONT           70              42          19         Ok             
+1        BACK            80              70          24         Ok             
+1        CPU             90              80          33         Ok             
+1        Homewood        110             90          43         Ok             
+CTVLEF02# 
+CTVLEF02# show power status power-supply 1
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show power status power-supply 2
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show power status fan-tray
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show power used
+
+show power total
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show power total
+show power inl
+
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# show power inl
+
+show power status all
+
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show power status all
+show environment cool                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show environment cooling
+
+show environment s                           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show environment status
+
+sh env all
+
+
+                           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# sh env all
+
+show power availabl                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show power available
+
+show protocols
+
+                 ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show protocols
+show ip route
+
+show                  ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# show ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 172.20.48.1, Vlan1250, [1/0], 2y30w, static
+172.20.48.0/24, ubest/mbest: 1/0, attached
+    *via 172.20.48.12, Vlan1250, [0/0], 2y30w, direct
+172.20.48.12/32, ubest/mbest: 1/0, attached
+    *via 172.20.48.12, Vlan1250, [0/0], 2y30w, local
+
+CTVLEF02# 
+CTVLEF02# show interface status
+
+-------------------------------------------------------------------------------
+-
+Port          Name               Status    Vlan      Duplex  Speed   Type
+-------------------------------------------------------------------------------
+-
+mgmt0         --                 connected routed    full    1000    --        
+ 
+
+-------------------------------------------------------------------------------
+-
+Port          Name               Status    Vlan      Duplex  Speed   Type
+-------------------------------------------------------------------------------
+-
+Eth1/1        *** 10GE To- C1R1C connected 1251      full    1000    1000base-T
+ 
+Eth1/2        *** 10GE To- C1R1C connected 1251      full    1000    1000base-T
+ 
+Eth1/3        *** 10GE To- C1R1C connected 1251      full    1000    1000base-T
+ 
+Eth1/4        --                 connected 1251      full    1000    1000base-T
+ 
+Eth1/5        --                 xcvrAbsen 1251      auto    auto    --        
+ 
+[7m--More--[mEth1/6        --                 notconnec 1251      auto    auto    10Gbase-SR
+[7m--More--[m[K
+...skipping one line
+Eth1/7        --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/8        --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/9        --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/10       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/11       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/12       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/13       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/14       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/15       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/16       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/17       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/18       *** 10GE To- C1R2C connected 1251      full    10G     10Gbase-SR
+ 
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[mEth1/19       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/20       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/21       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/22       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/23       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/24       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/25       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/26       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/27       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/28       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/29       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/30       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+[7m--More--[mEth1/31       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/32       --                 notconnec 1251      auto    auto    10Gbase-SR
+ 
+Eth1/33       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/34       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/35       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/36       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+[7m--More--[m [K
+Eth1/37       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/38       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/39       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/40       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/41       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/42       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/43       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/44       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/45       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/46       *** 10GE To- C1R1C connected 1251      full    10G     10Gbase-SR
+ 
+Eth1/47       *** vPC keepalive  connected routed    full    10G     10Gbase-SR
+ 
+Eth1/48       *** vPC keepalive  connected routed    full    10G     10Gbase-SR
+[7m--More--[m[K/[K[7mNo previous regular expression[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m [K
+[7m--More--[mEth1/49       *** 40GE To- CTVLE connected trunk     full    40G     QSFP-40G-S
+[7m--More--[m[K
+...skipping one line
+Eth1/50       *** 40GE To- CTVLE connected trunk     full    40G     QSFP-40G-S
+R-BD
+Eth1/51       --                 notconnec routed    auto    auto    WSP-Q40GLR
+4L
+Eth1/52       --                 notconnec routed    auto    auto    WSP-Q40GLR
+4L
+Eth1/53       *** 40GE To- CTVCO connected trunk     full    40G     QSFP-40G-S
+R-BD
+Eth1/54       *** 40GE To- CTVCO connected trunk     full    40G     QSFP-40G-S
+R-BD
+Po1           *** to- CTVLEF01:  connected routed    full    10G     --        
+ 
+Po2           *** vPC peer-links connected trunk     full    40G     --        
+ 
+Po12          *** EC.to-CCTV01&0 connected trunk     full    40G     --        
+ 
+Po41          *** EC - To - C1R1 connected 1251      full    1000    --        
+ 
+Po42          *** EC - To - C1R1 connected 1251      full    1000    --        
+ 
+Po43          *** EC - To - C1R1 connected 1251      full    1000    --        
+ 
+Po50          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[mPo51          *** EC - To - C1R2 connected 1251      full    10G     --        
+ 
+Po52          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po53          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po54          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po55          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po56          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po57          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po58          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po59          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po60          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po61          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po62          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+[7m--More--[mPo63          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po64          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po65          --                 noOperMem routed    auto    auto    --        
+ 
+Po66          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po67          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po68          *** EC - To - C1R1 connected 1251      full    10G     --        
+[7m--More--[m [K
+Po69          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po70          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po71          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po72          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po73          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po74          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po75          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po76          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po77          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po78          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Po79          *** EC - To - C1R1 connected 1251      full    10G     --        
+ 
+Vlan1         --                 down      routed    auto    auto    --
+[7m--More--[m[K/[K[7mNo previous regular expression[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[mVlan1250      *** SVI for NETWOR connected routed    auto    auto    --
+CTVLEF02# detail
+
+
+show mac addre            ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# show mac address
+Legend: 
+	* - primary entry, G - Gateway MAC, (R) - Routed MAC, O - Overlay MAC
+	age - seconds since last seen,+ - primary entry using vPC Peer-Link,
+	(T) - True, (F) - False, C - ControlPlane MAC, ~ - vsan
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+* 1251     0000.0c9f.f0fa   dynamic  0         F      F    Po12
++ 1251     0080.e547.7f58   dynamic  0         F      F    Po12
+* 1251     0080.e547.8b14   dynamic  0         F      F    Po12
++ 1251     0080.e547.8bfc   dynamic  0         F      F    Po12
+* 1251     0080.e547.8ca8   dynamic  0         F      F    Po12
+* 1251     0080.e547.8cf0   dynamic  0         F      F    Po12
++ 1251     0080.e547.8d20   dynamic  0         F      F    Po12
+* 1251     0080.e547.8d80   dynamic  0         F      F    Po12
+* 1251     0080.e547.94a8   dynamic  0         F      F    Po12
+* 1251     00de.fbc5.1042   dynamic  0         F      F    Po12
+* 1251     00de.fbc5.1142   dynamic  0         F      F    Po12
+* 1251     1c86.0b21.7a56   dynamic  0         F      F    Po12
+* 1251     1c86.0b23.fca0   dynamic  0         F      F    Po12
++ 1251     48df.373a.6190   dynamic  0         F      F    Po60
+* 1251     48df.373a.6c80   dynamic  0         F      F    Po57
++ 1251     48df.373a.d4f0   dynamic  0         F      F    Po73
++ 1251     48df.373a.d510   dynamic  0         F      F    Po76
++ 1251     48df.373a.d520   dynamic  0         F      F    Po66
+[7m--More--[m+ 1251     48df.373a.d5e0   dynamic  0         F      F    Po61
+[7m--More--[m[K
+...skipping one line
+* 1251     48df.373a.d630   dynamic  0         F      F    Po12
+* 1251     48df.373a.d650   dynamic  0         F      F    Po12
++ 1251     48df.373a.d680   dynamic  0         F      F    Po58
+* 1251     48df.373a.d690   dynamic  0         F      F    Po12
+* 1251     48df.373a.d6a0   dynamic  0         F      F    Po77
++ 1251     48df.373a.d6c0   dynamic  0         F      F    Po54
++ 1251     48df.373a.d700   dynamic  0         F      F    Po79
++ 1251     48df.373a.d710   dynamic  0         F      F    Po78
++ 1251     48df.373a.d720   dynamic  0         F      F    Po51
++ 1251     48df.373a.d780   dynamic  0         F      F    Po55
+* 1251     48df.373a.d7d0   dynamic  0         F      F    Po62
+* 1251     48df.373a.d7e0   dynamic  0         F      F    Po74
++ 1251     48df.373a.d880   dynamic  0         F      F    Po56
++ 1251     48df.373b.a020   dynamic  0         F      F    Po71
++ 1251     48df.373b.a0e0   dynamic  0         F      F    Po68
++ 1251     48df.373b.a1f8   dynamic  0         F      F    Po12
++ 1251     48df.373b.a2e0   dynamic  0         F      F    Po52
++ 1251     48df.373b.a310   dynamic  0         F      F    Po50
+* 1251     48df.373b.a768   dynamic  0         F      F    Po12
++ 1251     48df.373b.a860   dynamic  0         F      F    Po72
+* 1251     48df.373b.a8a0   dynamic  0         F      F    Po12
++ 1251     48df.373b.aaf0   dynamic  0         F      F    Po12
++ 1251     48df.373b.acf0   dynamic  0         F      F    Po67
++ 1251     48df.373b.ad10   dynamic  0         F      F    Po12
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m* 1251     48df.373b.add0   dynamic  0         F      F    Po59
++ 1251     48df.373b.ae30   dynamic  0         F      F    Po63
+* 1251     48df.373b.ae40   dynamic  0         F      F    Po12
++ 1251     48df.373b.b180   dynamic  0         F      F    Po70
+* 1251     48df.373b.b1c0   dynamic  0         F      F    Po75
++ 1251     48df.373b.b250   dynamic  0         F      F    Po53
+* 1251     48df.373b.ba20   dynamic  0         F      F    Po12
+* 1251     48df.373b.baa8   dynamic  0         F      F    Po12
+* 1251     48df.373b.bbc0   dynamic  0         F      F    Po69
+* 1251     48df.373b.bd20   dynamic  0         F      F    Po12
++ 1251     48df.3740.bfd0   dynamic  0         F      F    Po63
+* 1251     48df.3740.c010   dynamic  0         F      F    Po12
+* 1251     48df.3740.c020   dynamic  0         F      F    Po52
++ 1251     48df.3740.c070   dynamic  0         F      F    Po67
+* 1251     48df.3740.c0c0   dynamic  0         F      F    Po79
+* 1251     48df.3740.c0d0   dynamic  0         F      F    Po12
+* 1251     48df.3740.c0f0   dynamic  0         F      F    Po62
+* 1251     48df.3740.c110   dynamic  0         F      F    Po71
+* 1251     48df.3740.c1a0   dynamic  0         F      F    Po59
+* 1251     48df.3740.c1b0   dynamic  0         F      F    Po68
+* 1251     48df.3740.c1c0   dynamic  0         F      F    Po56
++ 1251     48df.3740.c1d0   dynamic  0         F      F    Po70
+* 1251     48df.3740.c1e0   dynamic  0         F      F    Po78
++ 1251     48df.3740.c1f0   dynamic  0         F      F    Po12
+[7m--More--[m* 1251     48df.3740.c200   dynamic  0         F      F    Po51
+[7m--More--[m* 1251     48df.3740.c250   dynamic  0         F      F    Po73
+[7m--More--[m[K
+...skipping one line
+* 1251     48df.3740.c9c0   dynamic  0         F      F    Po55
+* 1251     48df.3740.c9d0   dynamic  0         F      F    Po64
+* 1251     48df.3740.c9f0   dynamic  0         F      F    Po74
+* 1251     48df.3740.caf0   dynamic  0         F      F    Po60
++ 1251     48df.3740.cb90   dynamic  0         F      F    Po76
+* 1251     48df.3740.cc20   dynamic  0         F      F    Po72
+* 1251     48df.3740.ccb0   dynamic  0         F      F    Po12
+* 1251     48df.3740.cce0   dynamic  0         F      F    Po69
+* 1251     48df.3740.cd40   dynamic  0         F      F    Po53
+* 1251     48df.3740.ce40   dynamic  0         F      F    Po75
+* 1251     48df.3740.ce50   dynamic  0         F      F    Po66
+* 1251     48df.3740.d040   dynamic  0         F      F    Po61
+* 1251     48df.3740.e460   dynamic  0         F      F    Po58
+* 1251     48df.3740.e470   dynamic  0         F      F    Po77
+* 1251     48df.3741.33b0   dynamic  0         F      F    Po57
++ 1251     6c92.cf2d.96b0   dynamic  0         F      F    Po12
+* 1251     6c92.cf2d.af41   dynamic  0         F      F    Po12
++ 1251     8894.710f.f32c   dynamic  0         F      F    Po12
++ 1251     98f2.b32c.c3d9   dynamic  0         F      F    Po43
++ 1251     c4cb.e1d5.790b   dynamic  0         F      F    Po12
++ 1251     c4cb.e1d5.792c   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.64f1   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.6500   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.6541   dynamic  0         F      F    Po12
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m+ 1251     d404.e6e4.6800   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.6b31   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.7531   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.7580   dynamic  0         F      F    Po12
+* 1251     d404.e6e4.7720   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.7b81   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.8380   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.8390   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.8e70   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.8f91   dynamic  0         F      F    Po12
++ 1251     d404.e6e4.9080   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.25a0   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.26f0   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.2721   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.2740   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.2751   dynamic  0         F      F    Po12
+* 1251     d404.e6e8.2771   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.27c1   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.2811   dynamic  0         F      F    Po12
++ 1251     d404.e6e8.34d0   dynamic  0         F      F    Po12
+* 1251     d4f5.ef5a.a680   dynamic  0         F      F    Po12
+* 1251     d4f5.ef5a.a688   dynamic  0         F      F    Po12
++ 1251     d4f5.ef5a.a6b0   dynamic  0         F      F    Po12
+* 1251     d4f5.ef5a.a6b8   dynamic  0         F      F    Po12
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m+ 1251     d4f5.ef5a.e188   dynamic  0         F      F    Po12
+* 1251     d4f5.ef92.a6c0   dynamic  0         F      F    Po12
++ 1251     d4f5.ef92.ad48   dynamic  0         F      F    Po12
+* 1251     d4f5.ef92.ae78   dynamic  0         F      F    Po12
+* 1251     d4f5.ef92.b298   dynamic  0         F      F    Po12
++ 1251     eceb.b897.70a4   dynamic  0         F      F    Po12
+* 1251     eceb.b897.70d9   dynamic  0         F      F    Po42
+* 1251     eceb.b897.70da   dynamic  0         F      F    Eth1/4
+* 1251     eceb.b897.b064   dynamic  0         F      F    Po41
++ 1251     eceb.b897.b066   dynamic  0         F      F    vPC Peer-Link
++ 1251     f8ce.0726.ef9e   dynamic  0         F      F    vPC Peer-Link
+G    -     00de.fbeb.6fc7   static   -         F      F    sup-eth1(R)
+G 1250     00de.fbeb.6fc7   static   -         F      F    sup-eth1(R)
+* 1250     00de.fbed.cf07   static   -         F      F    vPC Peer-Link(R)
+CTVLEF02# sum
+show hsrp br
+show f           ^
+% Invalid command at '^' marker.
+CTVLEF02# show hsrp br
+eatures
+show vpc
+show                 ^
+% Invalid command at '^' marker.
+CTVLEF02# show features
+fex
+show lice sum
+
+                      ^
+% Invalid command at '^' marker.
+CTVLEF02# show vpc
+Legend:
+		(*) - local vPC is down, forwarding via vPC peer-link
+
+vPC domain id                     : 10  
+Peer status                       : peer adjacency formed ok      
+vPC keep-alive status             : peer is alive                 
+Configuration consistency status  : success 
+Per-vlan consistency status       : success                       
+Type-2 consistency status         : success 
+vPC role                          : secondary, operational primary
+Number of vPCs configured         : 33  
+Peer Gateway                      : Disabled
+Dual-active excluded VLANs        : -
+Graceful Consistency Check        : Enabled
+Auto-recovery status              : Enabled, timer is off.(timeout = 240s)
+Delay-restore status              : Timer is off.(timeout = 120s)
+Delay-restore SVI status          : Timer is off.(timeout = 10s)
+Operational Layer3 Peer-router    : Disabled
+
+vPC Peer-link status
+---------------------------------------------------------------------
+id    Port   Status Active vlans    
+--    ----   ------ -------------------------------------------------
+1     Po2    up     1250-1251                                                  
+[7m--More--[m[K
+...skipping one line
+vPC status
+----------------------------------------------------------------------------
+Id    Port          Status Consistency Reason                Active vlans
+--    ------------  ------ ----------- ------                ---------------
+12    Po12          up     success     success               1251              
+          
+                                                                               
+          
+41    Po41          up     success     success               1251              
+          
+                                                                               
+          
+42    Po42          up     success     success               1251              
+          
+                                                                               
+          
+43    Po43          up     success     success               1251              
+          
+                                                                               
+          
+50    Po50          up     success     success               1251              
+          
+                                                                               
+          
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+[K[7m--More--[m51    Po51          up     success     success               1251              
+          
+                                                                               
+          
+52    Po52          up     success     success               1251              
+          
+                                                                               
+          
+53    Po53          up     success     success               1251              
+          
+                                                                               
+          
+54    Po54          up     success     success               1251              
+          
+                                                                               
+          
+55    Po55          up     success     success               1251              
+          
+                                                                               
+          
+56    Po56          up     success     success               1251              
+          
+                                                                               
+          
+[7m--More--[m[K
+...skipping 24 lines
+70    Po70          up     success     success               1251              
+          
+                                                                               
+          
+71    Po71          up     success     success               1251              
+          
+                                                                               
+          
+72    Po72          up     success     success               1251              
+          
+                                                                               
+          
+73    Po73          up     success     success               1251              
+          
+                                                                               
+          
+74    Po74          up     success     success               1251              
+          
+                                                                               
+          
+75    Po75          up     success     success               1251              
+          
+                                                                               
+          
+[7m--More--[m76    Po76          up     success     success               1251              
+[7m--More--[m[K
+...skipping one line
+                                                                               
+          
+77    Po77          up     success     success               1251              
+          
+                                                                               
+          
+78    Po78          up     success     success               1251              
+          
+                                                                               
+          
+79    Po79          up     success     success               1251              
+          
+                                                                               
+          
+
+Please check "show vpc consistency-parameters vpc <vpc-num>" for the 
+consistency reason of down vpc and for type-2 consistency reasons for 
+any vpc.
+
+CTVLEF02# how lice sum
+er le 25
+
+
+
+           ^
+% Invalid command at '^' marker.
+CTVLEF02# 
+CTVLEF02# ter le 25
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# 
+CTVLEF02# 

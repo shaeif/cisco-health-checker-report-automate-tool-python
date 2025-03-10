@@ -4,7 +4,7 @@
   tasks:
     - name: Read the text file
       slurp:
-        src: input/MCR_ACC_06health_check_output27154158.txt
+        src: input/HO04I4_health_check_output.txt
       register: file_content
 
     - name: Decode the file

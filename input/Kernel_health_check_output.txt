@@ -1,0 +1,1972 @@
+Switch Details:
+No output from "show switch"
+
+Version:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2018, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 05.31
+  NXOS: version 7.0(3)I7(5)
+  BIOS compile time:  05/17/2018
+  NXOS image file is: bootflash:///nxos.7.0.3.I7.5.bin
+  NXOS compile time:  8/28/2018 2:00:00 [08/28/2018 12:51:46]
+
+
+Hardware
+  cisco Nexus9000 C93108TC-FX Chassis 
+  Intel(R) Xeon(R) CPU D-1526 @ 1.80GHz with 24571652 kB of memory.
+  Processor Board ID FDO21470L0N
+
+  Device name: DCIMMALL01
+  bootflash:  115805356 kB
+Kernel uptime is 1051 day(s), 23 hour(s), 56 minute(s), 12 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 7.0(3)I7(5)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+
+CPU :
+PID    Runtime(ms)  Invoked   uSecs  1Sec    Process
+-----  -----------  --------  -----  ------  -----------
+    1       588697  18277212     32   0.00%  init
+    2         4094    270618     15   0.00%  kthreadd
+    3       422540  10400259     40   0.00%  ksoftirqd/0
+    6      1819005   6070853    299   0.00%  migration/0
+    7       359613  22723147     15   0.00%  watchdog/0
+    8      2009992   5687740    353   0.00%  migration/1
+    9     16705547  1891333914      8   0.00%  kworker/1:0
+   10      3196914  87085564     36   0.00%  ksoftirqd/1
+   12       402670  22723153     17   0.00%  watchdog/1
+   13      1928784   6186016    311   0.00%  migration/2
+   15      1949405  55173282     35   0.00%  ksoftirqd/2
+   16       360919  22723149     15   0.00%  watchdog/2
+   17      1723731   6710617    256   0.00%  migration/3
+   19       557833  14439581     38   0.00%  ksoftirqd/3
+   20       341951  22723147     15   0.00%  watchdog/3
+   21       476730  27288229     17   0.00%  migration/4
+   22      6721264  1462085123      4   0.00%  kworker/4:0
+   23        35812   1719263     20   0.00%  ksoftirqd/4
+   24       141845  22723147      6   0.00%  watchdog/4
+   25       510255  27001587     18   0.00%  migration/5
+   27       688289  29962711     22   0.00%  ksoftirqd/5
+   28       165732  22723147      7   0.00%  watchdog/5
+   29       505353  27348305     18   0.00%  migration/6
+   31       400297  17701428     22   0.00%  ksoftirqd/6
+   32       156846  22723147      6   0.00%  watchdog/6
+   33       516218  27534735     18   0.00%  migration/7
+   34      7115668  1070260315      6   0.00%  kworker/7:0
+   35        39692   1684106     23   0.00%  ksoftirqd/7
+   36       153334  22723147      6   0.00%  watchdog/7
+   37            0         2      3   0.00%  cpuset
+   38            0         2      2   0.00%  khelper
+   39            1       176      7   0.00%  kdevtmpfs
+   40            0         2      2   0.00%  netns
+   41        90634  15150515      5   0.00%  sync_supers
+   42         9446   1059484      8   0.00%  bdi-default
+   43            0       121      6   0.00%  kblockd
+   44            0         2      3   0.00%  ata_sff
+   45            0        26     22   0.00%  khubd
+   46            0         2      3   0.00%  rpciod
+   47     18614106  2147483647      5   0.00%  kworker/2:1
+   66        48366    757560     63   0.00%  khungtaskd
+   67            0         3      2   0.00%  kswapd0
+   68    461874113  2147483647    984   0.75%  ksmd
+   69            0         5      0   0.00%  fsnotify_mark
+   70            0         2      2   0.00%  unionfs_siod
+   71            0         2      2   0.00%  nfsiod
+   72            0         2      2   0.00%  crypto
+   86            0         3      4   0.00%  scsi_eh_0
+   87            0        20      5   0.00%  scsi_eh_1
+   88            0         3      3   0.00%  scsi_eh_2
+   89            0         3      4   0.00%  scsi_eh_3
+   90            0         3      3   0.00%  scsi_eh_4
+   91            0         3      3   0.00%  scsi_eh_5
+   94            0        10      3   0.00%  kworker/u:4
+   95           65       385    170   0.00%  kworker/u:5
+  100      2229886  403160098      5   0.00%  kworker/5:1
+  101     21362648  2147483647      8   0.00%  kworker/1:1
+  103      4125453  618811849      6   0.00%  kworker/7:1
+  104      4242474  914709542      4   0.00%  kworker/4:1
+  107            0         2      3   0.00%  cnic_wq
+  108            0         2      2   0.00%  bnx2x
+  109            0         2      2   0.00%  edac-poller
+  110            0         2      2   0.00%  deferwq
+  236           15       724     21   0.00%  loop0
+  454       574717  48842615     11   0.00%  flush-8:0
+ 2112          106      2092     50   0.00%  loop1
+ 2115           95       964     99   0.00%  loop2
+ 2118          102      1124     91   0.00%  loop3
+ 2121           45       326    139   0.00%  loop4
+ 2127            1       153     10   0.00%  loop5
+ 2129            0         3      4   0.00%  loop6
+ 3509        10013    354130     28   0.00%  jbd2/sda4-8
+ 3510            0         2      2   0.00%  ext4-dio-unwrit
+ 4100            0         2      3   0.00%  trigger
+ 6395            0         7     20   0.00%  jbd2/sda5-8
+ 6396            0         2      3   0.00%  ext4-dio-unwrit
+ 6401            0         6     20   0.00%  jbd2/sda6-8
+ 6402            0         2      3   0.00%  ext4-dio-unwrit
+ 8420          413       148   2794   0.00%  mmcqd/0
+ 8499        16549    916437     18   0.00%  jbd2/sda2-8
+ 8500            0         2      7   0.00%  ext4-dio-unwrit
+ 8529            0         6     21   0.00%  jbd2/mmcblk0p3-
+ 8530            0         2      7   0.00%  ext4-dio-unwrit
+ 9915         1788    317140      5   0.00%  kworker/6:0
+12361            0         1    510   0.00%  sshd
+12788           23      1474     16   0.00%  loop7
+12791           46      1969     23   0.00%  loop8
+12929       313960  11865225     26   0.00%  jbd2/sda3-8
+12930            0         2      7   0.00%  ext4-dio-unwrit
+12949         5235    197989     26   0.00%  jbd2/sda7-8
+12950            0         2     13   0.00%  ext4-dio-unwrit
+13100            1        36     37   0.00%  portmap
+13231            0         2      5   0.00%  lockd
+13232          102     25250      4   0.00%  nfsd
+13234            0         1    215   0.00%  rpc.mountd
+13236            1         6    257   0.00%  rpc.statd
+14939            1       144     10   0.00%  loop9
+14940            0         2      4   0.00%  ext4-dio-unwrit
+16038            0         2    100   0.00%  mcelog
+17349            8         8   1009   0.00%  libvirtd_mon.sh
+17350            2        13    209   0.00%  sh
+17351     12140995  191921820     63   0.00%  sysmgr
+17352      7281367  184116660     39   0.00%  sysmgr
+17360           19         3   6646   0.00%  inotifywait
+17364          156        31   5042   0.00%  libvirtd
+19677            0        25      6   0.00%  flush-179:0
+19678            0        25      7   0.00%  flush-7:9
+20066          308       391    789   0.00%  dcos_sshd
+20067          305       613    497   0.00%  vsh.bin
+21238            0         1     13   0.00%  mping-thread
+21239            0         1     10   0.00%  mping-thread
+21273            0         2    412   0.00%  sleep
+21279            4         2   2220   0.00%  vsh.bin
+21280           17         4   4275   0.00%  ps
+21479            0        30      1   0.00%  cctrl_kthread
+21580      6723883  1527076905      4   0.00%  kworker/3:2
+21593      7136893  1225833651      5   0.00%  kworker/0:0
+21727         7041   1438008      4   0.00%  kworker/6:1
+22021            0         2     11   0.00%  redun_kthread
+22271            0         1      5   0.00%  usd_mts_kthread
+22754      1493709  45546901     32   0.00%  ls-notify-mts-t
+26181           17        32    552   0.00%  bootflash_sync.
+26205            4        25    173   0.00%  inotifywait
+26579      8274537  1449160620      5   0.00%  kworker/2:2
+26581          219        70   3138   0.00%  sdwrapd
+26583   1399213248  497028528   2815   0.00%  pfmclnt
+26586      7947245  1440477334      5   0.00%  kworker/5:2
+26615            9         7   1381   0.00%  xinetd
+26616            9         4   2301   0.00%  tftpd
+26617          110       559    197   0.00%  sdwrapd
+26621       360143  30311744     11   0.00%  dme_proxy
+26625     52099280  242717344    214   0.00%  platform
+26630       363530  30311585     11   0.00%  dme_bootup_proxy
+26631          928       265   3503   0.25%  event_manager
+26632         1813       498   3642   0.50%  policyelem
+26661      3760432  91163373     41   0.00%  syslogd
+26670      1160426  27247635     42   0.00%  vshd
+26671        37487   1514645     24   0.00%  template_manager
+26672        35744   1514763     23   0.00%  tamnw
+26673           87        33   2652   0.00%  smm
+26674      1811889  90978609     19   0.00%  psshelper
+26675       521413  18221619     28   0.00%  pixm_vl
+26678       531354  18222668     29   0.00%  pixm_gl
+26679           77        20   3876   0.00%  nxapi
+26680          846       177   4779   0.00%  nginx
+26681        37604   1514696     24   0.00%  mmode
+26682       101373   1528358     66   0.00%  lmgrd
+26683      3982704  23161252    171   0.00%  fs-daemon
+26686       184154   7587653     24   0.00%  feature-mgr
+26687          119       733    163   0.00%  confcheck
+26688       202613   9084306     22   0.00%  capability
+26689       148974   9083621     16   0.00%  bloggerd
+26690      1801528  90976247     19   0.00%  psshelper_gsvc
+26720       211253   6073681     34   0.00%  clis
+26721       423024  18206724     23   0.00%  licmgr
+26728      4518256  61128891     73   0.00%  tams_proc
+26730       190517   1518317    125   0.00%  cisco
+26764            1         4    307   0.00%  nginx
+26769      5823436  53612142    108   0.00%  tamd_proc
+26770      3718481  181858565     20   0.00%  nginx
+26785       796298  30355315     26   0.00%  xmlma
+26786       497026  18218371     27   0.00%  vmm
+26787       216551   3802914     56   0.00%  vman
+26790       495730  18218648     27   0.00%  vdc_mgr
+26791      2006242  18327532    109   0.00%  usbhsd
+26792      1148009  45520229     25   0.00%  ttyd
+26795     14801741  53647842    275   0.00%  sysinfo
+26796       205194   9084460     22   0.00%  snmpmib_proc
+26797          178       592    300   0.00%  sksd
+26801        30808   1733381     17   0.00%  res_mgr
+26802      1554125  91026501     17   0.00%  plugin
+26803       430651  18388023     23   0.00%  plog_sup
+26806      1272054  90952216     13   0.00%  patch-installer
+26811          105        72   1470   0.00%  nbproxy
+26812       168634   6073274     27   0.00%  mvsh
+26813           75       544    139   0.00%  mping_server
+26816      5523242  30533651    180   0.00%  module
+26819          270        95   2848   0.00%  kim
+26822       163407   6072680     26   0.00%  evms
+26826          181       615    294   0.00%  epld_upgrade_stdby
+26829     29486788  19270097   1530   0.00%  diagclient
+26830      1607285  24993161     64   0.00%  dhclient
+26833      1215809  16144903     75   0.00%  crdcfg_server
+26834          141       591    239   0.00%  core-dmon
+26835          413       167   2477   0.00%  confelem
+26836      1190769   6787804    175   0.00%  clk_mgr
+26839       327054  18296206     17   0.00%  bios_daemon
+26840       339946  11382790     29   0.00%  ascii-cfg
+26843      1373065  90972819     15   0.00%  securityd
+26846      1659320  90977264     18   0.00%  cert_enroll
+26847      1574892  90964996     17   0.00%  aaa
+26861       245179  11376470     21   0.00%  obfl
+26873       107401   4542938     23   0.00%  evmc
+26882      4204864  46418845     90   0.00%  klogd
+26890      1192547   8591829    138   0.00%  aclmgr
+26891          468       201   2329   0.00%  urib
+26902      3727030  181858441     20   0.00%  nginx
+26914          138       576    239   0.00%  ExceptionLog
+26915       789220  45489057     17   0.00%  bootvar
+26916     36899966  52089858    708   0.00%  diagmgr
+26921       233233   9085853     25   0.00%  ifmgr
+26939          380       159   2395   0.00%  l3vm
+27137       744328  18269532     40   0.00%  cardclient
+27138      4537865  117643849     38   0.00%  device_test
+27139       200277   7006917     28   0.00%  xbar
+27171          380        94   4043   0.00%  adjmgr
+27172          352        95   3712   0.00%  u6rib
+27178       239187   9048794     26   0.00%  statsclient
+27202      3730909  181859833     20   0.00%  nginx
+27221          127        39   3268   0.00%  npacl
+27243          439        59   7445   0.00%  arp
+27246          338        56   6050   0.00%  icmpv6
+27247          124        50   2491   0.00%  pktmgr
+27261          484        96   5045   0.00%  netstack
+27301      3157159  91105965     34   0.00%  radius
+27304      4717290  24512599    192   0.00%  cdp
+27305       832457  21272283     39   0.00%  cfs
+27306           43       539     81   0.00%  ip_dummy
+27307           61       545    113   0.00%  ipv6_dummy
+27308       530275  18222633     29   0.00%  otm
+27309      9688371  47732156    202   0.00%  snmpd
+27310           36       540     66   0.00%  tcpudp_dummy
+27323           68        62   1100   0.00%  dcos-xinetd
+27370      1520857  90982965     16   0.00%  callhome
+27995     87937515  35838446   2453   0.00%  thirdpartyapps
+28042      4842462  1087112070      4   0.00%  kworker/3:1
+28468       530865  18233215     29   0.00%  port-profile
+28520      1043481   8171366    127   0.00%  spm
+28523          484       212   2287   0.00%  rpm
+28528      1336372  15299836     87   0.00%  pltfm_config
+28531      1014429   8156551    124   0.00%  plcmgr
+28532     23802604  28440871    836   0.00%  pfstat
+28550       488907   6248337     78   0.00%  ntp
+28555       581216  18320811     31   0.00%  monitor
+28558     13682683  10574096   1293   0.00%  lldp
+28559       545157  18224380     29   0.00%  lim
+28562      5065186  89192006     56   0.00%  l2rib
+28565       305758   6085987     50   0.00%  ipfib
+28566          729       293   2488   0.00%  igmp
+28575       233029   9086444     25   0.00%  eth_port_channel
+28578          147        50   2947   0.25%  ecp
+28583        74419   3028714     24   0.00%  adbm
+28586       344403   7559914     45   0.00%  acllog
+28697       224092   9085027     24   0.00%  eltm
+28711        43685   1518875     28   0.00%  eth_dstats
+28712   1065642148  516804235   2061   4.37%  ipqosmgr
+28713      2883350  15078440    191   0.00%  lacp
+28726       485740   9126974     53   0.00%  vlan_mgr
+28730       252065   3776830     66   0.00%  aclqos
+28735      3662560   8260134    443   0.00%  diag_port_lb
+28736        40819   1516256     26   0.00%  ethpm
+28737      1746032  10050891    173   0.00%  l2fm
+28747    147981838  445962487    331   0.00%  stp
+28748       507183  18219972     27   0.00%  stripcl
+28815      3366629   8873846    379   0.00%  copp
+28857       117271   4542761     25   0.00%  vpc
+28858       810145  19019313     42   0.00%  ufdm
+28861       205197   9084394     22   0.00%  u2
+28862       518048  18221406     28   0.00%  sal
+28865          531       136   3908   0.00%  mrib
+28866      1600104  15467731    103   0.00%  mfdm
+28867       537893  18222894     29   0.00%  mcm
+28868          199       602    331   0.25%  m6rib
+28869     23474151  93629017    250   0.00%  l2pt
+28870       120206   4543115     26   0.00%  interface-vlan
+28909       141608   4543111     31   0.00%  m2rib
+28931          182        41   4451   0.00%  mcastfwd
+28977       413740  90905110      4   0.00%  wdpunch_thread
+29332       142082   9082540     15   0.00%  bloggerd
+29345      1847346  90980355     20   0.00%  psshelper
+29346      1836043  90977825     20   0.00%  psshelper
+29347       559743  20191973     27   0.00%  plog_lc
+29348      1330450  90961945     14   0.00%  patch_installer
+29349       245922  11375627     21   0.00%  obfl_lc
+29350       125493   6067779     20   0.00%  mvsh
+29351        76581   4541644     16   0.00%  evmc
+29352      2342422  94072213     24   0.00%  dt_helper
+29353        49777   3027838     16   0.00%  diagclient
+29354    122334656  1921191806     63   0.00%  crdcfg_server
+29355       276561   9105892     30   0.00%  capability
+29368      1725653  90975306     18   0.00%  device_test
+29384    739411719  271797070   2720   0.00%  crdclient
+29426     49798643  39097222   1273   0.00%  dc3_sensor
+29427   1611918218  2147483647    144   1.75%  tahusd
+29429           71       169    421   0.00%  getty
+29895      3850663  94131439     40   0.00%  ntpd
+29934      2980237  68004661     43   0.00%  bfdc
+29935      1431487  13854877    103   0.00%  iftmc
+29936      9988750  372076347     26   0.00%  nf
+29937       372833  18204816     20   0.00%  pixc
+29938      3650657  26502888    137   0.00%  port_client
+29939   3959640846  2147483647    722   0.75%  stats_client
+29940        72423   4541371     15   0.00%  vntagc
+29941       216974   2820732     76   0.00%  mtm
+29944      2111256  21508840     98   0.00%  ipfib
+29946    307397423  2147483647     62   0.25%  aclqos
+29947       227887   5110192     44   0.00%  ptplc
+29948          123        27   4590   0.00%  fcoelc
+29949        47803   3027573     15   0.00%  monc
+29950       151474   7583856     19   0.00%  xbar_client
+30196      8004904  1378033180      5   0.00%  kworker/0:2
+30417            1         1   1322   0.00%  incrond
+CPU util  :    0.75% user,    1.12% kernel,   98.12% idle
+Please note that only processes from the requested vdc are shown above
+
+CPU History :
+1 11     1     1111    1   1       
+    222423242422291232237722385374122242211422432111132112211362
+100                                                             
+ 90                                                             
+ 80                                                             
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20                          #  #                               
+ 10              #      ##   ####     #     ####    #   #     # 
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per second (last 60 seconds)
+                      # = average CPU%
+
+
+                                                                
+    11121111 111111 1 111111 111 111111 1 111111 11 11 111111111
+    811033529124401739320524931192054127295310329539468630021273
+100                                                             
+ 90                                                             
+ 80                                                             
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20 *  *  *              *         *      *      *   * *      * 
+ 10 ************************************************************
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per minute (last 60 minutes)
+              * = maximum CPU%   # = average CPU%
+
+
+                                                                            
+    212221221121112111221111112111211211122112221121121112211121122112211221
+    260107028618753758207667980687376089701773207929527855077707611870369006
+100                                                                         
+ 90                                                                         
+ 80                                                                         
+ 70                                                                         
+ 60                                                                         
+ 50                                                                         
+ 40                                                                         
+ 30                                                      *                  
+ 20 ************************************************************************
+ 10 ************************************************************************
+    0....5....1....1....2....2....3....3....4....4....5....5....6....6....7.
+              0    5    0    5    0    5    0    5    0    5    0    5    0 
+
+                   CPU% per hour (last 72 hours)
+                  * = maximum CPU%   # = average CPU%
+
+Memory :
+PID    MemAlloc  MemLimit    MemUsed     StackBase/Ptr      Process
+-----  --------  ----------  ----------  -----------------  ----------------
+    1    176128  0           4329472     357cbec0/357cb4e8  init
+    2         0  0           0                  0/0         kthreadd
+    3         0  0           0                  0/0         ksoftirqd/0
+    6         0  0           0                  0/0         migration/0
+    7         0  0           0                  0/0         watchdog/0
+    8         0  0           0                  0/0         migration/1
+    9         0  0           0                  0/0         kworker/1:0
+   10         0  0           0                  0/0         ksoftirqd/1
+   12         0  0           0                  0/0         watchdog/1
+   13         0  0           0                  0/0         migration/2
+   15         0  0           0                  0/0         ksoftirqd/2
+   16         0  0           0                  0/0         watchdog/2
+   17         0  0           0                  0/0         migration/3
+   19         0  0           0                  0/0         ksoftirqd/3
+   20         0  0           0                  0/0         watchdog/3
+   21         0  0           0                  0/0         migration/4
+   22         0  0           0                  0/0         kworker/4:0
+   23         0  0           0                  0/0         ksoftirqd/4
+   24         0  0           0                  0/0         watchdog/4
+   25         0  0           0                  0/0         migration/5
+   27         0  0           0                  0/0         ksoftirqd/5
+   28         0  0           0                  0/0         watchdog/5
+   29         0  0           0                  0/0         migration/6
+   31         0  0           0                  0/0         ksoftirqd/6
+   32         0  0           0                  0/0         watchdog/6
+   33         0  0           0                  0/0         migration/7
+   34         0  0           0                  0/0         kworker/7:0
+   35         0  0           0                  0/0         ksoftirqd/7
+   36         0  0           0                  0/0         watchdog/7
+   37         0  0           0                  0/0         cpuset
+   38         0  0           0                  0/0         khelper
+   39         0  0           0                  0/0         kdevtmpfs
+   40         0  0           0                  0/0         netns
+   41         0  0           0                  0/0         sync_supers
+   42         0  0           0                  0/0         bdi-default
+   43         0  0           0                  0/0         kblockd
+   44         0  0           0                  0/0         ata_sff
+   45         0  0           0                  0/0         khubd
+   46         0  0           0                  0/0         rpciod
+   47         0  0           0                  0/0         kworker/2:1
+   66         0  0           0                  0/0         khungtaskd
+   67         0  0           0                  0/0         kswapd0
+   68         0  0           0                  0/0         ksmd
+   69         0  0           0                  0/0         fsnotify_mark
+   70         0  0           0                  0/0         unionfs_siod
+   71         0  0           0                  0/0         nfsiod
+   72         0  0           0                  0/0         crypto
+   86         0  0           0                  0/0         scsi_eh_0
+   87         0  0           0                  0/0         scsi_eh_1
+   88         0  0           0                  0/0         scsi_eh_2
+   89         0  0           0                  0/0         scsi_eh_3
+   90         0  0           0                  0/0         scsi_eh_4
+   91         0  0           0                  0/0         scsi_eh_5
+   94         0  0           0                  0/0         kworker/u:4
+   95         0  0           0                  0/0         kworker/u:5
+  100         0  0           0                  0/0         kworker/5:1
+  101         0  0           0                  0/0         kworker/1:1
+  103         0  0           0                  0/0         kworker/7:1
+  104         0  0           0                  0/0         kworker/4:1
+  107         0  0           0                  0/0         cnic_wq
+  108         0  0           0                  0/0         bnx2x
+  109         0  0           0                  0/0         edac-poller
+  110         0  0           0                  0/0         deferwq
+  236         0  0           0                  0/0         loop0
+  454         0  0           0                  0/0         flush-8:0
+ 2112         0  0           0                  0/0         loop1
+ 2115         0  0           0                  0/0         loop2
+ 2118         0  0           0                  0/0         loop3
+ 2121         0  0           0                  0/0         loop4
+ 2127         0  0           0                  0/0         loop5
+ 2129         0  0           0                  0/0         loop6
+ 3509         0  0           0                  0/0         jbd2/sda4-8
+ 3510         0  0           0                  0/0         ext4-dio-unwrit
+ 4100         0  0           0                  0/0         trigger
+ 6395         0  0           0                  0/0         jbd2/sda5-8
+ 6396         0  0           0                  0/0         ext4-dio-unwrit
+ 6401         0  0           0                  0/0         jbd2/sda6-8
+ 6402         0  0           0                  0/0         ext4-dio-unwrit
+ 8420         0  0           0                  0/0         mmcqd/0
+ 8499         0  0           0                  0/0         jbd2/sda2-8
+ 8500         0  0           0                  0/0         ext4-dio-unwrit
+ 8529         0  0           0                  0/0         jbd2/mmcblk0p3-
+ 8530         0  0           0                  0/0         ext4-dio-unwrit
+ 9915         0  0           0                  0/0         kworker/6:0
+12361    442368  0           32579584    f43eb060/f43ea638  sshd
+12788         0  0           0                  0/0         loop7
+12791         0  0           0                  0/0         loop8
+12929         0  0           0                  0/0         jbd2/sda3-8
+12930         0  0           0                  0/0         ext4-dio-unwrit
+12949         0  0           0                  0/0         jbd2/sda7-8
+12950         0  0           0                  0/0         ext4-dio-unwrit
+13100    184320  0           8642560     cf7cd380/cf7cd1a0  portmap
+13231         0  0           0                  0/0         lockd
+13232         0  0           0                  0/0         nfsd
+13234    323584  0           13221888    dfac0280/dfabff38  rpc.mountd
+13236    208896  0           15097856    d4f2b1e0/d4f2af78  rpc.statd
+14939         0  0           0                  0/0         loop9
+14940         0  0           0                  0/0         ext4-dio-unwrit
+16038    176128  0           2285568     ffe47da0/ffe47bd0  mcelog
+17349     94208  0           2936832     ff86f8f0/ff86f2f8  libvirtd_mon.sh
+17350     94208  0           2936832     ffc77960/ffc770f8  sh
+17351   9216000  0           539680768   ffc3d2b0/ffc3d020  sysmgr
+17352   7905280  0           474337280   ff85b8f0/ff85b660  sysmgr
+17360    258048  0           6533120     f2195480/f2195278  inotifywait
+17364  14094336  0           19779584    ffed5da0/ffed57b0  libvirtd
+19677         0  0           0                  0/0         flush-179:0
+19678         0  0           0                  0/0         flush-7:9
+20066   1925120  0           420003840   ffc046c0/ffbffeac  dcos_sshd
+20067  15728640  0           579567616   ffb988b0/ffb8ad74  vsh.bin
+21238         0  0           0                  0/0         mping-thread
+21239         0  0           0                  0/0         mping-thread
+21292    159744  0           1974272     ffc1b8a0/ffc1b610  sleep
+21302  16035840  0           580468736   ffb988b0/ffb89fd8  vsh.bin
+21303         0  0           0           b2c32ef0/b2c32be8  ps
+21479         0  0           0                  0/0         cctrl_kthread
+21580         0  0           0                  0/0         kworker/3:2
+21593         0  0           0                  0/0         kworker/0:0
+21727         0  0           0                  0/0         kworker/6:1
+22021         0  0           0                  0/0         redun_kthread
+22271         0  0           0                  0/0         usd_mts_kthread
+22754         0  0           0                  0/0         ls-notify-mts-t
+26181    131072  0           2973696     ffd345a0/ffd32b38  bootflash_sync.
+26205    376832  0           6651904     ec40f2a0/ec40f098  inotifywait
+26579         0  0           0                  0/0         kworker/2:2
+26581    466944  0           280629248   fff49680/fff494b0  sdwrapd
+26583   2043904  0           286896128   ffe10d70/ffe0fcd0  pfmclnt
+26586         0  0           0                  0/0         kworker/5:2
+26615    389120  735279001   2785280     ff902dd0/ff902bf0  xinetd
+26616    434176  317279001   2514944     ffcbf640/ffcbf3d0  tftpd
+26617   2330624  642735174   418639872   ffd360f0/ffd35420  sdwrapd
+26621    475136  0           280633344   ffae3890/ffae36a0  dme_proxy
+26625  29151232  0           575356928   ffa46c00/ffa45b10  platform
+26630    475136  0           280637440   ff96d6b0/ff96d510  dme_bootup_proxy
+26631  141586432  0           804446208   ffb36d90/ffb36ccc  event_manager
+26632  118439936  0           805048320   ffb23440/ffb2337c  policyelem
+26661  21262336  917034764   556556288   ff88f3b0/ff88ae7c  syslogd
+26670   6213632  1026385254  539430912   ff955cb0/ff9557a8  vshd
+26671  13869056  0           629297152   ffe0c2c0/ffe09f1c  template_manager
+26672   4775936  627370585   422318080   ffce6f70/ffce6180  tamnw
+26673   8032256  1030737804  427384832   ffc30a40/ffc30480  smm
+26674   2007040  670446937   296566784   ff9a1850/ff9a1520  psshelper
+26675  324841472  1026618982  753840128   ffd181f0/ffd175e0  pixm_vl
+26678  50733056  1151726611  588541952   ffe7ce00/ffe7c1f0  pixm_gl
+26679   1097728  0           21118976    ffcd8ac0/ffcd87c0  nxapi
+26680  553459712  0           1100079104  ffd3a3a0/ffd3a0f0  nginx
+26681   4177920  0           503689216   fff85ba0/fff82ffc  mmode
+26682    294912  0           3248128     ffc7b8f0/ffc7a570  lmgrd
+26683   1388544  0           419721216   ffb56110/ffb558a0  fs-daemon
+26686  10924032  0           549007360   ffac7e00/ffac6e6c  feature-mgr
+26687   1138688  0           417546240   ff9e6a70/ff9e6820  confcheck
+26688   2514944  626478476   418861056   ffed2170/ffed15a0  capability
+26689   5259264  754868857   425865216   fff87960/fff860ec  bloggerd
+26690   1871872  670298252   294195200   ffc115c0/ffc11290  psshelper_gsvc
+26720  28381184  1628338764  734199808   fff1a0e0/fff1957c  clis
+26721   1466368  757307584   421445632   ffbb27c0/ffbb22d8  licmgr
+26728    192512  0           4685824     ffa06010/ffa05c90  tams_proc
+26730    311296  0           3272704     ff8b7aa0/ff8b78f0  cisco
+26764   1310720  0           289775616   ffcd8ac0/ffcd8680  nginx
+26769    192512  0           4579328     ffe19480/ffe190f0  tamd_proc
+26770   1310720  0           289775616   ffcd8ac0/ffcd8680  nginx
+26785   1167360  0           418611200   ff82d7a0/ff82d5e0  xmlma
+26786   1986560  639366323   419385344   ffc28060/ffc26e20  vmm
+26787   5054464  788139897   433963008   fff3e710/fff3e1d8  vman
+26790   9252864  970025267   541765632   ffaab6b0/ffaaab60  vdc_mgr
+26791   9912320  0           290193408   ffa55070/ffa52e3c  usbhsd
+26792   8613888  830155955   541364224   ff8ccdc0/ff8cc690  ttyd
+26795   8548352  810103008   558096384   ffa08ce0/ffa087b8  sysinfo
+26796   2408448  765841190   423272448   ffc4fed0/ffc4ee90  snmpmib_proc
+26797   1294336  641676358   420282368   ff94d6b0/ff94d020  sksd
+26801   1781760  624969100   420868096   fff2b2e0/fff2ad7c  res_mgr
+26802   3641344  1990028902  294535168   ffcc5af0/ffcc4acc  plugin
+26803    905216  797694092   417341440   ffa01a80/ffa015f0  plog_sup
+26806    864256  0           281399296   ff8968f0/ff8962e8  patch-installer
+26811  10035200  4294967295  832794624   ff9843f0/ff983e50  nbproxy
+26812   1720320  1165870464  418824192   ffa23440/ffa221c0  mvsh
+26813    479232  0           281505792   ffe9e120/ffe9dcd0  mping_server
+26816   3321856  784257408   430125056   ffcb8af0/ffcb7770  module
+26819  14450688  895594233   441122816   ff82d450/ff82ced0  kim
+26822   1916928  628911500   420024320   ff94cd40/ff94bd10  evms
+26826   9465856  868089728   430125056   ff9b3990/ff9b3728  epld_upgrade_stdby
+26829   6238208  760006438   424353792   ffb98ef0/ffb97740  diagclient
+26830   4575232  1784586163  827490304   ffe9df40/ffe9c3ac  dhclient
+26833  30547968  1220712204  501129216   ffaed770/ffaecee0  crdcfg_server
+26834   1040384  0           419479552   ff851370/ff850d10  core-dmon
+26835  100175872  0           593584128   ff9735a0/ff9734dc  confelem
+26836   9486336  823666060   546529280   ff95f030/ff95e010  clk_mgr
+26839    708608  845279001   406892544   ffa81a70/ffa80f38  bios_daemon
+26840  14766080  4294967295  659615744   ffbe0630/ffbdf518  ascii-cfg
+26843   9150464  0           548073472   ff9cc820/ff9cb538  securityd
+26846   2248704  0           422490112   ff8b38f0/ff8b1b4c  cert_enroll
+26847   6873088  0           543473664   ffe26d30/ffe258c0  aaa
+26861   1409024  804209190   422318080   ffbf98f0/ffbf8f88  obfl
+26873   1921024  891190361   419143680   fff7fce0/fff7ecc0  evmc
+26882    184320  0           4329472     c9d5fbc0/c9d5faa8  klogd
+26890  13668352  1699816448  554299392   ff854790/ff8533b0  aclmgr
+26891  25608192  4294967295  850661376   ffd6a9b0/ffd6a5c0  urib
+26902   1310720  0           289775616   ffcd8ac0/ffcd8680  nginx
+26914   1593344  805993408   423673856   ffe98700/ffe97800  ExceptionLog
+26915   7925760  863592998   542453760   ffded010/ffdec670  bootvar
+26916   4521984  758280793   422133760   ff85a650/ff859440  diagmgr
+26921  56856576  889850649   597405696   ffc20b00/ffc1fab0  ifmgr
+26939  19161088  1176674188  562774016   ffd6f880/ffd6f450  l3vm
+27137   1159168  0           416055296   ffab3e20/ffab39d0  cardclient
+27138  14970880  858573900   434888704   ffc75e50/ffc751fc  device_test
+27139   4661248  0           422518784   fff23850/fff227f0  xbar
+27171  50200576  1371750284  988639232   ffd8ebb0/ffd8e670  adjmgr
+27172  28033024  1969699699  940355584   ffa712a0/ffa71160  u6rib
+27178  15151104  777808064   438116352   ffbe9fc0/ffbe9b20  statsclient
+27202   1310720  0           289775616   ffcd8ac0/ffcd8680  nginx
+27221   8445952  1312505216  435785728   ff8b0cd0/ff8b0930  npacl
+27243  80289792  1663470144  952512512   ffe7cbf0/ffe7ca90  arp
+27246  26247168  1361717132  996220928   ffca6290/ffca5d30  icmpv6
+27247  27529216  1095645619  482758656   ffc9edb0/ffc9ec90  pktmgr
+27261  58327040  1726381952  1086111744  ffe58fd0/ffe58a10  netstack
+27301   9531392  1283798368  822976512   ffa3d160/ffa380bc  radius
+27304   9281536  1259150412  826630144   ff97e000/ff97ce3c  cdp
+27305   5939200  1086575846  425246720   ff80b8c0/ff809d4c  cfs
+27306    475136  625953152   280612864   ffcbdc20/ffcbd9d8  ip_dummy
+27307    475136  625953152   280612864   ffbe21d0/ffbe1f88  ipv6_dummy
+27308  10326016  1420167462  947281920   ffdf49d0/ffdf2e5c  otm
+27309  25280512  1242569945  874733568   ffabcbc0/ffab79fc  snmpd
+27310    475136  625953152   280612864   ffc62ce0/ffc62a98  tcpudp_dummy
+27323   2015232  735279001   413339648   ffa11a10/ffa0dc2c  dcos-xinetd
+27370   2215936  860574387   420679680   ffa65450/ffa6512c  callhome
+27995   6000640  0           9080832     ffc7e7b0/ffc7e088  thirdpartyapps
+28042         0  0           0                  0/0         kworker/3:1
+28468  74747904  1741466214  597282816   fff7d090/fff7b42c  port-profile
+28520   6303744  1418567321  428089344   ffa969c0/ffa95d60  spm
+28523  24678400  1371511488  972845056   ffe4ca80/ffe4c960  rpm
+28528   9273344  854606508   552841216   ffc38860/ffc36c5c  pltfm_config
+28531   5963776  1040010329  431394816   ff853e70/ff852e60  plcmgr
+28532  10637312  1167595404  544956416   ff9c8d50/ff9c71dc  pfstat
+28550   8114176  1442222374  963440640   ffd42200/ffd3dedc  ntp
+28555   4714496  1138395827  704892928   ff885710/ff883bac  monitor
+28558   4718592  1091557299  835129344   ffe02430/ffe008ac  lldp
+28559  16322560  915570585   550440960   fff79bb0/fff7800c  lim
+28562  25522176  1134428979  592019456   fff76f20/fff76990  l2rib
+28565  71462912  1217143910  519999488   ffde8360/ffde745c  ipfib
+28566  151842816  1724332889  1059328000  fff8e7b0/fff8e270  igmp
+28575  25124864  876689792   561704960   ffb26f10/ffb2514c  eth_port_channel
+28578   8384512  1033963814  426901504   ffa8d680/ffa8d560  ecp
+28583  13398016  989205043   441294848   ffcfc2f0/ffcfa76c  adbm
+28586   7024640  1091266035  539783168   ffdd2d40/ffdd1d20  acllog
+28697  21438464  1110031859  560828416   ffd39830/ffd37c7c  eltm
+28711   1425408  787534809   418799616   fff5d9d0/fff5d600  eth_dstats
+28712  17522688  1050828134  561893376   ffea6240/ffea4ba0  ipqosmgr
+28713  11595776  1169627430  548229120   ff81aac0/ff819aa0  lacp
+28726  18546688  963747980   567058432   ffec00a0/ffebe74c  vlan_mgr
+28730  40407040  819178483   468844544   ff8e6640/ff8e48bc  aclqos
+28735  94793728  850572800   520327168   ff9ff5b0/ff9fe7b0  diag_port_lb
+28736  31178752  1014183315  584187904   ffda04f0/ffd9e52c  ethpm
+28737  44847104  1448169606  605581312   ff9e0f00/ff9df14c  l2fm
+28747  12668928  1447592115  553111552   ff9f8f00/ff9f83f0  stp
+28748   4489216  769513254   424267776   ffe8fe70/ffe8ee20  stripcl
+28815   9674752  1046300006  551198720   ffbab9d0/ffbaa720  copp
+28857  12128256  1742192691  835358720   ffc07d00/ffc05f6c  vpc
+28858  42426368  1109184806  565387264   ffb44b10/ffb42f0c  ufdm
+28861   2064384  771099225   422559744   ffd1dc30/ffd1cbf0  u2
+28862   2400256  1293041958  796364800   ffdac4e0/ffdaa96c  sal
+28865  131014656  1842361728  1050980352  ffd0dfa0/ffd0de70  mrib
+28866  16347136  1171353356  452718592   ff82b300/ff82974c  mfdm
+28867   2379776  770621632   424497152   ffca8540/ffca74c0  mcm
+28868  54796288  1343058624  892452864   ffe6efa0/ffe6ee70  m6rib
+28869   2551808  1033414131  424456192   ff8b2700/ff8b0b5c  l2pt
+28870  13656064  1369289292  552259584   ffd3d2f0/ffd3b69c  interface-vlan
+28909   6176768  1169798080  426352640   ffe4b680/ffe4a9e0  m2rib
+28931  65728512  1327937689  845512704   ffabcb40/ffabca60  mcastfwd
+28977         0  0           0                  0/0         wdpunch_thread
+29332   3469312  0           287924224   ffc04240/ffc0351c  bloggerd
+29345   1712128  0           287186944   ffc058a0/ffc05570  psshelper
+29346   1712128  0           287186944   ffdbaf50/ffdbac20  psshelper
+29347  101163008  0           670662656   ff8067b0/ff806320  plog_lc
+29348    851968  0           281198592   ffaf9110/ffaf8b68  patch_installer
+29349    479232  0           281174016   fffc1380/fffc0a18  obfl_lc
+29350   1105920  0           284803072   ffe7b100/ffe79e80  mvsh
+29351   1175552  0           284950528   ff895bc0/ff894ba0  evmc
+29352  101736448  0           674189312   ffb7b2f0/ffb7ab80  dt_helper
+29353   4640768  0           475516928   ffbe3650/ffbe1ea0  diagclient
+29354  37203968  0           507248640   ffe06e60/ffe065e0  crdcfg_server
+29355    405504  0           280903680   ffd558a0/ffd55618  capability
+29368  106528768  0           679260160   ff921bf0/ff920fac  device_test
+29384    864256  0           472059904   ffd53100/ffd52c20  crdclient
+29426  102408192  0           674996224   ffb12110/ffb11c50  dc3_sensor
+29427  980500480  0           1996288000  ffecfed0/ffecf01c  tahusd
+29429    192512  0           2383872     ffbbba50/ffbb93b8  getty
+29895   1581056  0           415170560   ffd184c0/ffd146fc  ntpd
+29934  121692160  0           701124608   ffcda6f0/ffcda1d0  bfdc
+29935  189386752  0           777842688   ffe802e0/ffe7f260  iftmc
+29936  107556864  0           688361472   fffb7690/fffb6640  nf
+29937  137019392  0           720781312   ff99c140/ff99b550  pixc
+29938  115011584  0           689459200   ffc08b10/ffc07f20  port_client
+29939  115380224  0           693370880   ffd5e150/ffd5dcb0  stats_client
+29940  103153664  0           682622976   ff93a400/ff9393e0  vntagc
+29941  133468160  0           716206080   ffa5da50/ffa5cf40  mtm
+29944  212213760  0           815259648   ff9e8630/ff9e7730  ipfib
+29946  180105216  0           785289216   ffd252c0/ffd24090  aclqos
+29947  107372544  0           707883008   ffddbac0/ffddaaa0  ptplc
+29948  104300544  0           679010304   ffdf76a0/ffdf6680  fcoelc
+29949  104022016  0           685600768   ffed7640/ffed6620  monc
+29950  106364928  0           681009152   ff988620/ff987580  xbar_client
+30196         0  0           0                  0/0         kworker/0:2
+30417    266240  0           12840960    30287bc0/3027f740  incrond
+
+All processes: MemAlloc = 6629023744
+
+CDP Neighbors :
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+SPN02.corp.dohaoasis.com(FOX2205PB9L)
+                    Eth1/54        159    R S I s   N9K-C9504     Eth3/7        
+
+Total entries displayed: 1
+
+CDP Neighbors Detail :
+----------------------------------------
+Device ID:SPN02.corp.dohaoasis.com(FOX2205PB9L)
+System Name: SPN02
+
+Interface address(es):
+    IPv4 Address: 172.17.250.20
+Platform: N9K-C9504, Capabilities: Router Switch IGMP Filtering Supports-STP-Dispute
+Interface: Ethernet1/54, Port ID (outgoing port): Ethernet3/7
+Holdtime: 157 sec
+
+Version:
+Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I7(5)
+
+Advertisement Version: 2
+
+Native VLAN: 3451
+Duplex: full
+
+MTU: 1500
+Physical Location: snmplocation
+Mgmt address(es):
+    IPv4 Address: 172.18.147.20
+
+EtherChannel Summary :
+No output from "show etherchannel summary"
+
+IP Interface Brief :
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan50               172.17.250.118  protocol-up/link-up/admin-up
+
+Bootflash :
+No output from "show bootflash"
+
+System Resources :
+Load average:   1 minute: 0.51   5 minutes: 0.56   15 minutes: 0.55
+Processes   :   565 total, 1 running
+CPU states  :   1.12% user,   1.62% kernel,   97.25% idle
+	CPU0 states  :   0.00% user,   1.02% kernel,   98.97% idle
+	CPU1 states  :   1.00% user,   1.00% kernel,   98.00% idle
+	CPU2 states  :   0.00% user,   1.00% kernel,   99.00% idle
+	CPU3 states  :   0.00% user,   3.00% kernel,   97.00% idle
+	CPU4 states  :   0.00% user,   0.00% kernel,   100.00% idle
+	CPU5 states  :   0.00% user,   0.00% kernel,   100.00% idle
+	CPU6 states  :   6.06% user,   3.03% kernel,   90.90% idle
+	CPU7 states  :   1.00% user,   1.00% kernel,   98.00% idle
+Memory usage:   24571652K total,   6166144K used,   18405508K free
+Current memory status: OK
+
+Module Information :
+No output from "show module"
+
+Stack Power Details :
+No output from "show stack-power detail"
+
+VLAN Brief :
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Po105, Eth1/49, Eth1/53
+                                                Eth1/54
+2    NATIVE                           active    Po105, Eth1/49, Eth1/53
+                                                Eth1/54
+50   NETWORK-MGMT                     active    Po105, Eth1/49, Eth1/53
+                                                Eth1/54
+3451 DCIM                             active    Po105, Eth1/1, Eth1/2, Eth1/3
+                                                Eth1/4, Eth1/5, Eth1/6, Eth1/7
+                                                Eth1/8, Eth1/9, Eth1/10, Eth1/11
+                                                Eth1/12, Eth1/13, Eth1/14
+                                                Eth1/15, Eth1/16, Eth1/17
+                                                Eth1/18, Eth1/19, Eth1/20
+                                                Eth1/21, Eth1/22, Eth1/23
+                                                Eth1/24, Eth1/25, Eth1/26
+                                                Eth1/27, Eth1/28, Eth1/29
+                                                Eth1/30, Eth1/31, Eth1/32
+                                                Eth1/33, Eth1/34, Eth1/35
+                                                Eth1/36, Eth1/37, Eth1/38
+                                                Eth1/39, Eth1/40, Eth1/41
+                                                Eth1/42, Eth1/43, Eth1/44
+                                                Eth1/45, Eth1/46, Eth1/47
+                                                Eth1/48, Eth1/49, Eth1/50
+                                                Eth1/53, Eth1/54
+
+Inventory :
+NAME: "Chassis",  DESCR: "Nexus9000 C93108TC-FX Chassis"         
+PID: N9K-C93108TC-FX     ,  VID: V02 ,  SN: FDO21470L0N          
+
+NAME: "Slot 1",  DESCR: "48x1/10GT + 6x40G/100G Ethernet Module"
+PID: N9K-C93108TC-FX     ,  VID: V02 ,  SN: FDO21470L0N          
+
+NAME: "Power Supply 1",  DESCR: "Nexus9000 C93108TC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: LIT211845JU          
+
+NAME: "Power Supply 2",  DESCR: "Nexus9000 C93108TC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: LIT211845SM          
+
+NAME: "Fan 1",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 2",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 3",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 4",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A
+
+Power :
+No output from "show power"
+
+Environment :
+No output from "show environment status"
+
+Redundancy :
+No output from "show redundancy"
+
+Running Config :
+!Command: show running-config
+!Time: Tue Mar  4 21:30:14 2025
+
+version 7.0(3)I7(5) Bios:version 05.31 
+hostname DCIMMALL01
+vdc DCIMMALL01 id 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 511
+  limit-resource u4route-mem minimum 248 maximum 248
+  limit-resource u6route-mem minimum 96 maximum 96
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+
+feature telnet
+cfs eth distribute
+feature interface-vlan
+feature lacp
+feature vpc
+feature lldp
+clock timezone UTC 3 0
+
+username admin password 5 $5$.na8mh3l$ygYByfnqU01s/9i3PxPBcXZ35E6hGqISsCMEdhLKwgA  role network-admin
+username swsnmpv3user password 5 $5$SIGmJAUh$qXVPfUkhhF6iuZbiSU6aXMaY/T.7jdTJvyo1XNuosID  role network-operator
+
+banner motd ^
+
+
+****************************************************************************
+*                                                                          *
+* !!! WARNING: UNAUTHORIZED ACCESS TO THIS EQUIPMENT IS PROHIBITED !!!     *
+* ======================================================================== *
+*  This system is solely for the use of authorized users for official      *
+*  purposes. You have no expectation of privacy in its use and to ensure   *
+*  that the system is functioning properly, individuals using this         *
+*  system are subject to having all of their activities monitored          *
+*  and recorded by system personnel.                                       *
+*                                                                          *
+* ======================================================================== *
+* !!! WARNING: Use of this system evidences an express consent to such     *
+*              monitoring and agreement that if such monitoring reveals    *
+*              evidence of possible abuse or criminal activity, system     *
+*              personnel may provide the results of such monitoring        *
+*              to appropriate officials.                                   *
+*                                                                          *
+****************************************************************************
+^
+
+ssh key rsa 2048 
+no ip domain-lookup
+ip domain-name corp.dohaoasis.com
+crypto key param rsa label DCIMMALL01.corp.dohaoasis.com modulus 2048 
+spanning-tree mode mst
+errdisable recovery interval 120
+errdisable recovery cause link-flap
+errdisable recovery cause udld
+errdisable recovery cause security-violation
+errdisable recovery cause psecure-violation
+policy-map type qos copp-system-p-policy-lenient
+copp profile strict
+snmp-server user admin network-admin auth md5 0xad5c1714e74e4f4059b57133a3d5ba09 priv 0xad5c1714e74e4f4059b57133a3d5ba09 localizedkey
+snmp-server user swsnmpv3user network-operator auth sha 0x0878047e98774268b10a44f9998e455c5f0af1af priv aes-128 0x0878047e98774268b10a44f9998e455c5f0af1af localizedkey
+snmp-server host 172.17.250.97 informs version 3 priv P@ssw0rd
+rmon event 1 description FATAL(1) owner PMON@FATAL
+rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+rmon event 3 description ERROR(3) owner PMON@ERROR
+rmon event 4 description WARNING(4) owner PMON@WARNING
+rmon event 5 description INFORMATION(5) owner PMON@INFO
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps lldp lldpRemTablesChange
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps system Clock-change-notification
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+snmp-server enable traps mmode cseNormalModeChangeNotify
+snmp-server enable traps mmode cseMaintModeChangeNotify
+ntp server 172.18.255.251 prefer use-vrf default key 1
+ntp server 172.18.255.252 use-vrf default key 1
+ntp source-interface  Vlan50
+ntp authenticate
+ntp authentication-key 1 md5 Fh03c!iL 7
+ntp trusted-key 1
+
+ip route 0.0.0.0/0 Vlan50 172.17.250.1
+no ip source-route
+vlan 1-2,50,3451
+vlan 2
+  name NATIVE
+vlan 50
+  name NETWORK-MGMT
+vlan 3451
+  name DCIM
+
+spanning-tree pathcost method long
+vrf context management
+  ip route 0.0.0.0/0 172.18.144.1
+vrf context vpc-keepalive
+
+
+interface Vlan1
+
+interface Vlan50
+  description *** SVI for NETWORK-MGMT ***
+  no shutdown
+  no ip redirects
+  ip address 172.17.250.118/24
+
+interface port-channel105
+  description *** EC -to- SPN01&SPN02 : Member-Ports ETH-1/53 ETH-1/54 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  spanning-tree port type network
+
+interface Ethernet1/1
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/2
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/3
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/4
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/5
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/6
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/7
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/8
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/9
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/10
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/11
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/12
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/13
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/14
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/15
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/16
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/17
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/18
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/19
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/20
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/21
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/22
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/23
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/24
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/25
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/26
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/27
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/28
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/29
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/30
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/31
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/32
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/33
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/34
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/35
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/36
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/37
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/38
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/39
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/40
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/41
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/42
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/43
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/44
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/45
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/46
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/47
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/48
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/49
+  description *** 40G-OOB To- DCIM at DC2-DCIM02 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  no shutdown
+
+interface Ethernet1/50
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  switchport trunk allowed vlan 3451
+  no shutdown
+
+interface Ethernet1/51
+  no shutdown
+
+interface Ethernet1/52
+  no shutdown
+
+interface Ethernet1/53
+  description *** 40-GE -to- SPN01 -ETH-3/7 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  channel-group 105 mode active
+  no shutdown
+
+interface Ethernet1/54
+  description *** 40-GE -to- SPN02 -ETH-3/7 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  channel-group 105 mode active
+  no shutdown
+
+interface mgmt0
+  vrf member management
+  ip address 172.18.147.118/20
+line console
+line vty
+boot nxos bootflash:/nxos.7.0.3.I7.5.bin
+
+Protocols :
+No output from "show protocols"
+
+IP Route :
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 172.17.250.1, Vlan50, [1/0], 2y46w, static
+172.17.250.0/24, ubest/mbest: 1/0, attached
+    *via 172.17.250.118, Vlan50, [0/0], 2y46w, direct
+172.17.250.118/32, ubest/mbest: 1/0, attached
+    *via 172.17.250.118, Vlan50, [0/0], 2y46w, local
+
+Interface Status :
+--------------------------------------------------------------------------------
+Port          Name               Status    Vlan      Duplex  Speed   Type
+--------------------------------------------------------------------------------
+mgmt0         --                 notconnec routed    auto    auto    --         
+
+--------------------------------------------------------------------------------
+Port          Name               Status    Vlan      Duplex  Speed   Type
+--------------------------------------------------------------------------------
+Eth1/1        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/2        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/3        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/4        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/5        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/6        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/7        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/8        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/9        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/10       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/11       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/12       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/13       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/14       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/15       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/16       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/17       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/18       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/19       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/20       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/21       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/22       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/23       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/24       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/25       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/26       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/27       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/28       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/29       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/30       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/31       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/32       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/33       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/34       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/35       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/36       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/37       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/38       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/39       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/40       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/41       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/42       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/43       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/44       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/45       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/46       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/47       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/48       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/49       *** 40G-OOB To- DC xcvrAbsen trunk     auto    auto    --         
+Eth1/50       --                 xcvrAbsen trunk     auto    auto    --         
+Eth1/51       --                 notconnec routed    auto    auto    QSFP-40G-SR-BD
+Eth1/52       --                 xcvrAbsen routed    auto    auto    --         
+Eth1/53       *** 40-GE -to- SPN notconnec trunk     auto    auto    WSP-Q40GLR4L
+Eth1/54       *** 40-GE -to- SPN connected trunk     full    40G     WSP-Q40GLR4L
+Po105         *** EC -to- SPN01& connected trunk     full    40G     --         
+Vlan1         --                 down      routed    auto    auto    --
+Vlan50        *** SVI for NETWOR connected routed    auto    auto    --
+
+Log :
+Legend: 
+	* - primary entry, G - Gateway MAC, (R) - Routed MAC, O - Overlay MAC
+	age - seconds since last seen,+ - primary entry using vPC Peer-Link,
+	(T) - True, (F) - False, C - ControlPlane MAC, ~ - vsan
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   50     00be.75f2.b5bf   dynamic  0         F      F    Po105
+*   50     28ac.9e41.4d98   dynamic  0         F      F    Po105
+*   50     7069.5aca.414a   dynamic  0         F      F    Po105
+*   50     b40c.25e0.8010   dynamic  0         F      F    Po105
+*   50     b4de.31f2.d4e7   dynamic  0         F      F    Po105
+* 3451     002e.c765.ed5b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0b40   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0d7d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e08   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e0d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e0f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e11   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e13   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e14   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e15   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e17   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e1a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e1b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e1d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e1f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e20   dynamic  0         F      F    Eth1/9
+* 3451     2c26.5f33.0e22   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e24   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e25   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e26   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e27   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e28   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e29   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e2b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e2c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e2d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e2e   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e2f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e30   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e31   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e32   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e33   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e35   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e37   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e38   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e3a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e3c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e3d   dynamic  0         F      F    Eth1/7
+* 3451     2c26.5f33.0e3f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e42   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e43   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e44   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e45   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e46   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e47   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e49   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e4a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e4b   dynamic  0         F      F    Eth1/16
+* 3451     2c26.5f33.0e4c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e4e   dynamic  0         F      F    Eth1/6
+* 3451     2c26.5f33.0e50   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e51   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e53   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e55   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e56   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e57   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e58   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e59   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e5a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e5b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e5c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e5f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e60   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e61   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e62   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e63   dynamic  0         F      F    Eth1/14
+* 3451     2c26.5f33.0e64   dynamic  0         F      F    Eth1/13
+* 3451     2c26.5f33.0e65   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e67   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e68   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e69   dynamic  0         F      F    Eth1/11
+* 3451     2c26.5f33.0e6a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e6b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e6c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e6d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e6e   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e6f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e71   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e72   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e75   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e76   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e77   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e78   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e79   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7a   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7e   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e7f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e80   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e82   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e83   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e84   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e85   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e86   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e88   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e8c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e8d   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e8f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e90   dynamic  0         F      F    Eth1/5
+* 3451     2c26.5f33.0e91   dynamic  0         F      F    Eth1/18
+* 3451     2c26.5f33.0e92   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e94   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e95   dynamic  0         F      F    Eth1/3
+* 3451     2c26.5f33.0e97   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e98   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e99   dynamic  0         F      F    Eth1/17
+* 3451     2c26.5f33.0e9b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e9c   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0e9d   dynamic  0         F      F    Eth1/2
+* 3451     2c26.5f33.0e9e   dynamic  0         F      F    Eth1/19
+* 3451     2c26.5f33.0e9f   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea0   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea1   dynamic  0         F      F    Eth1/15
+* 3451     2c26.5f33.0ea2   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea3   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea4   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea5   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea6   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea7   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ea9   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eab   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eac   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ead   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eae   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eaf   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb1   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb2   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb4   dynamic  0         F      F    Eth1/8
+* 3451     2c26.5f33.0eb5   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb6   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb7   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb8   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eb9   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eba   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ebb   dynamic  0         F      F    Eth1/20
+* 3451     2c26.5f33.0ebc   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ebe   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec0   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec1   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec2   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec3   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec4   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec5   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ec7   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eca   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ecb   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ecd   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ece   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ecf   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed1   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed3   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed4   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed6   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed7   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed8   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ed9   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0edb   dynamic  0         F      F    Eth1/1
+* 3451     2c26.5f33.0ede   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0edf   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ee0   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ee1   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ee2   dynamic  0         F      F    Eth1/10
+* 3451     2c26.5f33.0ee4   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ee5   dynamic  0         F      F    Eth1/12
+* 3451     2c26.5f33.0ee8   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0eeb   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0ef2   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0f5b   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0f5e   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0f60   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.0f62   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.1b94   dynamic  0         F      F    Po105
+* 3451     2c26.5f33.1e76   dynamic  0         F      F    Eth1/4
+* 3451     2c26.5f33.1e8c   dynamic  0         F      F    Po105
+* 3451     3c78.430a.c77b   dynamic  0         F      F    Po105
+* 3451     6c34.9194.771e   dynamic  0         F      F    Po105
+* 3451     84a9.c435.15c1   dynamic  0         F      F    Po105
+* 3451     b40c.25e0.8010   dynamic  0         F      F    Po105
+* 3451     c4ff.1f77.6e7d   dynamic  0         F      F    Po105
+* 3451     e472.e2f3.58b1   dynamic  0         F      F    Eth1/45
+* 3451     e472.e2f3.58b2   dynamic  0         F      F    Po105
+* 3451     f86e.eed3.48be   dynamic  0         F      F    Po105
+* 3451     f86e.eed3.48d6   dynamic  0         F      F    Po105
+G    -     b4de.31f2.c687   static   -         F      F    sup-eth1(R)
+G   50     b4de.31f2.c687   static   -         F      F    sup-eth1(R)
+Logging console:		enabled (Severity: critical)
+Logging monitor:		enabled (Severity: notifications)
+Logging linecard:		enabled (Severity: notifications)
+Logging timestamp:		Seconds
+Logging source-interface :	disabled
+Logging rate-limit:		enabled
+Logging server:			disabled
+Logging origin_id :		disabled
+Logging logflash:		enabled (Severity: notifications)
+Logging logfile:		enabled
+	Name - messages: Severity - notifications Size - 4194304
+
+
+Facility	Default Severity	Current Session Severity
+--------	----------------	------------------------
+aaa                 	3			3
+acllog              	2			2
+aclmgr              	3			3
+aclqos              	5			5
+adbm                	2			2
+arp                 	3			3
+auth                	0			0
+authpriv            	3			3
+bootvar             	5			5
+callhome            	2			2
+capability          	2			2
+cdp                 	2			2
+cert_enroll         	2			2
+cfs                 	3			3
+clis                	3			3
+clk_mgr             	2			2
+confcheck           	2			2
+copp                	2			2
+cron                	3			3
+daemon              	3			3
+device_test         	3			3
+dhclient            	2			2
+diag_port_lb        	2			2
+diagclient          	2			2
+diagmgr             	2			2
+ecp                 	5			5
+eltm                	2			2
+eth_port_channel    	5			5
+ethpm               	5			5
+evmc                	5			5
+evms                	2			2
+feature-mgr         	2			2
+fs-daemon           	2			2
+ftp                 	3			3
+ifmgr               	5			5
+igmp_1              	5			5
+interface-vlan      	2			2
+ip                  	3			3
+ipfib               	2			2
+ipqosmgr            	4			4
+ipv6                	3			3
+kern                	3			3
+l2fm                	2			2
+l2pt                	3			3
+l3vm                	5			5
+lacp                	2			2
+licmgr              	6			6
+lldp                	2			2
+local0              	3			3
+local1              	3			3
+local2              	3			3
+local3              	3			3
+local4              	3			3
+local5              	3			3
+local6              	3			3
+local7              	3			3
+lpr                 	3			3
+m2rib               	2			2
+m6rib               	5			5
+mail                	3			3
+mcm                 	2			2
+mfdm                	2			2
+mmode               	2			2
+module              	5			5
+monitor             	3			3
+mrib                	5			5
+mvsh                	2			2
+news                	3			3
+ntp                 	2			2
+otm                 	3			3
+pfstat              	2			2
+pixm_gl             	4			4
+pixm_vl             	4			4
+platform            	5			5
+plcmgr              	2			2
+plugin              	2			2
+port-profile        	2			2
+radius              	3			3
+res_mgr             	5			5
+rpm                 	5			5
+sal                 	2			2
+securityd           	3			3
+sksd                	3			3
+smm                 	4			4
+snmpd               	2			2
+span                	3			3
+spm                 	2			2
+stp                 	3			3
+syslog              	3			3
+sysmgr              	3			3
+tamnw               	2			2
+template_manager    	2			2
+u6rib               	5			5
+ufdm                	3			3
+urib                	5			5
+user                	3			3
+uucp                	3			3
+vdc_mgr             	6			6
+virtual-service     	5			5
+vlan_mgr            	2			2
+vpc                 	2			2
+vshd                	5			5
+xbar                	5			5
+xmlma               	3			3
+
+0(emergencies)		1(alerts)	2(critical)
+3(errors)		4(warnings)	5(notifications)
+6(information)		7(debugging
+
+
+2022 Apr 17 21:33:47 DCIMMALL01 %USER-0-SYSTEM_MSG:  before access to bkout_cfg  - clis
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-PS_FOUND: Power supply 1 found (Serial number LIT211845JU)
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-PS_OK: Power supply 1 ok (Serial number LIT211845JU)
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-PS_STATUS: PowerSupply 1 current-status is PS_OK 
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-PS_FANOK: Fan in Power supply 1 ok
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-PS_FOUND: Power supply 2 found (Serial number LIT211845SM)
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-PS_OK: Power supply 2 ok (Serial number LIT211845SM)
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-PS_STATUS: PowerSupply 2 current-status is PS_OK 
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-PS_FANOK: Fan in Power supply 2 ok
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_DETECT: Fan module 1 (Serial number ) Fan1(sys_fan1) detected
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_STATUS: Fan module 1 (Serial number ) Fan1(sys_fan1) current-status is FAN_OK
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-FANMOD_FAN_OK: Fan module 1 (Fan1(sys_fan1) fan) ok
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_DETECT: Fan module 2 (Serial number ) Fan2(sys_fan2) detected
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_STATUS: Fan module 2 (Serial number ) Fan2(sys_fan2) current-status is FAN_OK
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-FANMOD_FAN_OK: Fan module 2 (Fan2(sys_fan2) fan) ok
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_DETECT: Fan module 3 (Serial number ) Fan3(sys_fan3) detected
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_STATUS: Fan module 3 (Serial number ) Fan3(sys_fan3) current-status is FAN_OK
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-FANMOD_FAN_OK: Fan module 3 (Fan3(sys_fan3) fan) ok
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_DETECT: Fan module 4 (Serial number ) Fan4(sys_fan4) detected
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-5-FAN_STATUS: Fan module 4 (Serial number ) Fan4(sys_fan4) current-status is FAN_OK
+2022 Apr 17 21:33:48 DCIMMALL01 %PLATFORM-2-FANMOD_FAN_OK: Fan module 4 (Fan4(sys_fan4) fan) ok
+2022 Apr 17 21:33:49 DCIMMALL01  %USER-2-SYSTEM_MSG: <<%USBHSD-2-MOUNT>> logflash: online  - usbhsd
+2022 Apr 17 21:33:49 DCIMMALL01 Apr 17 21:33:49 %KERN-3-SYSTEM_MSG: [    0.342323] Allocating netns hash table - kernel
+2022 Apr 17 21:33:49 DCIMMALL01 Apr 17 21:33:49 %KERN-3-SYSTEM_MSG: [    4.127957] physmap-flash physmap-flash.0: map_probe failed - kernel
+2022 Apr 17 21:33:50 DCIMMALL01  %DAEMON-2-SYSTEM_MSG: <<%ASCII-CFG-2-CONF_CONTROL>> Binary restore - ascii-cfg[26840]
+2022 Apr 17 21:33:50 DCIMMALL01 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to create pending 
+2022 Apr 17 21:33:52 DCIMMALL01 netstack: Registration with cli server complete
+2022 Apr 17 21:34:00 DCIMMALL01 %USER-2-SYSTEM_MSG: ssnmgr_app_init called on ssnmgr up - aclmgr
+2022 Apr 17 21:34:07 DCIMMALL01 %USER-0-SYSTEM_MSG: end of default policer - copp
+2022 Apr 17 21:34:08 DCIMMALL01 Apr 17 21:34:08 %KERN-3-SYSTEM_MSG: [   65.591693] ICMPV6 daemon PID = 28917 - kernel
+2022 Apr 17 21:34:09 DCIMMALL01 %CARDCLIENT-2-FPGA_BOOT_PRIMARY: IOFPGA booted from Primary
+2022 Apr 17 21:34:09 DCIMMALL01 %CARDCLIENT-2-FPGA_BOOT_PRIMARY: MIFPGA booted from Primary
+2022 Apr 17 21:34:09 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 IOFPGA booted from Primary
+2022 Apr 17 21:34:09 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 MIFPGA booted from Primary
+2022 Apr 17 21:34:09 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 BIOS booted from Primary
+2022 Apr 17 21:34:10 DCIMMALL01 %MODULE-5-ACTIVE_SUP_OK: Supervisor 1 is active (Serial number: FDO21470L0N)
+2022 Apr 17 21:34:10 DCIMMALL01 %PLATFORM-5-MOD_STATUS: SUP sub Module 1 current-status is MOD_STATUS_ONLINE/OK
+2022 Apr 17 21:34:10 DCIMMALL01 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to create in progress 
+2022 Apr 17 21:34:10 DCIMMALL01 %IM-5-IM_INTF_STATE: mgmt0 is DOWN in vdc 1
+2022 Apr 17 21:34:10 DCIMMALL01 %VDC_MGR-5-VDC_HOSTNAME_CHANGE: vdc 1 hostname changed to DCIMMALL01 
+2022 Apr 17 21:34:10 DCIMMALL01 %ETH_PORT_CHANNEL-5-CREATED: port-channel105 created
+2022 Apr 17 21:34:10 DCIMMALL01 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to active 
+2022 Apr 17 21:34:10 DCIMMALL01 %VDC_MGR-2-VDC_ONLINE: vdc 1 has come online 
+2022 Apr 17 21:34:10 DCIMMALL01 %VDC_MGR-5-VDC_HOSTNAME_CHANGE: vdc 1 hostname changed to DCIMMALL01 
+2022 Apr 17 21:34:12 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 IOFPGA booted from Primary
+2022 Apr 17 21:34:12 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 MIFPGA booted from Primary
+2022 Apr 17 21:34:12 DCIMMALL01 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 BIOS booted from Primary
+2022 Apr 17 21:34:13 DCIMMALL01 %VSHD-5-VSHD_SYSLOG_CONFIG_I: Configured from vty by root on vsh.bin.28930
+2022 Apr 17 21:34:43 DCIMMALL01 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to updating 
+2022 Apr 17 21:34:43 DCIMMALL01 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to active 
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/49 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/50 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/51 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/52 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/53 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/54 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/51 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/52 is down (None)
+2022 Apr 17 21:34:51 DCIMMALL01 last message repeated 1 time
+2022 Apr 17 21:34:51 DCIMMALL01 %MODULE-5-MOD_OK: Module 1 is online (Serial number: FDO21470L0N)
+2022 Apr 17 21:34:51 DCIMMALL01 %PLATFORM-5-MOD_STATUS: LC sub Module 1 current-status is MOD_STATUS_ONLINE/OK
+2022 Apr 17 21:34:54 DCIMMALL01 %ASCII-CFG-2-CONF_CONTROL: System ready
+2022 Apr 17 21:35:08 DCIMMALL01 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/51, hardware type changed to 40G
+2022 Apr 17 21:35:08 DCIMMALL01 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/53, hardware type changed to 40G
+2022 Apr 17 21:35:09 DCIMMALL01 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/54, hardware type changed to 40G
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/10, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/10, operational duplex mode changed to Full
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/10, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/10, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/15, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/15, operational duplex mode changed to Full
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/15, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:10 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/15, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/16, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/16, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/16, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/16, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/12, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/12, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/12, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/12, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/1, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/1, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/1, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/1, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/13, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/13, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/13, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/13, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/5, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/5, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/5, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/5, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/4, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/4, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/4, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/4, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/3, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/3, operational duplex mode changed to Full
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/3, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:11 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/3, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/9, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/9, operational duplex mode changed to Full
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/9, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:12 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/9, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:13 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/6, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:13 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/6, operational duplex mode changed to Full
+2022 Apr 17 21:35:13 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/6, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:13 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/6, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:14 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/14, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:14 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/14, operational duplex mode changed to Full
+2022 Apr 17 21:35:14 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/14, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:14 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/14, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/2, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/2, operational duplex mode changed to Full
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/2, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/2, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/10 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/15 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/16 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/12 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/1 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/13 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/5 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/4 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/3 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/9 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/6 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/14 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/2 is up in mode access
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/54, operational speed changed to 40 Gbps
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/54, operational duplex mode changed to Full
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/54, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/54, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-SPEED: Interface port-channel105, operational speed changed to 40 Gbps
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface port-channel105, operational duplex mode changed to Full
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface port-channel105, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:15 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface port-channel105, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:16 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/18, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:16 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/18, operational duplex mode changed to Full
+2022 Apr 17 21:35:16 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/18, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:16 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/18, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:16 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/18 is up in mode access
+2022 Apr 17 21:35:19 DCIMMALL01 %ETH_PORT_CHANNEL-5-PORT_UP: port-channel105: Ethernet1/54 is up
+2022 Apr 17 21:35:19 DCIMMALL01 %ETH_PORT_CHANNEL-5-FOP_CHANGED: port-channel105: first operational port changed from none to Ethernet1/54
+2022 Apr 17 21:35:19 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/54 is up in mode trunk
+2022 Apr 17 21:35:19 DCIMMALL01 %ETHPORT-5-IF_UP: Interface port-channel105 is up in mode trunk
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/45, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/45, operational duplex mode changed to Full
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/45, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/45, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/45 is up in mode access
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/11, operational speed changed to 100 Mbps
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/11, operational duplex mode changed to Full
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/11, operational Receive Flow Control state changed to off
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/11, operational Transmit Flow Control state changed to off
+2022 Apr 17 21:35:22 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/11 is up in mode access
+2023 Jul 18 11:04:51 DCIMMALL01 %PLATFORM-2-MOD_TEMPMINALRM: Module-1 reported minor temperature alarm. Sensor=1 Temperature=43 MinThreshold=42
+2023 Jul 18 11:04:51 DCIMMALL01 %VSHD-5-VSHD_SYSLOG_CONFIG_I: Configured from vty by admin on vsh.bin.32630
+2023 Jul 18 20:33:21 DCIMMALL01 %PLATFORM-2-MOD_TEMPOK: Module-1 recovered from minor temperature alarm. Sensor=1 Temperature=40 MinThreshold=42
+2023 Jul 30 21:53:23 DCIMMALL01 %PLATFORM-2-FAN_REMOVED: Fan module 4 (Serial number ) Fan4(sys_fan4) removed
+2023 Jul 30 21:53:24 DCIMMALL01 %PLATFORM-5-FAN_DETECT: Fan module 4 (Serial number ) Fan4(sys_fan4) detected
+2023 Jul 30 21:53:24 DCIMMALL01 %PLATFORM-5-FAN_STATUS: Fan module 4 (Serial number ) Fan4(sys_fan4) current-status is FAN_OK
+2023 Jul 30 21:53:24 DCIMMALL01 %PLATFORM-2-FANMOD_FAN_OK: Fan module 4 (Fan4(sys_fan4) fan) ok
+2024 Feb 21 00:19:34 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/17, operational speed changed to 100 Mbps
+2024 Feb 21 00:19:34 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/17, operational duplex mode changed to Full
+2024 Feb 21 00:19:34 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/17, operational Receive Flow Control state changed to off
+2024 Feb 21 00:19:34 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/17, operational Transmit Flow Control state changed to off
+2024 Feb 21 00:19:34 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/17 is up in mode access
+2024 Feb 21 00:19:52 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/20, operational speed changed to 100 Mbps
+2024 Feb 21 00:19:52 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/20, operational duplex mode changed to Full
+2024 Feb 21 00:19:52 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/20, operational Receive Flow Control state changed to off
+2024 Feb 21 00:19:52 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/20, operational Transmit Flow Control state changed to off
+2024 Feb 21 00:19:52 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/20 is up in mode access
+2024 Feb 21 00:19:56 DCIMMALL01 %ETHPORT-5-SPEED: Interface Ethernet1/19, operational speed changed to 100 Mbps
+2024 Feb 21 00:19:56 DCIMMALL01 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/19, operational duplex mode changed to Full
+2024 Feb 21 00:19:56 DCIMMALL01 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/19, operational Receive Flow Control state changed to off
+2024 Feb 21 00:19:56 DCIMMALL01 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/19, operational Transmit Flow Control state changed to off
+2024 Feb 21 00:19:56 DCIMMALL01 %ETHPORT-5-IF_UP: Interface Ethernet1/19 is up in mode access
+2025 Mar  4 21:05:26 DCIMMALL01 %DAEMON-2-SYSTEM_MSG: fatal: Unable to negotiate with 172.30.205.19 port 51501: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1 - dcos_sshd[16936]
+
+Licensing and Features :
+No output from "show features"

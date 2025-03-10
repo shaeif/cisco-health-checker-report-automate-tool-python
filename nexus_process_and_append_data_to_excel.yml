@@ -1,0 +1,58 @@
+- name: Read, Process, and Append Data to CSV
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Find all text files in the directory
+      ansible.builtin.find:
+        paths: input/
+        patterns: "*.txt"
+      register: found_files
+
+    - name: Read and Decode Each File
+      ansible.builtin.slurp:
+        src: "{{ item.path }}"
+      loop: "{{ found_files.files }}"
+      register: file_contents
+
+    - name: Process Each File and Store in a List
+      ansible.builtin.set_fact:
+       extracted_data: "{{ extracted_data | default([]) + [{
+         'switch_model': switch_model,
+         'board_id': board_id,
+         'uptime_info': uptime_info,
+         'hostname': hostname,
+         'vlan_ip': vlan_ip,
+         'switch_version': switch_version,
+         'system_image': system_image,
+         'cpu_util': cpu_util,
+         'inventory_data': inventory_data,
+         'cisco_info': cisco_info
+        }] }}"
+      loop: "{{ file_contents.results }}"
+      vars:
+        decoded_file: "{{ item.content | b64decode }}"
+        switch_model: "{{ decoded_file | regex_search('^.*PID:\\s*\\S+.*VID:\\s*\\S+.*$', multiline=True) | regex_search('PID:\\s*(\\S+)', '\\1') | default('unknown') }}"
+        board_id: "{{ decoded_file | regex_search('(?<=Processor Board ID )\\S+', '\\0') | join('') | default('unknown') }}"
+        uptime_info: "{{ decoded_file | regex_search('(?m)^.*uptime.*$') | replace(',', ' ') | join('') | default('unknown') }}"
+        hostname: "{{ decoded_file | regex_search('(?<=Device name: )\\S+', '\\0') | default('unknown') }}"
+        vlan_ip: "{{ decoded_file | regex_search('^Vlan\\d{2,3}\\s+(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})', multiline=True) | regex_search('\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}', '\\0') | default('unknown') }}"
+        switch_version: "{{ decoded_file | regex_search('Cisco IOS Software.*', multiline=True) | regex_search('Version\\s+(\\d+\\.\\d+(\\(\\d+\\))?(\\.\\d+)?([A-Za-z]\\d*)?)', '\\1') | default('unknown') }}"
+        system_image: "{{ decoded_file | regex_search('(?:flash|bootflash):([^\\s]+\\.bin)', '\\1') | default('unknown') }}"
+        cpu_util: "{{ decoded_file | regex_findall('.*CPU\\s+utilization.*$', multiline=True) | join('\n') | default('unknown') }}"
+        inventory_data: "{{ decoded_file | regex_findall('^.*(?:NAME|DESCR|PID|VID|SN).*', multiline=True) | select('search', '.*(?:NAME|DESCR|PID|VID|SN).*.*(?:NAME|DESCR|PID|VID|SN).*') | join(' \n ') | replace(',', ' ') | string | default('unknown')}}"
+        cisco_info: "{{ decoded_file | regex_search('(?i)^Hardware:\\s*(cisco\\s+\\S+\\s+\\S+.*(?:\\n.*){1,3})', multiline=True) | default('unknown') }}"
+    
+    - name: Append extracted data to Excel file
+      ejfattouch.excel.write_sheet:
+        path: ./output/PMC.xlsx
+        sheet: "worksheet"
+        data: >-
+          {{  item.0+1  }},{{ 'Switch' }},{{ item.1.switch_model | join('') }},{{ item.1.hostname | join('') }},{{ item.1.vlan_ip | join('') }},{{ "UP" }},{{ item.1.switch_version | join('') }},{{ '' }},
+          {{ item.1.system_image | join('')  }},{{ item.1.board_id }},{{ item.1.uptime_info }},
+          {{ item.1.cpu_util }},{{ item.1.inventory_data }},{{ item.1.cisco_info }}
+        cell: "A{{ 2 + item.0 }}" 
+        override: True
+      with_indexed_items: "{{ extracted_data }}"
+
+
+# ansible-playbook -e 'ansible_python_interpreter=/home/shaeif/anaconda3/envs/py38/bin/python' process_and_append_data_to_excel.yml -vvv

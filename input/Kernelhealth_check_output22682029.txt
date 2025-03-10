@@ -1,0 +1,2531 @@
+Switch Details:
+No output from "show switch"
+
+Version:
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2018, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 05.31
+  NXOS: version 7.0(3)I7(5)
+  BIOS compile time:  05/17/2018
+  NXOS image file is: bootflash:///nxos.7.0.3.I7.5.bin
+  NXOS compile time:  8/28/2018 2:00:00 [08/28/2018 12:51:46]
+
+
+Hardware
+  cisco Nexus9000 C93108TC-FX Chassis 
+  Intel(R) Xeon(R) CPU D-1526 @ 1.80GHz with 24571652 kB of memory.
+  Processor Board ID FDO21452WT1
+
+  Device name: DCIM05
+  bootflash:  115805356 kB
+Kernel uptime is 977 day(s), 23 hour(s), 28 minute(s), 53 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 7.0(3)I7(5)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+
+CPU :
+PID    Runtime(ms)  Invoked   uSecs  1Sec    Process
+-----  -----------  --------  -----  ------  -----------
+    1       558623  16977441     32   0.00%  init
+    2         3874    255181     15   0.00%  kthreadd
+    3       134652   4291218     31   0.00%  ksoftirqd/0
+    6      1618162   5506843    293   0.00%  migration/0
+    7       334261  21124338     15   0.00%  watchdog/0
+    8      1988950   5440928    365   0.00%  migration/1
+    9     14219109  2147483647      6   0.00%  kworker/1:0
+   10      1772412  55602636     31   0.00%  ksoftirqd/1
+   11     12444082  2054546044      6   0.00%  kworker/0:1
+   12       360809  21124341     17   0.00%  watchdog/1
+   13      1729627   5730348    301   0.00%  migration/2
+   14     14123386  1737653888      8   0.00%  kworker/2:0
+   15      1017600  32710278     31   0.00%  ksoftirqd/2
+   16       334314  21124336     15   0.00%  watchdog/2
+   17      1510235   6169202    244   0.00%  migration/3
+   18     12494743  2147483647      4   0.00%  kworker/3:0
+   19       214032   6749691     31   0.00%  ksoftirqd/3
+   20       315223  21124336     14   0.00%  watchdog/3
+   21       405444  21228975     19   0.00%  migration/4
+   22      2831379  613790522      4   0.00%  kworker/4:0
+   23        25904   1372150     18   0.00%  ksoftirqd/4
+   24       126953  21124336      6   0.00%  watchdog/4
+   25       484592  20911530     23   0.00%  migration/5
+   27       394315  17811244     22   0.00%  ksoftirqd/5
+   28       145942  21124337      6   0.00%  watchdog/5
+   29       449571  21187029     21   0.00%  migration/6
+   31       219265   9938151     22   0.00%  ksoftirqd/6
+   32       136687  21124336      6   0.00%  watchdog/6
+   33       436224  21482736     20   0.00%  migration/7
+   34      4287799  674669224      6   0.00%  kworker/7:0
+   35        20227    860713     23   0.00%  ksoftirqd/7
+   36       136251  21124336      6   0.00%  watchdog/7
+   37            0         2      3   0.00%  cpuset
+   38            0         2      2   0.00%  khelper
+   39            1       176      7   0.00%  kdevtmpfs
+   40            0         2      2   0.00%  netns
+   41        99846  14084406      7   0.00%  sync_supers
+   42         8863    996777      8   0.00%  bdi-default
+   43            3       680      5   0.00%  kblockd
+   44            0         2      3   0.00%  ata_sff
+   45            0        26     23   0.00%  khubd
+   46            0         2      3   0.00%  rpciod
+   67        44836    704257     63   0.00%  khungtaskd
+   68            0         3      2   0.00%  kswapd0
+   69     70583594  2147483647    981   1.00%  ksmd
+   70            0         5      1   0.00%  fsnotify_mark
+   71            0         2      2   0.00%  unionfs_siod
+   72            0         2      2   0.00%  nfsiod
+   73            0         2      2   0.00%  crypto
+   87            0         3      4   0.00%  scsi_eh_0
+   88            0        20      7   0.00%  scsi_eh_1
+   89            0         3      4   0.00%  scsi_eh_2
+   90            0         3      4   0.00%  scsi_eh_3
+   91            0         3      3   0.00%  scsi_eh_4
+   92            0         3      3   0.00%  scsi_eh_5
+   95            0        10      4   0.00%  kworker/u:4
+   96           71       825     86   0.00%  kworker/u:5
+  101      7115531  1514772710      4   0.00%  kworker/4:1
+  103      5996759  941156342      6   0.00%  kworker/7:1
+  104      8406115  1412060496      5   0.00%  kworker/5:1
+  107            0         2      3   0.00%  cnic_wq
+  108            0         2      2   0.00%  bnx2x
+  109            0         2      2   0.00%  edac-poller
+  110            0         2      2   0.00%  deferwq
+  236           40       727     55   0.00%  loop0
+  454       540557  45907584     11   0.00%  flush-8:0
+ 2112          111      2103     53   0.00%  loop1
+ 2115          107       947    113   0.00%  loop2
+ 2118          104      1116     93   0.00%  loop3
+ 2121           35       319    109   0.00%  loop4
+ 2127           11       157     74   0.00%  loop5
+ 2129            0         3      4   0.00%  loop6
+ 3509         9283    329162     28   0.00%  jbd2/sda4-8
+ 3510            0         2      2   0.00%  ext4-dio-unwrit
+ 4100            0         2      3   0.00%  trigger
+ 5218         1394    274399      5   0.00%  kworker/6:0
+ 5898      4548153  738451203      6   0.00%  kworker/0:2
+ 6395            0         7     18   0.00%  jbd2/sda5-8
+ 6396            0         2      3   0.00%  ext4-dio-unwrit
+ 6401            0         6     24   0.00%  jbd2/sda6-8
+ 6402            0         2      3   0.00%  ext4-dio-unwrit
+ 7135      1901432  298818837      6   0.00%  kworker/1:2
+ 8420          405       145   2794   0.00%  mmcqd/0
+ 8499        20774   1177192     17   0.00%  jbd2/sda2-8
+ 8500            0         2      7   0.00%  ext4-dio-unwrit
+ 8529            0         6     20   0.00%  jbd2/mmcblk0p3-
+ 8530            0         2      7   0.00%  ext4-dio-unwrit
+11402      1103593  242681315      4   0.00%  kworker/3:2
+12361            0         1    493   0.00%  sshd
+12788           25      1459     17   0.00%  loop7
+12791           29      1975     14   0.00%  loop8
+12929       290417  11088765     26   0.00%  jbd2/sda3-8
+12930            0         2      7   0.00%  ext4-dio-unwrit
+12949         4891    185381     26   0.00%  jbd2/sda7-8
+12950            0         2      7   0.00%  ext4-dio-unwrit
+13100            1        37     37   0.00%  portmap
+13231            0         2      5   0.00%  lockd
+13232           92     23476      3   0.00%  nfsd
+13234            0         1    224   0.00%  rpc.mountd
+13236            1         6    251   0.00%  rpc.statd
+14939            1       152      9   0.00%  loop9
+14940            0         2      3   0.00%  ext4-dio-unwrit
+16038            0         2     99   0.00%  mcelog
+16774            0        13      6   0.00%  flush-179:0
+16775            0        13      6   0.00%  flush-7:9
+16884          297       401    741   0.00%  dcos_sshd
+16885          281       462    608   0.00%  vsh.bin
+17349            8         8   1117   0.00%  libvirtd_mon.sh
+17350            2        14    198   0.00%  sh
+17351     11405287  178167417     64   0.00%  sysmgr
+17352      6895306  171035886     40   0.00%  sysmgr
+17360           18         4   4662   0.00%  inotifywait
+17362          163        40   4076   0.00%  libvirtd
+17784            4         2   2318   0.00%  vsh.bin
+17785           14         6   2484   0.00%  ps
+21239            0         1     17   0.00%  mping-thread
+21240            0         1     10   0.00%  mping-thread
+21480        60176   1827726     32   0.00%  cctrl_kthread
+22022            0         2     11   0.00%  redun_kthread
+22272            0         1      4   0.00%  usd_mts_kthread
+22755       782781  42370801     18   0.00%  ls-notify-mts-t
+26077          840    172130      4   0.00%  kworker/6:2
+26182           14        18    816   0.00%  bootflash_sync.
+26206            3         9    419   0.00%  inotifywait
+26581          207        66   3141   0.00%  sdwrapd
+26583   1295470137  459995050   2816   0.25%  pfmclnt
+26586      1551952  257811076      6   0.00%  kworker/5:2
+26615            8         8   1029   0.00%  xinetd
+26616            9         4   2302   0.00%  tftpd
+26617          115       516    223   0.00%  sdwrapd
+26621       343747  28171543     12   0.00%  dme_proxy
+26625     47558179  213393118    222   0.00%  platform
+26630       341784  28171855     12   0.00%  dme_bootup_proxy
+26631          965       247   3907   0.25%  event_manager
+26632         1853       499   3714   0.25%  policyelem
+26663      3195979  84797782     37   0.00%  syslogd
+26669       643580  21156990     30   0.00%  vshd
+26670        34504   1408040     24   0.00%  template_manager
+26671        33273   1408200     23   0.00%  tamnw
+26672           85        26   3295   0.00%  smm
+26673      1694217  84545953     20   0.00%  psshelper
+26674       489115  16929721     28   0.00%  pixm_vl
+26678       488217  16927179     28   0.00%  pixm_gl
+26679          110        18   6129   0.00%  nxapi
+26680          899       167   5386   0.00%  nginx
+26681        34440   1408090     24   0.00%  mmode
+26682        99385   1417906     70   0.00%  lmgrd
+26683      3719459  21429029    173   0.00%  fs-daemon
+26686       172377   7050287     24   0.00%  feature-mgr
+26687          117       669    176   0.00%  confcheck
+26688       186624   8445213     22   0.00%  capability
+26689       138476   8444331     16   0.00%  bloggerd
+26690      1688480  84546108     19   0.00%  psshelper_gsvc
+26718       194479   5643847     34   0.00%  clis
+26719       366020  16918645     21   0.00%  licmgr
+26726      4149886  56687139     73   0.00%  tams_proc
+26735       178699   1410859    126   0.00%  cisco
+26766            1         4    276   0.00%  nginx
+26771      5476921  49659490    110   0.00%  tamd_proc
+26772      3480944  169015709     20   0.00%  nginx
+26787       755614  28203955     26   0.00%  xmlma
+26788       470734  16925401     27   0.00%  vmm
+26789       201752   3531983     57   0.00%  vman
+26792       458732  16924465     27   0.00%  vdc_mgr
+26793      1871992  17000389    110   0.00%  usbhsd
+26794      1073626  42295062     25   0.00%  ttyd
+26797     13686833  49311999    277   0.00%  sysinfo
+26798       192667   8445120     22   0.00%  snmpmib_proc
+26799          207       583    355   0.00%  sksd
+26803        29166   1610647     18   0.00%  res_mgr
+26804      1470451  84596848     17   0.00%  plugin
+26805       402856  17084386     23   0.00%  plog_sup
+26808      1183642  84542964     14   0.00%  patch-installer
+26813          167       109   1532   0.00%  nbproxy
+26814       156846   5641561     27   0.00%  mvsh
+26815           74       508    146   0.00%  mping_server
+26818      5106534  28221578    180   0.00%  module
+26821          222       151   1474   0.00%  kim
+26824       153513   5641428     27   0.00%  evms
+26828          166       546    304   0.00%  epld_upgrade_stdby
+26831     27509827  16803411   1637   0.00%  diagclient
+26832      1501915  23108769     64   0.00%  dhclient
+26835      1163703  14973287     77   0.00%  crdcfg_server
+26836          138       565    244   0.00%  core-dmon
+26837          405       358   1132   0.00%  confelem
+26838      1096188   5756006    190   0.00%  clk_mgr
+26841       306307  17005398     18   0.00%  bios_daemon
+26842       318630  10578427     30   0.00%  ascii-cfg
+26845      1265985  84555084     14   0.00%  securityd
+26848      1575286  84545422     18   0.00%  cert_enroll
+26849      1466106  84534040     17   0.00%  aaa
+26858       224472  10572672     21   0.00%  obfl
+26895      2745423   8097905    339   0.00%  aclmgr
+26905          476       337   1414   0.00%  urib
+26907       210884   1863109    113   0.00%  klogd
+26914        96684   4222985     22   0.00%  evmc
+26933      3472567  169015348     20   0.00%  nginx
+26941          132       634    208   0.00%  ExceptionLog
+26942       737334  42273313     17   0.00%  bootvar
+26943     34420024  47131882    730   0.00%  diagmgr
+26944       208234   8445701     24   0.00%  ifmgr
+26973          440       226   1947   0.00%  l3vm
+27044       684255  16961585     40   0.00%  cardclient
+27045      4200284  108756170     38   0.00%  device_test
+27046       185610   6508662     28   0.00%  xbar
+27073          176        67   2630   0.00%  npacl
+27120       217149   8411457     25   0.00%  statsclient
+27183      3499621  169016807     20   0.00%  nginx
+27232          264        67   3948   0.00%  adjmgr
+27233          265        65   4080   0.00%  u6rib
+27268          367        55   6673   0.00%  arp
+27269          306        44   6963   0.00%  icmpv6
+27270          132        44   3006   0.00%  pktmgr
+27290          479        70   6851   0.00%  netstack
+27333      2944616  84636113     34   0.00%  radius
+27334      7473552  27794835    268   0.00%  cdp
+27335       776122  19757499     39   0.00%  cfs
+27336           35       506     69   0.00%  ip_dummy
+27339           32       502     64   0.00%  ipv6_dummy
+27340       484524  16927578     28   0.00%  otm
+27341      9143704  43896264    208   0.00%  snmpd
+27342           47       504     93   0.00%  tcpudp_dummy
+27352          100       171    589   0.00%  dcos-xinetd
+27401      1385989  84564204     16   0.00%  callhome
+28497       491022  16939266     28   0.00%  port-profile
+28551       964000   7507349    128   0.00%  spm
+28554          552       141   3918   0.00%  rpm
+28559      1240975  14184406     87   0.00%  pltfm_config
+28560       939389   7506062    125   0.00%  plcmgr
+28563     21933245  25069659    874   0.00%  pfstat
+28579       453541   5797966     78   0.00%  ntp
+28586       547046  17020934     32   0.00%  monitor
+28589     19635606  13945551   1408   0.00%  lldp
+28590       512914  16930271     30   0.00%  lim
+28591      4693445  82815265     56   0.00%  l2rib
+28594       284984   5652613     50   0.00%  ipfib
+28597          733       188   3901   0.00%  igmp
+28604       221744   8448759     26   0.00%  eth_port_channel
+28607          129        72   1801   0.00%  ecp
+28614        69728   2815552     24   0.00%  adbm
+28615       286253   5828580     49   0.00%  acllog
+28730       207071   8446364     24   0.00%  eltm
+28739        41225   1412192     29   0.00%  eth_dstats
+28740    999823050  435588108   2295   0.00%  ipqosmgr
+28741      4400257  16295740    270   0.00%  lacp
+28758       234156   3503219     66   0.00%  aclqos
+28763       428830   8455024     50   0.00%  vlan_mgr
+28768      3457857   7340910    471   0.00%  diag_port_lb
+28769        40305   1413499     28   0.00%  ethpm
+28770      1670078   9335478    178   0.00%  l2fm
+28785    187760330  457061158    410   0.00%  stp
+28786       476638  16926796     28   0.00%  stripcl
+28847      3135706   8068207    388   0.00%  copp
+28888       111616   4223371     26   0.00%  vpc
+28891       757619  17659547     42   0.00%  ufdm
+28892       193063   8444981     22   0.00%  u2
+28893       478530  16927076     28   0.00%  sal
+28896          487        71   6866   0.00%  mrib
+28897      1156550  11763922     98   0.00%  mfdm
+28898       494561  16928317     29   0.00%  mcm
+28899          201        85   2374   0.00%  m6rib
+28900     21802642  86502547    252   0.00%  l2pt
+28901       113930   4223761     26   0.00%  interface-vlan
+28940       133982   4223389     31   0.00%  m2rib
+28955          188        58   3254   0.00%  mcastfwd
+29010       385370  84506296      4   0.00%  wdpunch_thread
+29011      7661693  941785152      8   0.00%  kworker/2:2
+29362       136973   8443445     16   0.00%  bloggerd
+29374      1734048  84545793     20   0.00%  psshelper
+29375      1728260  84546384     20   0.00%  psshelper
+29376       537917  19542200     27   0.00%  plog_lc
+29377      1201242  84547181     14   0.00%  patch_installer
+29378       225417  10572075     21   0.00%  obfl_lc
+29379       119606   5637604     21   0.00%  mvsh
+29380        71306   4221959     16   0.00%  evmc
+29381      2205028  87401034     25   0.00%  dt_helper
+29382        47521   2814748     16   0.00%  diagclient
+29383    112235259  1779619223     63   0.00%  crdcfg_server
+29384       260975   8462480     30   0.00%  capability
+29398      1601455  84542977     18   0.00%  device_test
+29438    687747203  243515871   2824   0.00%  crdclient
+29456     39607792  35684854   1109   0.00%  dc3_sensor
+29457   1487463752  2147483647    141   1.00%  tahusd
+29925      3590266  87398645     41   0.00%  ntpd
+29963      2945744  62378053     47   0.00%  bfdc
+29964      1332409  12833608    103   0.00%  iftmc
+29965      9585679  345775687     27   0.00%  nf
+29966       349089  16916168     20   0.00%  pixc
+29967      3344260  24567002    136   0.00%  port_client
+29968   3675438965  2147483647    720   0.00%  stats_client
+29969        68429   4221817     16   0.00%  vntagc
+29973       204444   2633508     77   0.00%  mtm
+29974      1970001  19995412     98   0.00%  ipfib
+29975    288464195  2147483647     63   0.00%  aclqos
+29976       205898   4416498     46   0.00%  ptplc
+29978          140        24   5865   0.00%  fcoelc
+29979        45714   2814544     16   0.00%  monc
+29980       148624   7047093     21   0.00%  xbar_client
+30435            1         1   1348   0.00%  incrond
+30716           67       167    406   0.00%  getty
+CPU util  :    0.87% user,    1.00% kernel,   98.12% idle
+Please note that only processes from the requested vdc are shown above
+
+CPU History :
+1      111                       1   
+    122223232135262123127743135178321522223221272222213322111361
+100                                                             
+ 90                                                             
+ 80                                                             
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20                                                             
+ 10            # #      ## #  # ######         #            # # 
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per second (last 60 seconds)
+                      # = average CPU%
+
+
+                                                                
+    11111 11111  1 11   1111121111     111 11111111 11111  11111
+    506408295519919358871163244435998975209843500248422349721100
+100                                                             
+ 90                                                             
+ 80                                                             
+ 70                                                             
+ 60                                                             
+ 50                                                             
+ 40                                                             
+ 30                                                             
+ 20 * *    ***      *     *  *   *     *   *  *                 
+ 10 ************************************************************
+    0....5....1....1....2....2....3....3....4....4....5....5....
+              0    5    0    5    0    5    0    5    0    5    
+
+               CPU% per minute (last 60 minutes)
+              * = maximum CPU%   # = average CPU%
+
+
+                                                                            
+    221111112111121111212111121111112211211111121111111221111111111211111122
+    456758791878407789055856817697773278177588707749696316697687567156896522
+100                                                                         
+ 90                                                                         
+ 80                                                                         
+ 70                                                                         
+ 60                                                                         
+ 50                                                                         
+ 40                                                                         
+ 30  *                  *                                                   
+ 20 ************ ********************************* *************************
+ 10 ************************************************************************
+    0....5....1....1....2....2....3....3....4....4....5....5....6....6....7.
+              0    5    0    5    0    5    0    5    0    5    0    5    0 
+
+                   CPU% per hour (last 72 hours)
+                  * = maximum CPU%   # = average CPU%
+
+Memory :
+PID    MemAlloc  MemLimit    MemUsed     StackBase/Ptr      Process
+-----  --------  ----------  ----------  -----------------  ----------------
+    1    176128  0           4329472     f9db46a0/f9db3cc8  init
+    2         0  0           0                  0/0         kthreadd
+    3         0  0           0                  0/0         ksoftirqd/0
+    6         0  0           0                  0/0         migration/0
+    7         0  0           0                  0/0         watchdog/0
+    8         0  0           0                  0/0         migration/1
+    9         0  0           0                  0/0         kworker/1:0
+   10         0  0           0                  0/0         ksoftirqd/1
+   11         0  0           0                  0/0         kworker/0:1
+   12         0  0           0                  0/0         watchdog/1
+   13         0  0           0                  0/0         migration/2
+   14         0  0           0                  0/0         kworker/2:0
+   15         0  0           0                  0/0         ksoftirqd/2
+   16         0  0           0                  0/0         watchdog/2
+   17         0  0           0                  0/0         migration/3
+   18         0  0           0                  0/0         kworker/3:0
+   19         0  0           0                  0/0         ksoftirqd/3
+   20         0  0           0                  0/0         watchdog/3
+   21         0  0           0                  0/0         migration/4
+   22         0  0           0                  0/0         kworker/4:0
+   23         0  0           0                  0/0         ksoftirqd/4
+   24         0  0           0                  0/0         watchdog/4
+   25         0  0           0                  0/0         migration/5
+   27         0  0           0                  0/0         ksoftirqd/5
+   28         0  0           0                  0/0         watchdog/5
+   29         0  0           0                  0/0         migration/6
+   31         0  0           0                  0/0         ksoftirqd/6
+   32         0  0           0                  0/0         watchdog/6
+   33         0  0           0                  0/0         migration/7
+   34         0  0           0                  0/0         kworker/7:0
+   35         0  0           0                  0/0         ksoftirqd/7
+   36         0  0           0                  0/0         watchdog/7
+   37         0  0           0                  0/0         cpuset
+   38         0  0           0                  0/0         khelper
+   39         0  0           0                  0/0         kdevtmpfs
+   40         0  0           0                  0/0         netns
+   41         0  0           0                  0/0         sync_supers
+   42         0  0           0                  0/0         bdi-default
+   43         0  0           0                  0/0         kblockd
+   44         0  0           0                  0/0         ata_sff
+   45         0  0           0                  0/0         khubd
+   46         0  0           0                  0/0         rpciod
+   67         0  0           0                  0/0         khungtaskd
+   68         0  0           0                  0/0         kswapd0
+   69         0  0           0                  0/0         ksmd
+   70         0  0           0                  0/0         fsnotify_mark
+   71         0  0           0                  0/0         unionfs_siod
+   72         0  0           0                  0/0         nfsiod
+   73         0  0           0                  0/0         crypto
+   87         0  0           0                  0/0         scsi_eh_0
+   88         0  0           0                  0/0         scsi_eh_1
+   89         0  0           0                  0/0         scsi_eh_2
+   90         0  0           0                  0/0         scsi_eh_3
+   91         0  0           0                  0/0         scsi_eh_4
+   92         0  0           0                  0/0         scsi_eh_5
+   95         0  0           0                  0/0         kworker/u:4
+   96         0  0           0                  0/0         kworker/u:5
+  101         0  0           0                  0/0         kworker/4:1
+  103         0  0           0                  0/0         kworker/7:1
+  104         0  0           0                  0/0         kworker/5:1
+  107         0  0           0                  0/0         cnic_wq
+  108         0  0           0                  0/0         bnx2x
+  109         0  0           0                  0/0         edac-poller
+  110         0  0           0                  0/0         deferwq
+  236         0  0           0                  0/0         loop0
+  454         0  0           0                  0/0         flush-8:0
+ 2112         0  0           0                  0/0         loop1
+ 2115         0  0           0                  0/0         loop2
+ 2118         0  0           0                  0/0         loop3
+ 2121         0  0           0                  0/0         loop4
+ 2127         0  0           0                  0/0         loop5
+ 2129         0  0           0                  0/0         loop6
+ 3509         0  0           0                  0/0         jbd2/sda4-8
+ 3510         0  0           0                  0/0         ext4-dio-unwrit
+ 4100         0  0           0                  0/0         trigger
+ 5218         0  0           0                  0/0         kworker/6:0
+ 5898         0  0           0                  0/0         kworker/0:2
+ 6395         0  0           0                  0/0         jbd2/sda5-8
+ 6396         0  0           0                  0/0         ext4-dio-unwrit
+ 6401         0  0           0                  0/0         jbd2/sda6-8
+ 6402         0  0           0                  0/0         ext4-dio-unwrit
+ 7135         0  0           0                  0/0         kworker/1:2
+ 8420         0  0           0                  0/0         mmcqd/0
+ 8499         0  0           0                  0/0         jbd2/sda2-8
+ 8500         0  0           0                  0/0         ext4-dio-unwrit
+ 8529         0  0           0                  0/0         jbd2/mmcblk0p3-
+ 8530         0  0           0                  0/0         ext4-dio-unwrit
+11402         0  0           0                  0/0         kworker/3:2
+12361    442368  0           32579584    50668d40/50668318  sshd
+12788         0  0           0                  0/0         loop7
+12791         0  0           0                  0/0         loop8
+12929         0  0           0                  0/0         jbd2/sda3-8
+12930         0  0           0                  0/0         ext4-dio-unwrit
+12949         0  0           0                  0/0         jbd2/sda7-8
+12950         0  0           0                  0/0         ext4-dio-unwrit
+13100    184320  0           8642560     a57c8140/a57c7f60  portmap
+13231         0  0           0                  0/0         lockd
+13232         0  0           0                  0/0         nfsd
+13234    323584  0           13221888    bbe555b0/bbe55268  rpc.mountd
+13236    208896  0           15097856    da1fe670/da1fe408  rpc.statd
+14939         0  0           0                  0/0         loop9
+14940         0  0           0                  0/0         ext4-dio-unwrit
+16038    176128  0           2285568     fff8be50/fff8bc80  mcelog
+16774         0  0           0                  0/0         flush-179:0
+16775         0  0           0                  0/0         flush-7:9
+16884   1925120  0           420003840   ffafa160/ffaf594c  dcos_sshd
+16885  15728640  0           579567616   ffa9e190/ffa90654  vsh.bin
+17349     94208  0           2936832     ffc9cf30/ffc9c938  libvirtd_mon.sh
+17350     94208  0           2936832     fff7d550/fff7cce8  sh
+17351   9216000  0           539680768   fffbc980/fffbc6f0  sysmgr
+17352   7905280  0           474337280   ffa09d30/ffa09aa0  sysmgr
+17360    258048  0           6533120     b67dcf10/b67dcd08  inotifywait
+17362  14094336  0           19779584    ff935d30/ff935740  libvirtd
+17811  16035840  0           580468736   ffa9e190/ffa8f8b8  vsh.bin
+17812         0  0           0           12f225d0/12f225d0  ps
+21239         0  0           0                  0/0         mping-thread
+21240         0  0           0                  0/0         mping-thread
+21480         0  0           0                  0/0         cctrl_kthread
+22022         0  0           0                  0/0         redun_kthread
+22272         0  0           0                  0/0         usd_mts_kthread
+22755         0  0           0                  0/0         ls-notify-mts-t
+26077         0  0           0                  0/0         kworker/6:2
+26182    131072  0           2973696     ff854500/ff852a98  bootflash_sync.
+26206    376832  0           6651904     66cb07f0/66cb05e8  inotifywait
+26581    466944  0           280629248   ff95dea0/ff95dcd0  sdwrapd
+26583   2043904  0           286896128   ff9b8540/ff9b74a0  pfmclnt
+26586         0  0           0                  0/0         kworker/5:2
+26615    389120  735279001   2785280     ffb460d0/ffb45ef0  xinetd
+26616    434176  317279001   2514944     ff86e780/ff86e510  tftpd
+26617   2330624  642735174   418639872   ffe17b70/ffe16ea0  sdwrapd
+26621    475136  0           280633344   ffd644e0/ffd642f0  dme_proxy
+26625  29151232  0           575352832   ffb152c0/ffb141d0  platform
+26630    475136  0           280637440   ffab9100/ffab8f60  dme_bootup_proxy
+26631  142635008  0           805494784   fffebe70/fffebdac  event_manager
+26632  118439936  0           805048320   fffa8a70/fffa89ac  policyelem
+26663  21262336  917034764   556556288   ff8fe5f0/ff8fa0bc  syslogd
+26669   6213632  1026385254  539430912   ffa754f0/ffa74fe8  vshd
+26670  13869056  0           629297152   ffdeb220/ffde8e7c  template_manager
+26671   4775936  627370585   422318080   ff8d2520/ff8d1730  tamnw
+26672   8032256  1029584371  427384832   ffbdb970/ffbdb3b0  smm
+26673   2007040  670446937   296566784   ffe69820/ffe694f0  psshelper
+26674  324841472  1026618982  753840128   ffed98e0/ffed8cd0  pixm_vl
+26678  50733056  1151726611  588541952   ffc265c0/ffc259b0  pixm_gl
+26679   1097728  0           21118976    ff87b240/ff87af40  nxapi
+26680  536686592  0           1083305984  fffa96b0/fffa9400  nginx
+26681   4177920  0           503689216   ffe28d20/ffe2617c  mmode
+26682    294912  0           3248128     ffa36310/ffa34f90  lmgrd
+26683   1388544  0           419721216   ff84d300/ff84ca90  fs-daemon
+26686  10924032  0           549007360   ffbaae10/ffba9e7c  feature-mgr
+26687   1138688  0           417546240   ffbeadd0/ffbeab80  confcheck
+26688   2514944  626478476   418861056   ff9b7910/ff9b6d40  capability
+26689   5259264  754868857   425865216   ff94b670/ff949dfc  bloggerd
+26690   1871872  670298252   294195200   ff92b4b0/ff92b180  psshelper_gsvc
+26718  28381184  1628338764  734195712   ffe04910/ffe03dac  clis
+26719   1466368  757307584   421445632   ffff9cd0/ffff97e8  licmgr
+26726    192512  0           4685824     ffeb1c70/ffeb18f0  tams_proc
+26735    311296  0           3272704     ffc95d20/ffc95b70  cisco
+26766   1310720  0           289775616   ff87b240/ff87ae00  nginx
+26771    192512  0           4579328     ff95b150/ff95adc0  tamd_proc
+26772   1310720  0           289775616   ff87b240/ff87ae00  nginx
+26787   1167360  0           418611200   ffc5ea10/ffc5e850  xmlma
+26788   1986560  639366323   419385344   ffebd3a0/ffebc160  vmm
+26789   5054464  788139897   433963008   ff8c4d80/ff8c4848  vman
+26792   9252864  970025267   541765632   ffcf6920/ffcf5dd0  vdc_mgr
+26793   9912320  0           290193408   ff99f620/ff99d3ec  usbhsd
+26794   8613888  830155955   541364224   ffca78f0/ffca71c0  ttyd
+26797   8548352  810103008   558096384   ff957930/ff957408  sysinfo
+26798   2408448  765841190   423272448   ff86ae70/ff869e30  snmpmib_proc
+26799   1294336  641676358   420282368   ffb59130/ffb58aa0  sksd
+26803   1781760  624969100   420868096   ff8c5ae0/ff8c557c  res_mgr
+26804   3641344  1990028902  294535168   ffbd0ec0/ffbcfe9c  plugin
+26805    905216  797694092   417341440   ff899180/ff898cf0  plog_sup
+26808    864256  0           281399296   ffe641a0/ffe63b98  patch-installer
+26813  10035200  4294967295  832794624   ffdfa7b0/ffdfa210  nbproxy
+26814   1720320  1165870464  418824192   ffde8030/ffde6db0  mvsh
+26815    479232  0           281505792   ff8862b0/ff885e60  mping_server
+26818   3321856  784257408   430125056   ffe652a0/ffe63f20  module
+26821  14450688  895594233   441122816   ffc14b80/ffc14600  kim
+26824   1916928  628911500   420024320   ffbebcf0/ffbeacc0  evms
+26828   9465856  868089728   430125056   ff8b37d0/ff8b3568  epld_upgrade_stdby
+26831   6238208  760006438   424353792   ffe451b0/ffe43a00  diagclient
+26832   4575232  1784586163  827490304   ffadd6a0/ffadbb0c  dhclient
+26835  30547968  1220712204  501129216   ffefa920/ffefa090  crdcfg_server
+26836   1040384  0           419479552   ff8d2610/ff8d1fb0  core-dmon
+26837  100220928  0           593629184   ff9e0750/ff9e068c  confelem
+26838   9486336  823666060   546529280   ffb24580/ffb23560  clk_mgr
+26841    708608  845279001   406892544   ffe6b9d0/ffe6ae98  bios_daemon
+26842  14766080  4294967295  659615744   ffb06eb0/ffb05d98  ascii-cfg
+26845   9150464  0           548073472   ffb9b630/ffb9a348  securityd
+26848   2248704  0           422490112   ffeab980/ffea9bdc  cert_enroll
+26849   6873088  0           543473664   ffb2bb10/ffb2a6a0  aaa
+26858   1409024  804209190   422318080   ff8efa20/ff8ef0b8  obfl
+26895  13672448  1699816448  554303488   ff982270/ff980e90  aclmgr
+26905  25608192  4294967295  850776064   ff92b030/ff92ac40  urib
+26907    184320  0           4329472     db39da90/db39d978  klogd
+26914   1921024  891190361   419143680   ff90b6a0/ff90a680  evmc
+26933   1310720  0           289775616   ff87b240/ff87ae00  nginx
+26941   1593344  805993408   423673856   ffddcc00/ffddbd00  ExceptionLog
+26942   7925760  863592998   542453760   ffad83a0/ffad7a00  bootvar
+26943   4521984  758280793   422133760   ffced950/ffcec740  diagmgr
+26944  56856576  889850649   597405696   ff93fed0/ff93ee80  ifmgr
+26973  19165184  1176678694  562778112   ffa39b80/ffa39750  l3vm
+27044   1159168  0           416055296   ffda5860/ffda5410  cardclient
+27045  14970880  858573900   434888704   ffce4f20/ffce42cc  device_test
+27046   4657152  0           422514688   ffaad5c0/ffaac560  xbar
+27073   8445952  1312500710  435785728   ff8a6270/ff8a5ed0  npacl
+27120  15151104  777808064   438116352   ff80c750/ff80c2b0  statsclient
+27183   1310720  0           289775616   ff87b240/ff87ae00  nginx
+27232  50200576  1372903718  988639232   ffe52d70/ffe52830  adjmgr
+27233  28033024  1969699699  940355584   ffc1c670/ffc1c530  u6rib
+27268  80289792  1663470144  952512512   ff9ff0d0/ff9fef70  arp
+27269  26247168  1361717132  996220928   ff8d5860/ff8d5300  icmpv6
+27270  27529216  1095645619  482758656   fffc4e30/fffc4d10  pktmgr
+27290  58327040  1726381952  1086111744  ffcab540/ffcaaf80  netstack
+27333   9531392  1283798368  822976512   ff802120/ff7fd07c  radius
+27334   9281536  1259150412  826630144   ffa95970/ffa947ac  cdp
+27335   5939200  1086575846  425246720   ffa6ef10/ffa6d39c  cfs
+27336    475136  625953152   280612864   fffee9c0/fffee778  ip_dummy
+27339    475136  625953152   280612864   fffd2050/fffd1e08  ipv6_dummy
+27340  10326016  1420167462  947281920   ffbdfd40/ffbde1cc  otm
+27341  25239552  1242569945  874692608   ff95f480/ff95a2bc  snmpd
+27342    475136  625953152   280612864   ff858c70/ff858a28  tcpudp_dummy
+27352   2015232  735279001   413339648   ff804ae0/ff800cfc  dcos-xinetd
+27401   2215936  860574387   420679680   ffc668b0/ffc6658c  callhome
+28497  74747904  1741466214  597282816   ff875110/ff8734ac  port-profile
+28551   6303744  1418567321  428093440   ffbccdc0/ffbcc160  spm
+28554  24678400  1371511488  972845056   ffaab7b0/ffaab690  rpm
+28559   9273344  854606508   552841216   ff883540/ff88193c  pltfm_config
+28560   5963776  1040010329  431394816   fffddfc0/fffdcfb0  plcmgr
+28563  10637312  1167595404  544956416   ffa16420/ffa148ac  pfstat
+28579   8118272  1442222374  963444736   ffa7e6e0/ffa7a3bc  ntp
+28586   4714496  1138395827  704892928   ffeb93b0/ffeb784c  monitor
+28589   4804608  1091557299  835215360   ff858940/ff856dbc  lldp
+28590  16322560  915570585   550440960   ffe3cfa0/ffe3b3fc  lim
+28591  25522176  1134428979  592019456   fff32fd0/fff32a40  l2rib
+28594  71462912  1217143910  519999488   ffcf0630/ffcef72c  ipfib
+28597  151842816  1724332889  1059328000  ff838d70/ff838830  igmp
+28604  25124864  876689792   561704960   fff7baa0/fff79cdc  eth_port_channel
+28607   8384512  1033963814  426901504   ffe3ddc0/ffe3dca0  ecp
+28614  13398016  989205043   441294848   fffc68b0/fffc4d2c  adbm
+28615   7024640  1091266035  539783168   ff94e2f0/ff94d2d0  acllog
+28730  21438464  1110031859  560828416   ffbc0a20/ffbbee6c  eltm
+28739   1425408  787534809   418799616   ffdb85a0/ffdb81d0  eth_dstats
+28740  17526784  1050828134  561897472   ff9eba50/ff9ea3b0  ipqosmgr
+28741  11595776  1169627430  548229120   fff90d80/fff8fd60  lacp
+28758  40407040  819178483   468844544   ffeeeea0/ffeed11c  aclqos
+28763  18546688  963747980   567058432   ffca0580/ffc9ec2c  vlan_mgr
+28768  94793728  850572800   520327168   ffd38ce0/ffd37ee0  diag_port_lb
+28769  31178752  1014183315  584187904   ffd64190/ffd621cc  ethpm
+28770  44867584  1448169606  605601792   ffddac20/ffdd8e6c  l2fm
+28785  12668928  1447592115  553111552   ffa5f030/ffa5e520  stp
+28786   4489216  769513254   424267776   fffebbd0/fffeab80  stripcl
+28847   9674752  1046300006  551198720   ffd639c0/ffd62710  copp
+28888  12128256  1742192691  835358720   ffca8a30/ffca6c9c  vpc
+28891  42426368  1109184806  565387264   ffe7e720/ffe7cb1c  ufdm
+28892   2064384  771099225   422559744   ffcfe680/ffcfd640  u2
+28893   2400256  1293041958  796364800   ff91ede0/ff91d26c  sal
+28896  131014656  1842357222  1050980352  ffb4d390/ffb4d260  mrib
+28897  16347136  1171353356  452718592   ffe92220/ffe9066c  mfdm
+28898   2379776  770621632   424497152   ffa74460/ffa733e0  mcm
+28899  54796288  1343058624  892452864   ffd3b480/ffd3b350  m6rib
+28900   2551808  1033414131  424456192   ffc53a90/ffc51eec  l2pt
+28901  13656064  1369289292  552259584   ff950120/ff94e4cc  interface-vlan
+28940   6176768  1169798080  426352640   ff9cac40/ff9c9fa0  m2rib
+28955  65728512  1327937689  845512704   ff92f2c0/ff92f1e0  mcastfwd
+29010         0  0           0                  0/0         wdpunch_thread
+29011         0  0           0                  0/0         kworker/2:2
+29362   3469312  0           287924224   ff94aec0/ff94a19c  bloggerd
+29374   1712128  0           287186944   ff8fde70/ff8fdb40  psshelper
+29375   1712128  0           287186944   ffe4a670/ffe4a340  psshelper
+29376  101163008  0           670662656   ff88b450/ff88afc0  plog_lc
+29377    851968  0           281198592   ffc9e290/ffc9dce8  patch_installer
+29378    479232  0           281174016   ffab34b0/ffab2b48  obfl_lc
+29379   1105920  0           284803072   fff3b240/fff39fc0  mvsh
+29380   1175552  0           284950528   ffe121f0/ffe111d0  evmc
+29381  101736448  0           674189312   ffe0aab0/ffe0a340  dt_helper
+29382   4640768  0           475516928   ff807d20/ff806570  diagclient
+29383  37203968  0           507248640   ffa44540/ffa43cc0  crdcfg_server
+29384    405504  0           280903680   ffacb2d0/ffacb048  capability
+29398  106528768  0           679260160   fff4eb60/fff4df1c  device_test
+29438    864256  0           472059904   ffcb5500/ffcb5020  crdclient
+29456  102408192  0           674996224   ffa5aa50/ffa5a590  dc3_sensor
+29457  980697088  0           1996484608  fff2fc70/fff2edbc  tahusd
+29925   1581056  0           415170560   ffb14e20/ffb1105c  ntpd
+29963  121692160  0           701124608   ff9aa970/ff9aa450  bfdc
+29964  189382656  0           777838592   ffa8fcd0/ffa8ec50  iftmc
+29965  107556864  0           688361472   ff8ae230/ff8ad1e0  nf
+29966  137019392  0           720781312   ffe8e230/ffe8d640  pixc
+29967  115011584  0           689459200   ffaba170/ffab9580  port_client
+29968  115380224  0           693370880   ff9149f0/ff914550  stats_client
+29969  103153664  0           682622976   ff9ace80/ff9abe60  vntagc
+29973  133529600  0           716263424   ffbf0f40/ffbf0430  mtm
+29974  212213760  0           815259648   ff9cdd30/ff9cce30  ipfib
+29975  180105216  0           785293312   ff869780/ff868550  aclqos
+29976  107372544  0           707883008   ffbf6a00/ffbf59e0  ptplc
+29978  104300544  0           679010304   ffa451e0/ffa441c0  fcoelc
+29979  104022016  0           685600768   ff9b5120/ff9b4100  monc
+29980  106364928  0           681009152   ffb1f930/ffb1e890  xbar_client
+30435    266240  0           12840960    bd4e5930/bd4dd4b0  incrond
+30716    192512  0           2383872     ffe8ad50/ffe886b8  getty
+
+All processes: MemAlloc = 6607515648
+
+CDP Neighbors :
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+OOB03               mgmt0          163    S I       WS-C2960X-48F Gig1/0/9      
+SPN01.corp.dohaoasis.com(FOX2205PB9N)
+                    Eth1/53        152    R S I s   N9K-C9504     Eth3/3        
+SPN02.corp.dohaoasis.com(FOX2205PB9L)
+                    Eth1/54        164    R S I s   N9K-C9504     Eth3/3        
+
+Total entries displayed: 3
+
+CDP Neighbors Detail :
+----------------------------------------
+Device ID:OOB03
+VTP Management Domain Name: null
+
+Interface address(es):
+    IPv4 Address: 172.18.147.140
+Platform: cisco WS-C2960X-48FPD-L, Capabilities: Switch IGMP Filtering 
+Interface: mgmt0, Port ID (outgoing port): GigabitEthernet1/0/9
+Holdtime: 162 sec
+
+Version:
+Cisco IOS Software, C2960X Software (C2960X-UNIVERSALK9-M), Version 15.2(7)E6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-22 10:47 by mcpre
+
+Advertisement Version: 2
+
+Native VLAN: 3450
+Duplex: full
+Mgmt address(es):
+    IPv4 Address: 172.18.147.140
+----------------------------------------
+Device ID:SPN01.corp.dohaoasis.com(FOX2205PB9N)
+System Name: SPN01
+
+Interface address(es):
+    IPv4 Address: 172.17.250.19
+Platform: N9K-C9504, Capabilities: Router Switch IGMP Filtering Supports-STP-Dispute
+Interface: Ethernet1/53, Port ID (outgoing port): Ethernet3/3
+Holdtime: 150 sec
+
+Version:
+Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I7(5)
+
+Advertisement Version: 2
+
+Native VLAN: 3451
+Duplex: full
+
+MTU: 1500
+Physical Location: snmplocation
+Mgmt address(es):
+    IPv4 Address: 172.18.147.19
+----------------------------------------
+Device ID:SPN02.corp.dohaoasis.com(FOX2205PB9L)
+System Name: SPN02
+
+Interface address(es):
+    IPv4 Address: 172.17.250.20
+Platform: N9K-C9504, Capabilities: Router Switch IGMP Filtering Supports-STP-Dispute
+Interface: Ethernet1/54, Port ID (outgoing port): Ethernet3/3
+Holdtime: 162 sec
+
+Version:
+Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I7(5)
+
+Advertisement Version: 2
+
+Native VLAN: 3451
+Duplex: full
+
+MTU: 1500
+Physical Location: snmplocation
+Mgmt address(es):
+    IPv4 Address: 172.18.147.20
+
+EtherChannel Summary :
+No output from "show etherchannel summary"
+
+IP Interface Brief :
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan50               172.17.250.115  protocol-up/link-up/admin-up
+
+Bootflash :
+No output from "show bootflash"
+
+System Resources :
+Load average:   1 minute: 0.25   5 minutes: 0.23   15 minutes: 0.23
+Processes   :   563 total, 1 running
+CPU states  :   0.87% user,   1.25% kernel,   97.87% idle
+	CPU0 states  :   1.01% user,   1.01% kernel,   97.97% idle
+	CPU1 states  :   2.97% user,   0.99% kernel,   96.03% idle
+	CPU2 states  :   0.00% user,   3.96% kernel,   96.03% idle
+	CPU3 states  :   0.00% user,   2.00% kernel,   98.00% idle
+	CPU4 states  :   0.00% user,   1.01% kernel,   98.98% idle
+	CPU5 states  :   0.00% user,   2.00% kernel,   98.00% idle
+	CPU6 states  :   1.00% user,   1.00% kernel,   98.00% idle
+	CPU7 states  :   1.00% user,   0.00% kernel,   99.00% idle
+Memory usage:   24571652K total,   6154312K used,   18417340K free
+Current memory status: OK
+
+Module Information :
+No output from "show module"
+
+Stack Power Details :
+No output from "show stack-power detail"
+
+VLAN Brief :
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Po102, Eth1/49, Eth1/50
+                                                Eth1/53, Eth1/54
+2    NATIVE                           active    Po102, Eth1/49, Eth1/50
+                                                Eth1/53, Eth1/54
+50   NETWORK-MGMT                     active    Po102, Eth1/49, Eth1/50
+                                                Eth1/53, Eth1/54
+3451 DCIM                             active    Po102, Eth1/1, Eth1/2, Eth1/3
+                                                Eth1/4, Eth1/5, Eth1/6, Eth1/7
+                                                Eth1/8, Eth1/9, Eth1/10, Eth1/11
+                                                Eth1/12, Eth1/13, Eth1/14
+                                                Eth1/15, Eth1/16, Eth1/17
+                                                Eth1/18, Eth1/19, Eth1/20
+                                                Eth1/21, Eth1/22, Eth1/23
+                                                Eth1/24, Eth1/25, Eth1/26
+                                                Eth1/27, Eth1/28, Eth1/29
+                                                Eth1/30, Eth1/31, Eth1/32
+                                                Eth1/33, Eth1/34, Eth1/35
+                                                Eth1/36, Eth1/37, Eth1/38
+                                                Eth1/39, Eth1/40, Eth1/41
+                                                Eth1/42, Eth1/43, Eth1/44
+                                                Eth1/45, Eth1/46, Eth1/47
+                                                Eth1/48, Eth1/49, Eth1/50
+                                                Eth1/53, Eth1/54
+
+Inventory :
+NAME: "Chassis",  DESCR: "Nexus9000 C93108TC-FX Chassis"         
+PID: N9K-C93108TC-FX     ,  VID: V02 ,  SN: FDO21452WT1          
+
+NAME: "Slot 1",  DESCR: "48x1/10GT + 6x40G/100G Ethernet Module"
+PID: N9K-C93108TC-FX     ,  VID: V02 ,  SN: FDO21452WT1          
+
+NAME: "Power Supply 1",  DESCR: "Nexus9000 C93108TC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: LIT211845RY          
+
+NAME: "Power Supply 2",  DESCR: "Nexus9000 C93108TC-FX Chassis Power Supply"
+PID: NXA-PAC-500W-PI     ,  VID: V01 ,  SN: LIT211845QQ          
+
+NAME: "Fan 1",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 2",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 3",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A                  
+
+NAME: "Fan 4",  DESCR: "Nexus9000 C93108TC-FX Chassis Fan Module"
+PID: NXA-FAN-30CFM-B     ,  VID: V01 ,  SN: N/A
+
+Power :
+No output from "show power"
+
+Environment :
+No output from "show environment status"
+
+Redundancy :
+No output from "show redundancy"
+
+Running Config :
+!Command: show running-config
+!Time: Tue Mar  4 22:27:04 2025
+
+version 7.0(3)I7(5) Bios:version 05.31 
+hostname DCIM05
+vdc DCIM05 id 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 511
+  limit-resource u4route-mem minimum 248 maximum 248
+  limit-resource u6route-mem minimum 96 maximum 96
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+
+feature telnet
+cfs eth distribute
+feature interface-vlan
+feature lacp
+feature vpc
+feature lldp
+clock timezone UTC 3 0
+
+username admin password 5 $5$Ru3AzH5q$DD7/KORCJ3RYi/BR40k4R5MjQEBSaOiLk7Lflkb0re1  role network-admin
+username swsnmpv3user password 5 $5$X2HW6ivX$yLUVXeKbFj6U7.FabWpUki7wUE2YuBVKRamwHyMeKt5  role network-operator
+
+banner motd ^
+
+
+****************************************************************************
+*                                                                          *
+* !!! WARNING: UNAUTHORIZED ACCESS TO THIS EQUIPMENT IS PROHIBITED !!!     *
+* ======================================================================== *
+*  This system is solely for the use of authorized users for official      *
+*  purposes. You have no expectation of privacy in its use and to ensure   *
+*  that the system is functioning properly, individuals using this         *
+*  system are subject to having all of their activities monitored          *
+*  and recorded by system personnel.                                       *
+*                                                                          *
+* ======================================================================== *
+* !!! WARNING: Use of this system evidences an express consent to such     *
+*              monitoring and agreement that if such monitoring reveals    *
+*              evidence of possible abuse or criminal activity, system     *
+*              personnel may provide the results of such monitoring        *
+*              to appropriate officials.                                   *
+*                                                                          *
+****************************************************************************
+^
+
+ssh key rsa 2048 
+no ip domain-lookup
+ip domain-name corp.dohaoasis.com
+crypto key param rsa label DCIM05.corp.dohaoasis.com modulus 2048 
+spanning-tree mode mst
+errdisable recovery interval 120
+errdisable recovery cause link-flap
+errdisable recovery cause udld
+errdisable recovery cause security-violation
+errdisable recovery cause psecure-violation
+policy-map type qos copp-system-p-policy-lenient
+copp profile lenient
+snmp-server user admin network-admin auth md5 0x3560baf0bc521478bec8b2416c20b780 priv 0x3560baf0bc521478bec8b2416c20b780 localizedkey
+snmp-server user swsnmpv3user network-operator auth sha 0xafe99279466939af7415f5047b9496dffabcdcd4 priv aes-128 0xafe99279466939af7415f5047b9496dffabcdcd4 localizedkey
+snmp-server host 172.17.250.97 informs version 3 priv P@ssw0rd
+rmon event 1 description FATAL(1) owner PMON@FATAL
+rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+rmon event 3 description ERROR(3) owner PMON@ERROR
+rmon event 4 description WARNING(4) owner PMON@WARNING
+rmon event 5 description INFORMATION(5) owner PMON@INFO
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps lldp lldpRemTablesChange
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps system Clock-change-notification
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+snmp-server enable traps mmode cseNormalModeChangeNotify
+snmp-server enable traps mmode cseMaintModeChangeNotify
+ntp server 172.18.255.251 prefer use-vrf default key 1
+ntp server 172.18.255.252 use-vrf default key 1
+ntp source-interface  Vlan50
+ntp authenticate
+ntp authentication-key 1 md5 Fh03c!iL 7
+ntp trusted-key 1
+
+ip route 0.0.0.0/0 Vlan50 172.17.250.1
+no ip source-route
+vlan 1-2,50,3451
+vlan 2
+  name NATIVE
+vlan 50
+  name NETWORK-MGMT
+vlan 3451
+  name DCIM
+
+spanning-tree pathcost method long
+vrf context management
+  ip route 0.0.0.0/0 172.18.144.1
+
+
+interface Vlan1
+
+interface Vlan50
+  description *** SVI for NETWORK-MGMT ***
+  no shutdown
+  no ip redirects
+  ip address 172.17.250.115/24
+
+interface port-channel102
+  description *** EC -to- SPN01&SPN02 : Member-Ports ETH-1/53 ETH-1/54 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  spanning-tree port type network
+
+interface Ethernet1/1
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/2
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/3
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/4
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/5
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/6
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/7
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/8
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/9
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/10
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/11
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/12
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/13
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/14
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/15
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/16
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/17
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/18
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/19
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/20
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/21
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/22
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/23
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/24
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/25
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/26
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/27
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/28
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/29
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/30
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/31
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/32
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/33
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/34
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/35
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/36
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/37
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/38
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/39
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/40
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/41
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/42
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/43
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/44
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/45
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/46
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/47
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/48
+  description *** 1G-DCIM TO .. ***
+  switchport
+  switchport access vlan 3451
+  spanning-tree port type edge
+  no shutdown
+
+interface Ethernet1/49
+  description *** 40-GE -to-DCIM03 Eth1/50 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  no shutdown
+
+interface Ethernet1/50
+  description *** 40-GE -to-CCTV ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  no shutdown
+
+interface Ethernet1/51
+
+interface Ethernet1/52
+
+interface Ethernet1/53
+  description *** 40-GE -to- SPN01 -ETH-3/3 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  channel-group 102 mode active
+  no shutdown
+
+interface Ethernet1/54
+  description *** 40-GE -to- SPN02 -ETH-3/3 ***
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 3451
+  channel-group 102 mode active
+  no shutdown
+
+interface mgmt0
+  vrf member management
+  ip address 172.18.147.115/20
+line console
+line vty
+boot nxos bootflash:/nxos.7.0.3.I7.5.bin
+
+Protocols :
+No output from "show protocols"
+
+IP Route :
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 172.17.250.1, Vlan50, [1/0], 2y35w, static
+172.17.250.0/24, ubest/mbest: 1/0, attached
+    *via 172.17.250.115, Vlan50, [0/0], 2y35w, direct
+172.17.250.115/32, ubest/mbest: 1/0, attached
+    *via 172.17.250.115, Vlan50, [0/0], 2y35w, local
+
+Interface Status :
+--------------------------------------------------------------------------------
+Port          Name               Status    Vlan      Duplex  Speed   Type
+--------------------------------------------------------------------------------
+mgmt0         --                 connected routed    full    1000    --         
+
+--------------------------------------------------------------------------------
+Port          Name               Status    Vlan      Duplex  Speed   Type
+--------------------------------------------------------------------------------
+Eth1/1        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/2        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/3        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/4        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/5        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/6        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/7        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/8        *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/9        *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/10       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/11       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/12       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/13       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/14       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/15       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/16       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/17       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/18       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/19       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/20       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/21       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/22       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/23       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/24       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/25       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/26       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/27       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/28       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/29       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/30       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/31       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/32       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/33       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/34       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/35       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/36       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/37       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/38       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/39       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/40       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/41       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/42       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/43       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/44       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/45       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/46       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/47       *** 1G-DCIM TO ..  notconnec 3451      auto    auto    10g        
+Eth1/48       *** 1G-DCIM TO ..  connected 3451      full    100     10g        
+Eth1/49       *** 40-GE -to-DCIM notconnec trunk     auto    auto    QSFP-40G-SR-BD
+Eth1/50       *** 40-GE -to-CCTV xcvrAbsen trunk     auto    auto    --         
+Eth1/51       --                 xcvrAbsen routed    auto    auto    --         
+Eth1/52       --                 xcvrAbsen routed    auto    auto    --         
+Eth1/53       *** 40-GE -to- SPN connected trunk     full    40G     QSFP-40G-SR-BD
+Eth1/54       *** 40-GE -to- SPN connected trunk     full    40G     WSP-Q40GLR4L
+Po102         *** EC -to- SPN01& connected trunk     full    40G     --         
+Vlan1         --                 down      routed    auto    auto    --
+Vlan50        *** SVI for NETWOR connected routed    auto    auto    --
+
+Log :
+Legend: 
+	* - primary entry, G - Gateway MAC, (R) - Routed MAC, O - Overlay MAC
+	age - seconds since last seen,+ - primary entry using vPC Peer-Link,
+	(T) - True, (F) - False, C - ControlPlane MAC, ~ - vsan
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   50     00be.75f2.b5bf   dynamic  0         F      F    Po102
+*   50     00be.75f2.b9bf   dynamic  0         F      F    Po102
+*   50     28ac.9e41.4d98   dynamic  0         F      F    Po102
+*   50     7069.5aca.414a   dynamic  0         F      F    Po102
+*   50     b40c.25e0.8010   dynamic  0         F      F    Po102
+*   50     b4de.31f2.d4e7   dynamic  0         F      F    Po102
+* 3451     002e.c765.ed5b   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0d7d   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e08   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e15   dynamic  0         F      F    Eth1/9
+* 3451     2c26.5f33.0e1b   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e20   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e24   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e28   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e2c   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e2d   dynamic  0         F      F    Eth1/15
+* 3451     2c26.5f33.0e2e   dynamic  0         F      F    Eth1/14
+* 3451     2c26.5f33.0e30   dynamic  0         F      F    Eth1/6
+* 3451     2c26.5f33.0e32   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e37   dynamic  0         F      F    Eth1/24
+* 3451     2c26.5f33.0e3c   dynamic  0         F      F    Eth1/3
+* 3451     2c26.5f33.0e42   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e45   dynamic  0         F      F    Eth1/1
+* 3451     2c26.5f33.0e46   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e4a   dynamic  0         F      F    Eth1/4
+* 3451     2c26.5f33.0e4c   dynamic  0         F      F    Eth1/26
+* 3451     2c26.5f33.0e55   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e56   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e57   dynamic  0         F      F    Eth1/25
+* 3451     2c26.5f33.0e58   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e59   dynamic  0         F      F    Eth1/2
+* 3451     2c26.5f33.0e5a   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e5c   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e5f   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e65   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e68   dynamic  0         F      F    Eth1/11
+* 3451     2c26.5f33.0e6d   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e75   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e76   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e7c   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e80   dynamic  0         F      F    Eth1/10
+* 3451     2c26.5f33.0e82   dynamic  0         F      F    Eth1/19
+* 3451     2c26.5f33.0e86   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e98   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e9d   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0e9f   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ea0   dynamic  0         F      F    Eth1/28
+* 3451     2c26.5f33.0ea3   dynamic  0         F      F    Eth1/27
+* 3451     2c26.5f33.0ea4   dynamic  0         F      F    Eth1/18
+* 3451     2c26.5f33.0ea5   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ea6   dynamic  0         F      F    Eth1/22
+* 3451     2c26.5f33.0ea7   dynamic  0         F      F    Eth1/13
+* 3451     2c26.5f33.0eab   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0eac   dynamic  0         F      F    Eth1/20
+* 3451     2c26.5f33.0ead   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0eb1   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0eb2   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0eb6   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0eb8   dynamic  0         F      F    Eth1/17
+* 3451     2c26.5f33.0ebc   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ebe   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ec0   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ecf   dynamic  0         F      F    Eth1/5
+* 3451     2c26.5f33.0ed3   dynamic  0         F      F    Eth1/7
+* 3451     2c26.5f33.0ed7   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ed9   dynamic  0         F      F    Eth1/12
+* 3451     2c26.5f33.0ee0   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ee5   dynamic  0         F      F    Po102
+* 3451     2c26.5f33.0ee8   dynamic  0         F      F    Eth1/21
+* 3451     2c26.5f33.0f5b   dynamic  0         F      F    Eth1/23
+* 3451     2c26.5f33.1e76   dynamic  0         F      F    Po102
+* 3451     3c78.430a.c77b   dynamic  0         F      F    Po102
+* 3451     6c34.9194.771e   dynamic  0         F      F    Eth1/16
+* 3451     84a9.c435.15c1   dynamic  0         F      F    Po102
+* 3451     b40c.25e0.8010   dynamic  0         F      F    Po102
+* 3451     c4ff.1f77.6e7d   dynamic  0         F      F    Po102
+* 3451     e472.e2f3.58b1   dynamic  0         F      F    Po102
+* 3451     e472.e2f3.58b2   dynamic  0         F      F    Eth1/48
+* 3451     f86e.eed3.48be   dynamic  0         F      F    Po102
+* 3451     f86e.eed3.48d6   dynamic  0         F      F    Po102
+G    -     b4de.3171.f057   static   -         F      F    sup-eth1(R)
+G   50     b4de.3171.f057   static   -         F      F    sup-eth1(R)
+Logging console:		enabled (Severity: critical)
+Logging monitor:		enabled (Severity: notifications)
+Logging linecard:		enabled (Severity: notifications)
+Logging timestamp:		Seconds
+Logging source-interface :	disabled
+Logging rate-limit:		enabled
+Logging server:			disabled
+Logging origin_id :		disabled
+Logging logflash:		enabled (Severity: notifications)
+Logging logfile:		enabled
+	Name - messages: Severity - notifications Size - 4194304
+
+
+Facility	Default Severity	Current Session Severity
+--------	----------------	------------------------
+aaa                 	3			3
+acllog              	2			2
+aclmgr              	3			3
+aclqos              	5			5
+adbm                	2			2
+arp                 	3			3
+auth                	0			0
+authpriv            	3			3
+bootvar             	5			5
+callhome            	2			2
+capability          	2			2
+cdp                 	2			2
+cert_enroll         	2			2
+cfs                 	3			3
+clis                	3			3
+clk_mgr             	2			2
+confcheck           	2			2
+copp                	2			2
+cron                	3			3
+daemon              	3			3
+device_test         	3			3
+dhclient            	2			2
+diag_port_lb        	2			2
+diagclient          	2			2
+diagmgr             	2			2
+ecp                 	5			5
+eltm                	2			2
+eth_port_channel    	5			5
+ethpm               	5			5
+evmc                	5			5
+evms                	2			2
+feature-mgr         	2			2
+fs-daemon           	2			2
+ftp                 	3			3
+ifmgr               	5			5
+igmp_1              	5			5
+interface-vlan      	2			2
+ip                  	3			3
+ipfib               	2			2
+ipqosmgr            	4			4
+ipv6                	3			3
+kern                	3			3
+l2fm                	2			2
+l2pt                	3			3
+l3vm                	5			5
+lacp                	2			2
+licmgr              	6			6
+lldp                	2			2
+local0              	3			3
+local1              	3			3
+local2              	3			3
+local3              	3			3
+local4              	3			3
+local5              	3			3
+local6              	3			3
+local7              	3			3
+lpr                 	3			3
+m2rib               	2			2
+m6rib               	5			5
+mail                	3			3
+mcm                 	2			2
+mfdm                	2			2
+mmode               	2			2
+module              	5			5
+monitor             	3			3
+mrib                	5			5
+mvsh                	2			2
+news                	3			3
+ntp                 	2			2
+otm                 	3			3
+pfstat              	2			2
+pixm_gl             	4			4
+pixm_vl             	4			4
+platform            	5			5
+plcmgr              	2			2
+plugin              	2			2
+port-profile        	2			2
+radius              	3			3
+res_mgr             	5			5
+rpm                 	5			5
+sal                 	2			2
+securityd           	3			3
+sksd                	3			3
+smm                 	4			4
+snmpd               	2			2
+span                	3			3
+spm                 	2			2
+stp                 	3			3
+syslog              	3			3
+sysmgr              	3			3
+tamnw               	2			2
+template_manager    	2			2
+u6rib               	5			5
+ufdm                	3			3
+urib                	5			5
+user                	3			3
+uucp                	3			3
+vdc_mgr             	6			6
+virtual-service     	5			5
+vlan_mgr            	2			2
+vpc                 	2			2
+vshd                	5			5
+xbar                	5			5
+xmlma               	3			3
+
+0(emergencies)		1(alerts)	2(critical)
+3(errors)		4(warnings)	5(notifications)
+6(information)		7(debugging
+
+
+2022 Jun 30 22:57:54 DCIM05 %USER-0-SYSTEM_MSG:  before access to bkout_cfg  - clis
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-PS_FOUND: Power supply 1 found (Serial number LIT211845RY)
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-PS_OK: Power supply 1 ok (Serial number LIT211845RY)
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-PS_STATUS: PowerSupply 1 current-status is PS_OK 
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-PS_FANOK: Fan in Power supply 1 ok
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-PS_STATUS: PowerSupply 2 current-status is PS_SHUT 
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-PS_FAIL: Power supply 2 failed or shut down (Serial number LIT211845QQ)
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-PS_ABSENT: Power supply 2 is absent/shutdown, ps-redundancy might be affected
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-PS_RED_MODE_CHG: Power supply operational redundancy mode changed to non-redundant
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_DETECT: Fan module 1 (Serial number ) Fan1(sys_fan1) detected
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_STATUS: Fan module 1 (Serial number ) Fan1(sys_fan1) current-status is FAN_OK
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-FANMOD_FAN_OK: Fan module 1 (Fan1(sys_fan1) fan) ok
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_DETECT: Fan module 2 (Serial number ) Fan2(sys_fan2) detected
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_STATUS: Fan module 2 (Serial number ) Fan2(sys_fan2) current-status is FAN_OK
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-FANMOD_FAN_OK: Fan module 2 (Fan2(sys_fan2) fan) ok
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_DETECT: Fan module 3 (Serial number ) Fan3(sys_fan3) detected
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_STATUS: Fan module 3 (Serial number ) Fan3(sys_fan3) current-status is FAN_OK
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-FANMOD_FAN_OK: Fan module 3 (Fan3(sys_fan3) fan) ok
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_DETECT: Fan module 4 (Serial number ) Fan4(sys_fan4) detected
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-5-FAN_STATUS: Fan module 4 (Serial number ) Fan4(sys_fan4) current-status is FAN_OK
+2022 Jun 30 22:57:55 DCIM05 %PLATFORM-2-FANMOD_FAN_OK: Fan module 4 (Fan4(sys_fan4) fan) ok
+2022 Jun 30 22:57:56 DCIM05  %USER-2-SYSTEM_MSG: <<%USBHSD-2-MOUNT>> logflash: online  - usbhsd
+2022 Jun 30 22:57:56 DCIM05 Jun 30 22:57:56 %KERN-3-SYSTEM_MSG: [    0.342238] Allocating netns hash table - kernel
+2022 Jun 30 22:57:57 DCIM05 Jun 30 22:57:56 %KERN-3-SYSTEM_MSG: [    4.141476] physmap-flash physmap-flash.0: map_probe failed - kernel
+2022 Jun 30 22:57:57 DCIM05 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to create pending 
+2022 Jun 30 22:57:57 DCIM05  %DAEMON-2-SYSTEM_MSG: <<%ASCII-CFG-2-CONF_CONTROL>> Binary restore - ascii-cfg[26842]
+2022 Jun 30 22:57:59 DCIM05 netstack: Registration with cli server complete
+2022 Jun 30 22:58:08 DCIM05 %USER-2-SYSTEM_MSG: ssnmgr_app_init called on ssnmgr up - aclmgr
+2022 Jun 30 22:58:14 DCIM05 %USER-0-SYSTEM_MSG: end of default policer - copp
+2022 Jun 30 22:58:15 DCIM05 Jun 30 22:58:15 %KERN-3-SYSTEM_MSG: [   66.083756] ICMPV6 daemon PID = 28950 - kernel
+2022 Jun 30 22:58:17 DCIM05 %CARDCLIENT-2-FPGA_BOOT_PRIMARY: IOFPGA booted from Primary
+2022 Jun 30 22:58:17 DCIM05 %CARDCLIENT-2-FPGA_BOOT_PRIMARY: MIFPGA booted from Primary
+2022 Jun 30 22:58:17 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 IOFPGA booted from Primary
+2022 Jun 30 22:58:17 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 MIFPGA booted from Primary
+2022 Jun 30 22:58:17 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 BIOS booted from Primary
+2022 Jun 30 22:58:17 DCIM05 %PLATFORM-5-MOD_STATUS: SUP sub Module 1 current-status is MOD_STATUS_ONLINE/OK
+2022 Jun 30 22:58:17 DCIM05 %MODULE-5-ACTIVE_SUP_OK: Supervisor 1 is active (Serial number: FDO21452WT1)
+2022 Jun 30 22:58:17 DCIM05 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to create in progress 
+2022 Jun 30 22:58:17 DCIM05 %IM-5-IM_INTF_STATE: mgmt0 is DOWN in vdc 1
+2022 Jun 30 22:58:17 DCIM05 %VDC_MGR-5-VDC_HOSTNAME_CHANGE: vdc 1 hostname changed to DCIM05 
+2022 Jun 30 22:58:18 DCIM05 %ETH_PORT_CHANNEL-5-CREATED: port-channel102 created
+2022 Jun 30 22:58:18 DCIM05 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to active 
+2022 Jun 30 22:58:18 DCIM05 %VDC_MGR-2-VDC_ONLINE: vdc 1 has come online 
+2022 Jun 30 22:58:18 DCIM05 %VDC_MGR-5-VDC_HOSTNAME_CHANGE: vdc 1 hostname changed to DCIM05 
+2022 Jun 30 22:58:20 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 IOFPGA booted from Primary
+2022 Jun 30 22:58:20 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 MIFPGA booted from Primary
+2022 Jun 30 22:58:20 DCIM05 %CARDCLIENT-5-MOD_BOOT_PRIMARY: Module 1 BIOS booted from Primary
+2022 Jun 30 22:58:20 DCIM05 %VSHD-5-VSHD_SYSLOG_CONFIG_I: Configured from vty by root on vsh.bin.28972
+2022 Jun 30 22:58:50 DCIM05 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to updating 
+2022 Jun 30 22:58:50 DCIM05 %VDC_MGR-5-VDC_STATE_CHANGE: vdc 1 state changed to active 
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/49 is down (None)
+2022 Jun 30 22:58:58 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/50 is down (None)
+2022 Jun 30 22:58:58 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/51 is down (None)
+2022 Jun 30 22:58:58 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/52 is down (None)
+2022 Jun 30 22:58:58 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/53 is down (None)
+2022 Jun 30 22:58:58 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:58 DCIM05 %ETHPORT-5-IF_DOWN_NONE: Interface Ethernet1/54 is down (None)
+2022 Jun 30 22:58:59 DCIM05 last message repeated 1 time
+2022 Jun 30 22:58:59 DCIM05 %MODULE-5-MOD_OK: Module 1 is online (Serial number: FDO21452WT1)
+2022 Jun 30 22:58:59 DCIM05 %PLATFORM-5-MOD_STATUS: LC sub Module 1 current-status is MOD_STATUS_ONLINE/OK
+2022 Jun 30 22:59:01 DCIM05 %ASCII-CFG-2-CONF_CONTROL: System ready
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/23, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/23, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/23, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/23, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/3, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/3, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/3, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/3, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/27, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/27, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/27, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/27, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/13, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/13, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/13, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/13, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/5, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/5, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/5, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/5, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/11, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/11, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/11, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/11, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/1, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/1, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/1, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/1, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/19, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/19, operational duplex mode changed to Full
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/19, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/19, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/23 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/3 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/27 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/13 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/5 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/11 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/1 is up in mode access
+2022 Jun 30 22:59:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/19 is up in mode access
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/49, hardware type changed to 40G
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/20, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/20, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/20, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/20, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/15, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/15, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/15, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/15, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/25, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/25, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/25, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/25, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/53, hardware type changed to 40G
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_HARDWARE: Interface Ethernet1/54, hardware type changed to 40G
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/21, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/21, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/21, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/21, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/9, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/9, operational duplex mode changed to Full
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/9, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/9, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/20 is up in mode access
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/15 is up in mode access
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/25 is up in mode access
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2022 Jun 30 22:59:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/21 is up in mode access
+2022 Jun 30 22:59:18 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/9 is up in mode access
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/54, operational speed changed to 40 Gbps
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/54, operational duplex mode changed to Full
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/54, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/54, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-SPEED: Interface port-channel102, operational speed changed to 40 Gbps
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface port-channel102, operational duplex mode changed to Full
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface port-channel102, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:19 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface port-channel102, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:22 DCIM05 %ETH_PORT_CHANNEL-5-PORT_UP: port-channel102: Ethernet1/54 is up
+2022 Jun 30 22:59:22 DCIM05 %ETH_PORT_CHANNEL-5-FOP_CHANGED: port-channel102: first operational port changed from none to Ethernet1/54
+2022 Jun 30 22:59:22 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/54 is up in mode trunk
+2022 Jun 30 22:59:22 DCIM05 %ETHPORT-5-IF_UP: Interface port-channel102 is up in mode trunk
+2022 Jun 30 22:59:24 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/48, operational speed changed to 100 Mbps
+2022 Jun 30 22:59:24 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/48, operational duplex mode changed to Full
+2022 Jun 30 22:59:24 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/48, operational Receive Flow Control state changed to off
+2022 Jun 30 22:59:24 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/48, operational Transmit Flow Control state changed to off
+2022 Jun 30 22:59:24 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/48 is up in mode access
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-5-PS_FOUND: Power supply 2 found (Serial number LIT211845QQ)
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-2-PS_OK: Power supply 2 ok (Serial number LIT211845QQ)
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-5-PS_STATUS: PowerSupply 2 current-status is PS_OK 
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-2-PS_FANOK: Fan in Power supply 2 ok
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-2-PS_CAPACITY_CHANGE: Power supply PS2 changed its capacity. possibly due to On/Off or power cable removal/insertion (Serial number LIT211845QQ)
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-4-PFM_PS_RED_MODE_CHG: Power redundancy configured mode changed to ps-redundant
+2022 Jun 30 23:46:34 DCIM05 %PLATFORM-2-PS_RED_MODE_RESTORED: Power redundancy operational mode changed to configured mode
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/4, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/4, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/4, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/4, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/4 is up in mode access
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/17, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/17, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/17, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/17, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/28, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/28, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/28, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/28, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/6, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/6, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/6, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/6, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/18, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/18, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/18, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/18, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/22, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/22, operational duplex mode changed to Full
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/22, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/22, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/17 is up in mode access
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/28 is up in mode access
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/6 is up in mode access
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/18 is up in mode access
+2022 Jun 30 23:46:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/22 is up in mode access
+2022 Jun 30 23:46:38 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:38 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2022 Jun 30 23:46:38 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:38 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:38 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/26, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/26, operational duplex mode changed to Full
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/26, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/26, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/10, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/10, operational duplex mode changed to Full
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/10, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/10, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/12, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/12, operational duplex mode changed to Full
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/12, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/12, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/26 is up in mode access
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/10 is up in mode access
+2022 Jun 30 23:46:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/12 is up in mode access
+2022 Jun 30 23:46:41 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/2, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:41 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/2, operational duplex mode changed to Full
+2022 Jun 30 23:46:41 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/2, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:41 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/2, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:41 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/2 is up in mode access
+2022 Jun 30 23:46:43 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/24, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:43 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/24, operational duplex mode changed to Full
+2022 Jun 30 23:46:43 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/24, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:43 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/24, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:43 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/24 is up in mode access
+2022 Jun 30 23:46:45 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/16, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:45 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/16, operational duplex mode changed to Full
+2022 Jun 30 23:46:45 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/16, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:45 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/16, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:45 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/16 is up in mode access
+2022 Jun 30 23:46:50 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/14, operational speed changed to 100 Mbps
+2022 Jun 30 23:46:50 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/14, operational duplex mode changed to Full
+2022 Jun 30 23:46:50 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/14, operational Receive Flow Control state changed to off
+2022 Jun 30 23:46:50 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/14, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:46:50 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/14 is up in mode access
+2022 Jun 30 23:50:42 DCIM05 %IM-5-IM_INTF_STATE: mgmt0 is UP in vdc 1
+2022 Jun 30 23:52:14 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/53, operational speed changed to 40 Gbps
+2022 Jun 30 23:52:14 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/53, operational duplex mode changed to Full
+2022 Jun 30 23:52:14 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/53, operational Receive Flow Control state changed to off
+2022 Jun 30 23:52:14 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/53, operational Transmit Flow Control state changed to off
+2022 Jun 30 23:52:18 DCIM05 %ETH_PORT_CHANNEL-5-PORT_UP: port-channel102: Ethernet1/53 is up
+2022 Jun 30 23:52:24 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/53 is up in mode trunk
+2022 Jul 17 16:16:22 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/16 is down (Link failure)
+2022 Aug  8 22:53:43 DCIM05 %IM-5-IM_INTF_STATE: mgmt0 is DOWN in vdc 1
+2022 Aug  8 23:04:33 DCIM05 %IM-5-IM_INTF_STATE: mgmt0 is UP in vdc 1
+2023 May 16 00:17:42 DCIM05 %DAEMON-2-SYSTEM_MSG: fatal: Unable to negotiate with 172.30.211.14 port 62718: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1 - dcos_sshd[5425]
+2023 Nov  7 22:05:42 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2023 Nov 25 04:49:36 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link failure)
+2023 Nov 25 04:49:43 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2023 Nov 25 04:49:43 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2023 Nov 25 04:49:43 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2023 Nov 25 04:49:43 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2023 Nov 25 04:49:43 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 21 08:04:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 21 21:49:53 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 21 21:49:53 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 21 21:49:53 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 21 21:49:53 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 21 21:49:53 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 21 21:49:54 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 22 05:25:49 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 22 11:30:02 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 22 11:30:02 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 22 11:30:02 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 22 11:30:02 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 22 11:30:02 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 22 11:30:03 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 22 13:14:56 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 22 15:23:03 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 22 15:23:03 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 22 15:23:03 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 22 15:23:03 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 22 15:23:03 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 22 15:23:04 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 00:09:14 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 00:09:14 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 00:09:14 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 00:09:14 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 00:09:14 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 00:09:15 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 00:35:24 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 07:19:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 07:19:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 07:19:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 07:19:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 07:19:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 07:19:17 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 10:17:14 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 10:17:14 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 10:17:14 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 10:17:14 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 10:17:14 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 10:17:15 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 13:45:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 13:45:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 13:45:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 13:45:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 13:45:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 13:45:37 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 17:03:46 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 17:03:46 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 17:03:46 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 17:03:46 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 17:03:46 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 17:03:49 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 18:40:18 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 18:40:18 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 18:40:18 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 18:40:18 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 18:40:18 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 18:40:19 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 23 23:24:56 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 23 23:24:56 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 23 23:24:56 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 23 23:24:56 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 23 23:24:56 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 23 23:24:57 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 24 00:27:45 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 24 07:16:10 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 24 20:47:31 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 24 20:47:31 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 24 20:47:31 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 24 20:47:31 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 24 20:47:31 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 24 20:47:32 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 24 22:05:46 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 24 22:05:46 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 24 22:05:46 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 24 22:05:46 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 24 22:05:46 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 24 22:05:47 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 24 22:11:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 25 02:03:30 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 25 06:31:16 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 25 07:24:43 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 25 07:24:43 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 25 07:24:43 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 25 07:24:43 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 25 07:24:43 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 25 07:24:44 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 25 11:28:05 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 25 11:28:05 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 25 11:28:05 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 25 11:28:05 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 25 11:28:05 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 25 11:28:06 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 26 01:11:07 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 27 02:50:23 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 27 02:50:23 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 27 02:50:23 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 27 02:50:23 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 27 02:50:23 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 27 02:50:24 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 27 05:35:20 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 27 05:35:20 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 27 05:35:20 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 27 05:35:20 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 27 05:35:20 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 27 05:35:21 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 27 15:45:09 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 27 15:45:09 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 27 15:45:09 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 27 15:45:09 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 27 15:45:09 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 27 15:45:10 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 27 20:57:05 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 27 20:57:05 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 27 20:57:05 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 27 20:57:05 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 27 20:57:05 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 27 20:57:06 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 10:56:34 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 10:56:34 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 10:56:34 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 10:56:34 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 10:56:34 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 10:56:35 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 12:00:54 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 12:00:54 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 12:00:54 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 12:00:54 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 12:00:54 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 12:00:55 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 14:25:31 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 15:56:49 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 20:07:06 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 20:07:06 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 20:07:06 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 20:07:06 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 20:07:06 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 20:07:07 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 28 23:28:47 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 29 07:12:55 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 29 10:28:42 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 29 10:28:42 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 29 10:28:42 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 29 10:28:42 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 29 10:28:42 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 29 10:28:43 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 29 13:12:34 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 29 13:12:34 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 29 13:12:34 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 29 13:12:34 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 29 13:12:34 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 29 13:12:35 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 29 21:00:39 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 29 21:00:39 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 29 21:00:39 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 29 21:00:39 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 29 21:00:39 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 29 21:00:40 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 30 03:04:37 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 30 06:02:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 30 06:02:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 30 06:02:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 30 06:02:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 30 06:02:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 30 06:02:37 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 30 07:11:36 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 30 11:23:09 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 31 01:26:49 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 31 14:11:17 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Jan 31 19:01:48 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  1 00:32:45 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  1 09:34:28 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  1 09:34:28 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  1 09:34:28 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  1 09:34:28 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  1 09:34:28 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  1 09:34:29 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  1 12:35:13 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  1 12:35:13 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  1 12:35:13 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  1 12:35:13 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  1 12:35:13 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  1 12:35:14 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  1 19:48:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  1 19:48:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  1 19:48:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  1 19:48:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  1 19:48:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  1 19:48:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  2 01:43:56 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  2 19:45:47 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  2 19:45:47 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  2 19:45:47 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  2 19:45:47 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  2 19:45:47 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  2 19:45:48 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  3 13:20:31 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  3 13:20:31 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  3 13:20:31 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  3 13:20:31 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  3 13:20:31 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  3 13:20:32 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  4 18:06:44 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  4 18:06:44 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  4 18:06:44 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  4 18:06:44 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  4 18:06:44 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  4 18:06:45 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 00:20:01 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 04:32:51 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 09:03:56 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 09:03:56 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 09:03:56 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 09:03:56 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 09:03:56 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 09:03:57 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 11:04:35 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 15:20:51 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 15:50:36 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  5 18:57:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  5 18:57:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  5 18:57:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  5 18:57:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  5 18:57:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  5 18:57:13 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  6 10:45:45 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  6 14:56:15 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  6 14:56:15 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  6 14:56:15 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  6 14:56:15 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  6 14:56:15 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  6 14:56:16 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  6 15:25:59 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  6 16:19:31 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  6 16:36:15 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  6 16:36:15 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  6 16:36:15 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  6 16:36:15 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  6 16:36:15 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  6 16:36:16 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 02:27:26 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 09:24:53 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 10:39:46 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 14:25:50 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 14:25:50 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 14:25:50 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 14:25:50 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 14:25:50 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 14:25:51 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 16:10:51 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 16:10:51 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 16:10:51 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 16:10:51 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 16:10:51 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 16:10:52 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 20:53:39 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  7 22:00:27 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  7 22:00:27 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  7 22:00:27 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  7 22:00:27 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  7 22:00:27 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  7 22:00:29 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  8 04:53:32 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  8 04:53:32 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  8 04:53:32 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  8 04:53:32 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  8 04:53:33 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  8 04:53:33 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  8 16:28:38 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  8 16:28:38 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  8 16:28:38 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  8 16:28:38 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  8 16:28:38 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  8 16:28:39 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb  9 23:29:39 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb  9 23:29:39 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb  9 23:29:39 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb  9 23:29:39 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb  9 23:29:39 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb  9 23:29:40 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 10 14:04:11 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 10 14:04:11 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 10 14:04:11 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 10 14:04:11 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 10 14:04:11 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 10 14:04:12 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 10 22:49:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 11 02:16:40 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 11 04:18:15 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 11 04:18:15 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 11 04:18:15 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 11 04:18:15 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 11 04:18:15 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 11 04:18:16 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 11 08:06:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 11 08:06:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 11 08:06:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 11 08:06:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 11 08:06:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 11 08:06:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 11 10:08:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 11 10:08:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 11 10:08:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 11 10:08:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 11 10:08:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 11 10:08:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 11 19:41:59 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 11 19:41:59 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 11 19:41:59 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 11 19:41:59 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 11 19:41:59 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 11 19:42:00 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 12 08:13:50 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 12 08:13:50 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 12 08:13:50 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 12 08:13:50 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 12 08:13:50 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 12 08:13:51 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 12 10:10:34 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 12 20:32:40 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 12 20:32:40 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 12 20:32:40 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 12 20:32:40 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 12 20:32:40 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 12 20:32:41 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 12 20:41:17 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 12 23:09:21 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 12 23:09:21 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 12 23:09:21 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 12 23:09:21 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 12 23:09:21 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 12 23:09:22 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 13 03:52:44 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 13 03:52:44 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 13 03:52:44 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 13 03:52:44 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 13 03:52:44 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 13 03:52:46 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 14 00:24:55 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 14 00:25:51 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link failure)
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/8, operational speed changed to 100 Mbps
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/8, operational duplex mode changed to Full
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/8, operational Receive Flow Control state changed to off
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/8, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/8 is up in mode access
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2024 Feb 14 00:26:12 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link failure)
+2024 Feb 14 00:26:27 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link failure)
+2024 Feb 14 00:26:33 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/9 is down (Link failure)
+2024 Feb 14 00:26:41 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2024 Feb 14 00:26:41 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2024 Feb 14 00:26:41 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2024 Feb 14 00:26:41 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:26:41 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2024 Feb 14 00:26:56 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link failure)
+2024 Feb 14 00:27:14 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2024 Feb 14 00:27:14 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2024 Feb 14 00:27:14 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2024 Feb 14 00:27:14 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:27:14 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2024 Feb 14 00:27:23 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/9, operational speed changed to 100 Mbps
+2024 Feb 14 00:27:23 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/9, operational duplex mode changed to Full
+2024 Feb 14 00:27:23 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/9, operational Receive Flow Control state changed to off
+2024 Feb 14 00:27:23 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/9, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:27:23 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/9 is up in mode access
+2024 Feb 14 00:27:30 DCIM05 %ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link failure)
+2024 Feb 14 00:28:04 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/7, operational speed changed to 100 Mbps
+2024 Feb 14 00:28:04 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/7, operational duplex mode changed to Full
+2024 Feb 14 00:28:04 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/7, operational Receive Flow Control state changed to off
+2024 Feb 14 00:28:04 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/7, operational Transmit Flow Control state changed to off
+2024 Feb 14 00:28:04 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/7 is up in mode access
+2024 Feb 14 03:51:52 DCIM05 %ETHPORT-5-SPEED: Interface Ethernet1/16, operational speed changed to 100 Mbps
+2024 Feb 14 03:51:52 DCIM05 %ETHPORT-5-IF_DUPLEX: Interface Ethernet1/16, operational duplex mode changed to Full
+2024 Feb 14 03:51:52 DCIM05 %ETHPORT-5-IF_RX_FLOW_CONTROL: Interface Ethernet1/16, operational Receive Flow Control state changed to off
+2024 Feb 14 03:51:52 DCIM05 %ETHPORT-5-IF_TX_FLOW_CONTROL: Interface Ethernet1/16, operational Transmit Flow Control state changed to off
+2024 Feb 14 03:51:52 DCIM05 %ETHPORT-5-IF_UP: Interface Ethernet1/16 is up in mode access
+2025 Mar  4 21:09:21 DCIM05 %DAEMON-2-SYSTEM_MSG: fatal: Unable to negotiate with 172.30.205.19 port 51544: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1 - dcos_sshd[4745]
+
+Licensing and Features :
+No output from "show features"
