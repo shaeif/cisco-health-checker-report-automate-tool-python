@@ -1,7 +1,9 @@
-- name: Perform health checks on Cisco Devices
+- name: Perform health checks on Cisco Devices (Catalyst)
   hosts: cisco_devices
   gather_facts: yes
   connection: network_cli
+  network_os: ios
+  serial: 20
   tasks:
 
     - name: Gather IOS facts
@@ -452,7 +454,7 @@
           {% endif %}
 
 
-        dest: "output/{{ ansible_facts['net_hostname'] }}_health_check_output.txt"
+        dest: "output/catalyst/{{ ansible_facts['net_hostname'] }}_health_check_output.txt"
         mode: '0644'
 
     - name: Show all gathered facts
