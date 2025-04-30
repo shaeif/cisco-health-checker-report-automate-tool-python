@@ -3,8 +3,51 @@
   gather_facts: yes
   connection: network_cli
   network_os: ios
+  vars:
+    enable_passwords:
+      - 
+    ansible_become: yes
+    ansible_become_method: enable
   serial: 20
   tasks:
+    - name: Ping test to check device reachability
+      ios_command:
+        commands: ping
+      register: ping_result
+      ignore_errors: yes
+
+    - name: Fail if device is not reachable
+      fail:
+        msg: "Device not reachable. Skipping further tasks."
+      when: ping_result.failed
+      ignore_errors: false
+
+    - name: Try enable passwords until success
+      block:
+        - name: Attempt enable password {{ item }}
+          vars:
+            ansible_become_password: "{{ item }}"
+          cisco.ios.ios_facts:
+          register: enable_test_result
+          ignore_errors: yes
+      loop: "{{ enable_passwords }}"
+      when: enable_password is not defined
+      register: enable_attempts
+      until: enable_test_result is not failed
+      retries: "{{ enable_passwords | length }}"
+      delay: 1
+      run_once: true
+
+    - name: Set working enable password
+      set_fact:
+        enable_password: "{{ item.item }}"
+      when: item.failed is not defined or item.failed == false
+      loop: "{{ enable_attempts.results }}"
+      run_once: true
+
+    - name: Set become password for all hosts
+      set_fact:
+        ansible_become_password: "{{ enable_password }}"
 
     - name: Gather IOS facts
       cisco.ios.ios_facts:
